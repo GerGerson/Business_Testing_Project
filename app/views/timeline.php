@@ -55,30 +55,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 					Timeline <small>coming soon page with date countdown</small>
 					</h3>
 					<ul class="page-breadcrumb breadcrumb">
-						<li class="btn-group">
-							<button type="button" class="btn blue dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
-							<span>
-								Actions
-							</span>
-							<i class="fa fa-angle-down"></i>
-							</button>
-							<ul class="dropdown-menu pull-right" role="menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-								<li>
-									<a href="#">Another action</a>
-								</li>
-								<li>
-									<a href="#">Something else here</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Separated link</a>
-								</li>
-							</ul>
-						</li>
 						<li>
 							<i class="fa fa-home"></i>
 							<a href="index.html">Home</a>
@@ -86,10 +62,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 						</li>
 						<li>
 							<a href="#">Pages</a>
-							<i class="fa fa-angle-right"></i>
-						</li>
-						<li>
-							<a href="#">Timeline</a>
 						</li>
 					</ul>
 					<!-- END PAGE TITLE & BREADCRUMB-->
@@ -102,11 +74,9 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 					<ul class="timeline">
 						<li class="timeline-yellow">
 							<div class="timeline-time">
-								<span class="date">
-									4/10/13
-								</span>
+	
 								<span class="time">
-									18:30
+									4/10/2013
 								</span>
 							</div>
 							<div class="timeline-icon">
