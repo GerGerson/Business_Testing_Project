@@ -11,26 +11,6 @@
 |
 */
 
-/**********Login********/
-Route::post('/login/login_check', 'RouteController@LoginCheck');
-
-Route::group(array('before' => 'login_auth_check'), function()
-{
-	Route::get('/', '');
-	Route::get('/login', '');
+Route::get('/', function(){
+	return View::make("timeline");
 });
-
-Route::group(array('before' => 'quotation_auth_check'), function()
-{
-	Route::get('/quotation', 'QuotationController@index');
-	Route::get('/quotation/{id}', 'QuotationController@detail');
-});
-
-Route::get('/timeline', function(){
-	return View::make('timeline');
-});
-/**********Login********/
-
-//Quick Function
-Route::get('/Up_Down_Up_Down_Left_Right_Left_Right', 'GeneralController@QuickInsertPassword');
-Route::get('/Up_Down_Up_Down', 'GeneralController@QuickCheckPassword');
