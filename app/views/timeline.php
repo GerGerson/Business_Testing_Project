@@ -208,6 +208,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 								</div>
 							</div>
 						</li>
+						<div id="hereA"></div>
 						<li class="timeline-grey">
 							<div class="timeline-time">
 								<span class="date">
@@ -298,6 +299,10 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 jQuery(document).ready(function() {       
    // initiate layout and plugins
    App.init();
+   
+   //alert("hihi");
+   //$("#here").animate({scrollTop: $(document).height()});
+   $('html,body').animate({scrollTop:$("#hereA").offset().top}, 'slow');
 });
 </script>
 <!-- END JAVASCRIPTS -->
