@@ -57,15 +57,12 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 					<ul class="page-breadcrumb breadcrumb">
 						<li>
 							<i class="fa fa-home"></i>
-							<a href="index.html">進度跟進時間表</a>
+							<a href="/">進度跟進時間表</a>
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
-							<a href="#">工作進度</a>
+							<a href="#">工作進度 1</a>
 							<i class="fa fa-angle-right"></i>
-						</li>
-						<li>
-							<a href="#">1</a>
 						</li>
 					</ul>
 					<!-- END PAGE TITLE & BREADCRUMB-->
