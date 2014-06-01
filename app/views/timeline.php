@@ -14,7 +14,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Metronic | Pages - Timeline</title>
+<title>測試 - 裝修進度跟進</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="" name="description"/>
@@ -52,16 +52,13 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 				<div class="col-md-12">
 					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 					<h3 class="page-title">
-					Timeline <small>coming soon page with date countdown</small>
+					將軍澳富寧花園 <small>裝修進度跟進</small>
 					</h3>
 					<ul class="page-breadcrumb breadcrumb">
 						<li>
 							<i class="fa fa-home"></i>
-							<a href="index.html">Home</a>
+							<a href="\">進度跟進時間表</a>
 							<i class="fa fa-angle-right"></i>
-						</li>
-						<li>
-							<a href="#">Pages</a>
 						</li>
 					</ul>
 					<!-- END PAGE TITLE & BREADCRUMB-->
@@ -72,190 +69,125 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 			<div class="row">
 				<div class="col-md-12">
 					<ul class="timeline">
-						<li class="timeline-yellow">
-							<div class="timeline-time">
-	
-								<span class="time">
-									4/10/2013
-								</span>
-							</div>
-							<div class="timeline-icon">
-								<i class="fa fa-trophy"></i>
-							</div>
-							<div class="timeline-body">
-								<h2>ICT 2013 20th International Conference</h2>
-								<div class="timeline-content">
-									<img class="timeline-img pull-left" src="assets/img/blog/2.jpg" alt="">
-									Ricebean black-eyed pea maize scallion green bean spinach cabbage jicama bell pepper carrot onion corn plantain garbanzo. Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage jicama bell pepper carrot onion corn plantain garbanzo.
-								</div>
-								<div class="timeline-footer">
-									<a href="#" class="nav-link pull-right">
-									Read more <i class="m-icon-swapright m-icon-white"></i>
-									</a>
-								</div>
-							</div>
-						</li>
 						<li class="timeline-blue">
 							<div class="timeline-time">
-								<span class="date">
-									4/11/13
-								</span>
 								<span class="time">
-									12:04
+									2014/06/01
 								</span>
 							</div>
 							<div class="timeline-icon">
-								<i class="fa fa-video-camera"></i>
+								<i class="fa fa-camera"></i>
 							</div>
 							<div class="timeline-body">
-								<h2>Management Meeting</h2>
+								<h2>2014/06/01 工程進度圖、以及問題發現圖檢視</h2>
 								<div class="timeline-content">
-									<img class="timeline-img pull-right" src="assets/img/blog/1.jpg" alt="">
-									Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi..
+									<img class="timeline-img pull-left" src="\photo\1\1.JPG" alt="">
+									工程進度圖 : 20張
+									<br><br>
+									問題發現圖 : 14張
 								</div>
 								<div class="timeline-footer">
-									<a href="#" class="nav-link">
-									Read more <i class="m-icon-swapright m-icon-white"></i>
+									<a href="/1" class="nav-link pull-right">
+									詳情 <i class="m-icon-swapright m-icon-white"></i>
 									</a>
 								</div>
 							</div>
 						</li>
-						<li class="timeline-green">
-							<div class="timeline-time">
-								<span class="date">
-									4/13/13
-								</span>
-								<span class="time">
-									05:36
-								</span>
-							</div>
-							<div class="timeline-icon">
-								<i class="fa fa-comments"></i>
-							</div>
-							<div class="timeline-body">
-								<h2>New Project Launch</h2>
-								<div class="timeline-content">
-									<img class="timeline-img pull-left" src="assets/img/blog/3.jpg" alt="">
-									Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean.
-								</div>
-								<div class="timeline-footer">
-									<a href="#" class="nav-link">
-									Read more <i class="m-icon-swapright m-icon-white"></i>
-									</a>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-purple">
-							<div class="timeline-time">
-								<span class="date">
-									4/15/13
-								</span>
-								<span class="time">
-									13:15
-								</span>
-							</div>
-							<div class="timeline-icon">
-								<i class="fa fa-music"></i>
-							</div>
-							<div class="timeline-body">
-								<h2>Promotion Day</h2>
-								<div class="timeline-content">
-									<div class="scroller" data-height="175px" data-always-visible="1" data-rail-visible1="1">
-										<p>
-											<img class="timeline-img pull-right" src="assets/img/blog/4.jpg" alt="">
-											Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi. coriander bitterleaf epazote radicchio shallot winter purslane collard.
-										</p>
-										<p>
-											 Coriander bitterleaf epazote radicchio shallot winter purslane collard. Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
-										</p>
-										<p>
-											<img class="timeline-img pull-left" src="assets/img/blog/6.jpg" alt=""> Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi radicchio shallot winter purslane collard greens spring onion squash lentil.
-										</p>
-										<p>
-											 Coriander bitterleaf epazote radicchio shallot winter purslane collard. Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
-										</p>
-									</div>
-								</div>
-								<div class="timeline-footer">
-									<a href="#" class="btn blue">
-									Read more <i class="m-icon-swapright m-icon-white"></i>
-									</a>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-red">
-							<div class="timeline-time">
-								<span class="date">
-									4/16/13
-								</span>
-								<span class="time">
-									21:30
-								</span>
-							</div>
-							<div class="timeline-icon">
-								<i class="fa fa-rss"></i>
-							</div>
-							<div class="timeline-body">
-								<h2>Daily Feeds</h2>
-								<div class="timeline-content">
-									<img class="timeline-img pull-left" src="assets/img/blog/5.jpg" alt="">
-									Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage jicama bell pepper carrot onion corn plantain garbanzo. Sierra leone bologi komatsuna celery peanut swiss chard silver beet squash dandelion maize chicory burdock tatsoi dulse radish wakame beetroot.
-								</div>
-								<div class="timeline-footer">
-									<a href="#" class="btn green pull-right">
-									Read more <i class="m-icon-swapright m-icon-white"></i>
-									</a>
-								</div>
-							</div>
-						</li>
-						<div id="hereA"></div>
 						<li class="timeline-grey">
 							<div class="timeline-time">
 								<span class="date">
-									4/17/13
-								</span>
-								<span class="time">
-									12:11
+									2014/06/08
 								</span>
 							</div>
 							<div class="timeline-icon">
-								<i class="fa fa-times"></i>
+								<i class="fa fa-calendar"></i>
 							</div>
 							<div class="timeline-body">
-								<h2>Staff Meeting</h2>
-								<div class="timeline-content">
-									 Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
-								</div>
-								<div class="timeline-footer">
-									<a href="#" class="nav-link pull-right">
-									Read more <i class="m-icon-swapright m-icon-white"></i>
-									</a>
-								</div>
+								<h2>待跟進</h2>
 							</div>
 						</li>
-						<li class="timeline-blue">
+						
+						<li class="timeline-grey">
 							<div class="timeline-time">
 								<span class="date">
-									4/18/13
-								</span>
-								<span class="time">
-									09:56
+									2014/06/15
 								</span>
 							</div>
 							<div class="timeline-icon">
-								<i class="fa fa-bar-chart-o"></i>
+								<i class="fa fa-calendar"></i>
 							</div>
 							<div class="timeline-body">
-								<h2>Demo Europe 2013</h2>
-								<div class="timeline-content">
-									<img class="timeline-img pull-left" src="assets/img/blog/2.jpg" alt="">
-									Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard.
-								</div>
-								<div class="timeline-footer">
-									<a href="#" class="nav-link">
-									Read more <i class="m-icon-swapright m-icon-white"></i>
-									</a>
-								</div>
+								<h2>待跟進</h2>
+							</div>
+						</li>
+						
+						<li class="timeline-grey">
+							<div class="timeline-time">
+								<span class="date">
+									2014/06/22
+								</span>
+							</div>
+							<div class="timeline-icon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="timeline-body">
+								<h2>待跟進</h2>
+							</div>
+						</li>
+						
+						<li class="timeline-grey">
+							<div class="timeline-time">
+								<span class="date">
+									2014/06/29
+								</span>
+							</div>
+							<div class="timeline-icon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="timeline-body">
+								<h2>待跟進</h2>
+							</div>
+						</li>
+						
+						<li class="timeline-grey">
+							<div class="timeline-time">
+								<span class="date">
+									2014/07/06
+								</span>
+							</div>
+							<div class="timeline-icon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="timeline-body">
+								<h2>待跟進</h2>
+							</div>
+						</li>
+						
+						<li class="timeline-grey">
+							<div class="timeline-time">
+								<span class="date">
+									2014/07/13
+								</span>
+							</div>
+							<div class="timeline-icon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="timeline-body">
+								<h2>待跟進</h2>
+							</div>
+						</li>
+						
+						<li class="timeline-grey">
+							<div class="timeline-time">
+								<span class="date">
+									2014/07/20
+								</span>
+							</div>
+							<div class="timeline-icon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="timeline-body">
+								<h2>待跟進</h2>
 							</div>
 						</li>
 					</ul>
@@ -270,7 +202,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <!-- BEGIN FOOTER -->
 <div class="footer">
 	<div class="footer-inner">
-		 2013 &copy; Metronic by keenthemes.
+		 2014 &copy; TBC.
 	</div>
 	<div class="footer-tools">
 		<span class="go-top">
@@ -302,7 +234,7 @@ jQuery(document).ready(function() {
    
    //alert("hihi");
    //$("#here").animate({scrollTop: $(document).height()});
-   $('html,body').animate({scrollTop:$("#hereA").offset().top}, 'slow');
+   //$('html,body').animate({scrollTop:$("#hereA").offset().top}, 'slow');
 });
 </script>
 <!-- END JAVASCRIPTS -->
