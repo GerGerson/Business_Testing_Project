@@ -14,7 +14,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Metronic | Pages - Blog Post</title>
+<title>測試 - 裝修進度跟進 - 1</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="" name="description"/>
@@ -52,12 +52,12 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 				<div class="col-md-12">
 					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 					<h3 class="page-title">
-						工作進度 1 <small> 已於 2014年6月2日 更新 </small>
+						將軍澳富寧花園裝修進度 <small> 已於 2014年6月2日 更新 </small>
 					</h3>
 					<ul class="page-breadcrumb breadcrumb">
 						<li>
 							<i class="fa fa-home"></i>
-							<a href="index.html">主頁</a>
+							<a href="index.html">進度跟進時間表</a>
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
@@ -127,7 +127,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 													<p>
 														按解鎖看大圖
 													</p>
-													<small><button type="button" class="btn red">解鎖</button></small>
+													<small><button type="button" class="btn red" disabled>解鎖</button>(功能開發中)</small>
 												</blockquote>
 											</div>
 											<!-- END Image 1 description -->
@@ -137,7 +137,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 							
 						</div>
 						<!--end col-md-9-->
-
+						<!--
 						<div class="col-md-3 blog-sidebar">
 							<h3>其他工作進度</h3>
 							<div class="top-news">
