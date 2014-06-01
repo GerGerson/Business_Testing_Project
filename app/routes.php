@@ -14,3 +14,7 @@
 Route::get('/', function(){
 	return View::make("timeline");
 });
+
+Route::get('/1', function(){
+	return View::make("1");
+});
