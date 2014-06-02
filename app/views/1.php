@@ -90,7 +90,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 										<?php for($i = 1;$i <= 20; $i++){?>
 											<!--BEGIN Image 1 -->
 											<div class="blog-tag-data">
-												<img src="/photo/1/<?=$i?>.jpg" class="img-responsive" width="40%" height="40%" alt="">
+												<img src="/photo/1/<?=$i?>.JPG" class="img-responsive" width="40%" height="40%" alt="">
 											</div>
 											<!--END Image 1 -->
 							
@@ -99,7 +99,72 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 												<blockquote class="hero">
 													<p>
 													</p>
-													<small></small>
+													<small>
+													<?php
+														switch ($i) {
+															case 1;
+																echo "大門";
+																break;
+															case 2;
+																echo "大門原入牆櫃位置";
+																break;
+															case 3;
+																echo "大廰影出大門";
+																break;
+															case 4;
+																echo "大門走廊影出大廰";
+																break;
+															case 5;
+																echo "大門走廊及大廰之間電線、銅喉路軌           ";
+																break;
+															case 6;
+																echo "大廰A";
+																break;
+															case 7;
+																echo "大廰B";
+																break;
+															case 8;
+																echo "大廰C(向客房方向影出)";
+																break;
+															case 9;
+																echo "廚房A";
+																break;
+															case 10;
+																echo "廚房B(煤氣錶)";
+																break;
+															case 11;
+																echo "廚房C(電線)";
+																break;
+															case 12;
+																echo "廚房D";
+																break;
+															case 13;
+																echo "廁所A(浴缸位置)";
+																break;
+															case 14;
+																echo "廁所B";
+																break;
+															case 15;
+																echo "廁所C(座廁位置)";
+																break;
+															case 16;
+																echo "廁所D(抽氣位置)";
+																break;	
+															case 17;
+																echo "客房A";
+																break;
+															case 18;
+																echo "客房B";
+																break;
+															case 19;
+																echo "客房C";
+																break;
+															case 20;
+																echo "主人房";
+																break;
+														}
+													?>
+													</small>
 												</blockquote>
 											</div>
 											<!-- END Image 1 description -->
@@ -110,7 +175,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 											<div class="row" style="margin:15px">
 											<?php for($i = 21;$i <= 32; $i++){?>
 												<!--BEGIN Image 1 -->
-												<img src="/photo/1/<?=$i?>_t.jpg"  width="7%" height="7%" alt="">
+												<img src="/photo/1/<?=$i?>_t.jpg" alt="">
 												<!--END Image 1 -->
 							
 											
