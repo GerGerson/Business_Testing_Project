@@ -84,7 +84,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 									<img class="timeline-img pull-left" src="\photo\1\1.JPG" alt="">
 									工程進度圖 : 20張
 									<br><br>
-									問題發現圖 : 14張
+									問題發現圖 : 12張
 								</div>
 								<div class="timeline-footer">
 									<a href="/1" class="nav-link pull-right">
