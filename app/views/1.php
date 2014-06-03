@@ -25,14 +25,26 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+  
 <!-- END GLOBAL MANDATORY STYLES -->
+
+<!-- Page level plugin styles START -->
+<link href="../../assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+<link href="../../assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"><!-- for slider-range -->
+<link href="../../assets/global/plugins/rateit/src/rateit.css" rel="stylesheet" type="text/css">
+<!-- Page level plugin styles END -->
+
 <!-- BEGIN THEME STYLES -->
 <link href="../../assets/global/css/components.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
 <link id="style_color" href="../../assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+
+<link href="../../assets/frontend/pages/css/style-shop.css" rel="stylesheet" type="text/css">
+
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
 </head>
@@ -88,20 +100,23 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 								</ul>
 								<div class="tab-content">
 									<div class="tab-pane active" id="tab_5_1">
-										<?php for($i = 1;$i <= 20; $i++){?>
-											<!--BEGIN Image 1 -->
-											<div class="blog-tag-data">
-												<img src="/photo/1/<?=$i?>.JPG" class="img-responsive" width="40%" height="40%" alt="">
-											</div>
-											<!--END Image 1 -->
-							
-											<!-- BEGIN Image 1 description -->
-											<div>
-												<blockquote class="hero">
-													<p>
-													</p>
-													<small>
-													<?php
+									
+										<!-- BEGIN PRODUCT LIST -->
+										<div class="row product-list">
+											<!-- PRODUCT ITEM START -->
+											<?php for($i = 1;$i <= 20; $i++){?>
+												<div class="col-md-4 col-sm-6 col-xs-12">
+													<div class="product-item">
+														<div class="pi-img-wrapper">
+															<img src="../../photo/1/<?=$i?>.jpg" class="img-responsive" alt="Berry Lace Dress">
+															<div>
+																<a href="../../photo/1/<?=$i?>.jpg" class="btn btn-default fancybox-button">Zoom</a>
+																<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
+															</div>
+														</div>
+														<h3>
+														
+															<?php
 														switch ($i) {
 															case 1;
 																echo "大門";
@@ -165,11 +180,16 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 																break;
 														}
 													?>
-													</small>
-												</blockquote>
-											</div>
-											<!-- END Image 1 description -->
-										<?php }?>
+														
+														</h3>
+														<!--<div class="pi-price">$29.00</div>-->
+															<!--<a href="#" class="btn btn-default add2cart">Add to cart</a>-->
+													</div>
+												</div>
+											<?php }?>
+											<!-- PRODUCT ITEM END -->
+										</div>
+										<!-- END PRODUCT LIST -->
 									</div>
 									<div class="tab-pane" id="tab_5_2">
 										<div class="blog-tag-data">
@@ -197,7 +217,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 									</div>
 								</div>
 							</div>
-							
 						</div>
 						<!--end col-md-9-->
 						<!--
@@ -248,7 +267,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 					</div>
 						
 					<div class="row">
-						<div class="col-md-9 article-block">
 							
 					</div>
 				</div>
@@ -271,6 +289,11 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	</div>
 </div>
 <!-- END FOOTER -->
+
+
+
+
+
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
@@ -288,11 +311,27 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <!-- END CORE PLUGINS -->
 <script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
 <script src="../../assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+
+
+<!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+    <script src="../../assets/global/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="../../assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+    <script src='../../assets/global/plugins/zoom/jquery.zoom.min.js' type="text/javascript"></script><!-- product zoom -->
+    <script src="../../assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script><!-- Quantity -->
+    <script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="../../assets/global/plugins/rateit/src/jquery.rateit.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script><!-- for slider-range -->
+
+    <script src="../../assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
+    
+    <!-- END PAGE LEVEL JAVASCRIPTS -->
+
 <script>
 jQuery(document).ready(function() {       
    // initiate layout and plugins
-   Metronic.init(); // init metronic core components
-Layout.init(); // init current layout
+	Metronic.init(); // init metronic core components
+	Layout.init(); // init current layout
+
 });
 </script>
 <!-- END JAVASCRIPTS -->
