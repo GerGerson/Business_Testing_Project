@@ -86,7 +86,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 			<div class="row">
 				<div class="col-md-12 blog-page">
 					<div class="row">
-						<div class="col-md-8 article-block">
+						<div class="col-md-12 article-block">
 						
 							<div class="tabbable-custom ">
 								<ul class="nav nav-tabs ">
@@ -105,10 +105,10 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 										<div class="row product-list">
 											<!-- PRODUCT ITEM START -->
 											<?php for($i = 1;$i <= 20; $i++){?>
-												<div class="col-md-4 col-sm-6 col-xs-12">
-													<div class="product-item">
+												<div class="col-md-3 col-sm-4 col-xs-12">
+													<div class="product-item" style="margin:3px">
 														<div class="pi-img-wrapper">
-															<img src="../../photo/1/<?=$i?>.jpg" class="img-responsive" alt="Berry Lace Dress">
+															<img src="../../photo/1/<?=$i?>.jpg" class="img-responsive" alt="">
 															<div>
 																<a href="../../photo/1/<?=$i?>.jpg" class="btn btn-default fancybox-button">Zoom</a>
 																<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
