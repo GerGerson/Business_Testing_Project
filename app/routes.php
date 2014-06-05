@@ -12,9 +12,13 @@
 */
 
 Route::get('/', function(){
+	return View::make("index");
+});
+
+Route::get('/timeline', function(){
 	return View::make("timeline");
 });
 
-Route::get('/1', function(){
+Route::get('/timeline/1', function(){
 	return View::make("1");
 });
