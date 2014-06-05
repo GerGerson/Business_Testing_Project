@@ -18,9 +18,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Metronic | Admin Dashboard Template</title>
+<title>Metronic | Page Layouts - Horizontal Mega Menu 1</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="" name="description"/>
 <meta content="" name="author"/>
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
@@ -32,18 +32,15 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
-<link href="../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
+
 <link href="../../assets/global/plugins/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css"/>
-<link href="../../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
+
 <!-- END PAGE LEVEL PLUGIN STYLES -->
-<!-- BEGIN PAGE STYLES -->
-<link href="../../assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css"/>
-<!-- END PAGE STYLES -->
 <!-- BEGIN THEME STYLES -->
 <link href="../../assets/global/css/components.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
-<link href="../../assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link id="style_color" href="../../assets/admin/layout/css/themes/grey.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
@@ -59,50 +56,159 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
 <!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
-<body  class="page-sidebar-fixed page-footer-fixed">
+<body class="page-header-fixed page-full-width">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<!-- BEGIN LOGO 
+		<div class="page-logo">
+			<a href="index.html">
+			<img src="../../assets/admin/layout/img/logo.png" alt="logo" class="logo-default"/>
+			</a>
+		</div>
+		 END LOGO -->
+		<!-- BEGIN HORIZANTAL MENU -->
+		<!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+		<!-- DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) sidebar menu below. So the horizontal menu has 2 seperate versions -->
+		<div class="hor-menu hor-menu-light hidden-sm hidden-xs">
+			<ul class="nav navbar-nav">
+				<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
+				<li class="classic-menu-dropdown active">
+					<a href="/">
+					首頁 <span class="selected">
+					</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- END HORIZANTAL MENU -->
+		
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<div class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</div>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
 <div class="clearfix">
 </div>
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
 	<!-- BEGIN SIDEBAR -->
 	<div class="page-sidebar-wrapper">
+		<!-- BEGIN HORIZONTAL RESPONSIVE MENU -->
 		<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
 		<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
 		<div class="page-sidebar navbar-collapse collapse">
-			<!-- BEGIN SIDEBAR MENU -->
-			<ul class="page-sidebar-menu" data-auto-scroll="false" data-auto-speed="200">
-				<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
-				<li class="sidebar-toggler-wrapper">
-					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-					<div class="sidebar-toggler">
-					</div>
-					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-				</li>
-				
-				<li class="start active ">
+			<ul class="page-sidebar-menu" data-slide-speed="200" data-auto-scroll="true">
+				<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+				<!-- DOC: This is mobile version of the horizontal menu. The desktop version is defined(duplicated) in the header above -->
+				<li class="active">
 					<a href="/">
-					<i class="fa fa-home"></i>
-					<span class="title">首頁</span>
-					<span class="selected"></span>
-					</a>
-				</li>
-				<li class="last ">
-					<a href="/timeline">
-					<i class="fa fa-clock-o"></i>
-					<span class="title">工程進度</span>
+					首頁 <span class="selected">
+					</span>
 					</a>
 				</li>
 			</ul>
 		</div>
+		<!-- END HORIZONTAL RESPONSIVE MENU -->
 	</div>
-	
+	<!-- END SIDEBAR -->
 	<!-- BEGIN CONTENT -->
 	<div class="page-content-wrapper">
 		<div class="page-content">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							 Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<!-- BEGIN DASHBOARD STATS -->
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="dashboard-stat blue-madison">
+						<div class="visual">
+							<i class="fa fa-camera"></i>
+						</div>
+						<div class="details">
+							<div class="number">
+								 10/100
+							</div>
+						</div>
+						<div class="more">Photo Quota</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="dashboard-stat red-intense">
+						<div class="visual">
+							<i class="fa fa-video-camera"></i>
+						</div>
+						<div class="details">
+							<div class="number">
+								 10/100
+							</div>
+						</div>
+						<div class="more">Video Quota</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="dashboard-stat green-haze">
+						<div class="visual">
+							<i class="fa  fa-wrench"></i>
+						</div>
+						<div class="details">
+							<div class="number">
+								 10/100
+							</div>
+						</div>
+						<div class="more">Detail Checking Quota</div>
+					</div>
+				</div>
+			</div>
+			<!-- END DASHBOARD STATS -->
 			
+			<div class="row ">
+				<div class="col-md-6 col-sm-6">
+					<!-- BEGIN PORTLET-->
+					<div class="portlet box blue-madison calendar">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-calendar"></i>Calendar
+							</div>
+						</div>
+						<div class="portlet-body light-grey">
+							<div id="calendar">
+							</div>
+						</div>
+					</div>
+					<!-- END PORTLET-->
+				</div>
+			</div>
 		</div>
+
 	</div>
+	<!-- END CONTENT -->
 </div>
+<!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
@@ -118,60 +224,32 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
-<script src="../../assets/global/plugins/respond.min.js"></script>
-<script src="../../assets/global/plugins/excanvas.min.js"></script> 
-<![endif]-->
+  <script src="../../assets/global/plugins/excanvas.min.js"></script>
+  <script src="../../assets/global/plugins/respond.min.js"></script>  
+  <![endif]-->
 <script src="../../assets/global/plugins/jquery-1.11.0.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-<script src="../../assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
-<!-- BEGIN PAGE LEVEL PLUGINS -->
-<!--<script src="../../assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>-->
-<script src="../../assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/bootstrap-daterangepicker/moment.min.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
-<!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
+<!--BEGIN PAGE LEVEL PLUGINS-->
 <script src="../../assets/global/plugins/fullcalendar/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
-<script src="../../assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
-<!-- END PAGE LEVEL PLUGINS -->
-<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<!--END PAGE LEVEL PLUGINS-->
 <script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
 <script src="../../assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
 <script src="../../assets/admin/pages/scripts/index.js" type="text/javascript"></script>
-<script src="../../assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
-<!-- END PAGE LEVEL SCRIPTS -->
 <script>
-jQuery(document).ready(function() {    
-   Metronic.init(); // init metronic core componets
-   Layout.init(); // init layout
-   Index.init();   
-   Index.initDashboardDaterange();
-  // Index.initJQVMAP(); // init index page's custom scripts
-  // Index.initCalendar(); // init index page's custom scripts
-  // Index.initCharts(); // init index page's custom scripts
-  // Index.initChat();
-  // Index.initMiniCharts();
-   Index.initIntro();
-   Tasks.initDashboardWidget();
-});
-</script>
+    jQuery(document).ready(function() {    
+       Metronic.init(); // init metronic core components
+	   Layout.init(); // init current layout
+	   Index.init();
+	   Index.initCalendar();
+    });
+  </script>
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
