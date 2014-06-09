@@ -94,11 +94,16 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 										<a href="#tab_5_1" data-toggle="tab">工作進度圖</a>
 									</li>
 									<li class="">
-										<a href="#tab_5_2" data-toggle="tab">問題<i class="fa fa-exclamation-circle top-news-icon"></i></a>
-										
+										<a href="#tab_5_2" data-toggle="tab">影片</a>
 									</li>
+									<li class="">
+										<a href="#tab_5_3" data-toggle="tab">問題<i class="fa fa-exclamation-circle top-news-icon"></i></a>
+									</li>
+									
 								</ul>
 								<div class="tab-content">
+								
+									<!-- BEGIN TAB 1 -->
 									<div class="tab-pane active" id="tab_5_1">
 									
 										<!-- BEGIN PRODUCT LIST -->
@@ -191,7 +196,18 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 										</div>
 										<!-- END PRODUCT LIST -->
 									</div>
+									<!-- END TAB 1 -->
+									
+									<!-- BEGIN TAB 2 -->
 									<div class="tab-pane" id="tab_5_2">
+										<div id="ytapiplayer">
+											You need Flash player 8+ and JavaScript enabled to view this video.
+										</div>
+									</div>
+									<!-- END TAB 2 -->
+									
+									<!-- BEGIN TAB 3 -->
+									<div class="tab-pane" id="tab_5_3">
 										<div class="row product-list">
 											<!-- PRODUCT ITEM START -->
 											<?php for($i = 21;$i <= 23; $i++){?>
@@ -254,6 +270,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 											</div>
 											<!-- END Image 1 description -->
 									</div>
+									<!-- END TAB 3 -->
 								</div>
 							</div>
 						</div>
@@ -364,6 +381,8 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
     <script src="../../assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
     
     <!-- END PAGE LEVEL JAVASCRIPTS -->
+	
+	<script type="text/javascript" src="../../assets/global/plugins/swfobject/swfobject.js"></script>  
 
 <script>
 jQuery(document).ready(function() {       
@@ -373,6 +392,16 @@ jQuery(document).ready(function() {
 
 });
 </script>
+
+<script type="text/javascript">
+
+    var params = { allowScriptAccess: "always" };
+    var atts = { id: "myytplayer" };
+    swfobject.embedSWF("http://www.youtube.com/v/M7lc1UVf-VE?enablejsapi=1&playerapiid=ytplayer", 
+                       "ytapiplayer", "1280", "720", "8", null, null, params, atts);
+
+  </script>
+
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
