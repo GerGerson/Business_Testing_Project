@@ -108,9 +108,9 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 												<div class="col-md-3 col-sm-4 col-xs-12">
 													<div class="product-item" style="margin:3px">
 														<div class="pi-img-wrapper">
-															<img src="../../photo/1/<?=$i?>.jpg" class="img-responsive" alt="">
+															<img src="../../photo/1/<?=$i?>.JPG" class="img-responsive" alt="">
 															<div>
-																<a href="../../photo/1/<?=$i?>.jpg" class="btn btn-default fancybox-button">Zoom</a>
+																<a href="../../photo/1/<?=$i?>.JPG" class="btn btn-default fancybox-button">Zoom</a>
 																<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
 															</div>
 														</div>
@@ -192,9 +192,48 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 										<!-- END PRODUCT LIST -->
 									</div>
 									<div class="tab-pane" id="tab_5_2">
+										<div class="row product-list">
+											<!-- PRODUCT ITEM START -->
+											<?php for($i = 21;$i <= 23; $i++){?>
+												<div class="col-md-3 col-sm-4 col-xs-12">
+													<div class="product-item" style="margin:3px">
+														<div class="pi-img-wrapper">
+															<img src="../../photo/1/<?=$i?>.JPG" class="img-responsive" alt="">
+															<div>
+																<a href="../../photo/1/<?=$i?>.JPG" class="btn btn-default fancybox-button">Zoom</a>
+																<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
+															</div>
+														</div>
+														<h3>
+														
+															<?php
+														switch ($i) {
+															case 21;
+																echo "問題1";
+																break;
+															case 22;
+																echo "問題2";
+																break;
+															case 23;
+																echo "問題3";
+																break;
+														}
+													?>
+														
+														</h3>
+														<!--<div class="pi-price">$29.00</div>-->
+															<!--<a href="#" class="btn btn-default add2cart">Add to cart</a>-->
+													</div>
+												</div>
+											<?php }?>
+											<!-- PRODUCT ITEM END -->
+										</div>
+									
 										<div class="blog-tag-data">
+											
+										
 											<div class="row" style="margin:15px">
-											<?php for($i = 21;$i <= 32; $i++){?>
+											<?php for($i = 24;$i <= 32; $i++){?>
 												<!--BEGIN Image 1 -->
 												<img src="/photo/1/<?=$i?>_t.jpg" alt="">
 												<!--END Image 1 -->
@@ -208,7 +247,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 											<div>
 												<blockquote class="hero">
 													<p>
-														按解鎖看大圖
+														按解鎖看更多圖
 													</p>
 													<small><button type="button" class="btn red" disabled>解鎖</button>(功能開發中)</small>
 												</blockquote>
