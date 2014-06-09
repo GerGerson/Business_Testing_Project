@@ -123,7 +123,7 @@ var Index = function () {
                     h = {
                         left: 'title',
                         center: '',
-                        right: 'prev,next,today,month,agendaWeek,agendaDay'
+                        right: 'prev,next,month'
                     };
                 }
             }
@@ -134,46 +134,38 @@ var Index = function () {
                 header: h,
                 editable: true,
                 events: [{
-                    title: 'All Day Event',
-                    start: new Date(y, m, 1),
-                    backgroundColor: Metronic.getBrandColor('yellow')
-                }, {
-                    title: 'Long Event',
-                    start: new Date(y, m, d - 5),
-                    end: new Date(y, m, d - 2),
+                    title: '已跟進',
+                    start: new Date(2014, 5, 1),
                     backgroundColor: Metronic.getBrandColor('blue')
                 }, {
-                    title: 'Repeating Event',
-                    start: new Date(y, m, d - 3, 16, 0),
-                    allDay: false,
-                    backgroundColor: Metronic.getBrandColor('red')
+                    title: '待跟進',
+                    start: new Date(2014, 5, 11),
+                    backgroundColor: Metronic.getBrandColor('grey')
                 }, {
-                    title: 'Repeating Event',
-                    start: new Date(y, m, d + 4, 16, 0),
-                    allDay: false,
-                    backgroundColor: Metronic.getBrandColor('green')
+                    title: '待跟進',
+                    start: new Date(2014,5, 15),
+                    backgroundColor: Metronic.getBrandColor('grey')
                 }, {
-                    title: 'Meeting',
-                    start: new Date(y, m, d, 10, 30),
-                    allDay: false,
+                    title: '待跟進',
+                    start: new Date(2014, 5, 22),
+                    backgroundColor: Metronic.getBrandColor('grey')
                 }, {
-                    title: 'Lunch',
-                    start: new Date(y, m, d, 12, 0),
-                    end: new Date(y, m, d, 14, 0),
+                    title: '待跟進',
+                    start: new Date(2014, 5, 29),
+                    backgroundColor: Metronic.getBrandColor('grey')
+                }, {
+                    title: '待跟進',
+                    start: new Date(2014, 7, 6),
+                    backgroundColor: Metronic.getBrandColor('grey')
+                }, {
+                    title: '待跟進',
+                    start: new Date(2014, 7, 13),
                     backgroundColor: Metronic.getBrandColor('grey'),
                     allDay: false,
                 }, {
-                    title: 'Birthday Party',
-                    start: new Date(y, m, d + 1, 19, 0),
-                    end: new Date(y, m, d + 1, 22, 30),
-                    backgroundColor: Metronic.getBrandColor('purple'),
-                    allDay: false,
-                }, {
-                    title: 'Click for Google',
-                    start: new Date(y, m, 28),
-                    end: new Date(y, m, 29),
-                    backgroundColor: Metronic.getBrandColor('yellow'),
-                    url: 'http://google.com/',
+                    title: '待跟進',
+                    start: new Date(2014, 7, 20),
+                    backgroundColor: Metronic.getBrandColor('grey')
                 }]
             });
         },

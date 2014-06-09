@@ -144,7 +144,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 			<!-- BEGIN DASHBOARD STATS -->
 			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12">
 					<div class="dashboard-stat blue-madison">
 						<div class="visual">
 							<i class="fa fa-camera"></i>
@@ -155,32 +155,6 @@ License: You must have a valid license purchased only from themeforest(the above
 							</div>
 						</div>
 						<div class="more">Photo Quota</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="dashboard-stat red-intense">
-						<div class="visual">
-							<i class="fa fa-video-camera"></i>
-						</div>
-						<div class="details">
-							<div class="number">
-								 10/100
-							</div>
-						</div>
-						<div class="more">Video Quota</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="dashboard-stat green-haze">
-						<div class="visual">
-							<i class="fa  fa-wrench"></i>
-						</div>
-						<div class="details">
-							<div class="number">
-								 10/100
-							</div>
-						</div>
-						<div class="more">Detail Checking Quota</div>
 					</div>
 				</div>
 			</div>
