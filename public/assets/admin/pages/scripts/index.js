@@ -136,7 +136,8 @@ var Index = function () {
                 events: [{
                     title: '已跟進',
                     start: new Date(2014, 5, 1),
-                    backgroundColor: Metronic.getBrandColor('blue')
+                    backgroundColor: Metronic.getBrandColor('blue'), 
+					url: '/timeline/1',
                 }, {
                     title: '待跟進',
                     start: new Date(2014, 5, 11),

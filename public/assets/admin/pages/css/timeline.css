@@ -225,6 +225,19 @@ Timeline UI Base
   color: #4b8df8;
 }
 
+/* Blue Madison*/
+.timeline li.timeline-blue-madison .timeline-body:after {
+  border-right-color: #578ebe;
+}
+
+.timeline li.timeline-blue-madison .timeline-body {
+  background: #578ebe;
+}
+
+.timeline li.timeline-blue-madison .timeline-time span.time {
+  color: #578ebe;
+}
+
 /* Purple */
 .timeline li.timeline-purple .timeline-body:after {
   border-right-color: #852b99;

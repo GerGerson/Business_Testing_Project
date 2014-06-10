@@ -80,7 +80,11 @@ License: You must have a valid license purchased only from themeforest(the above
 					</span>
 					</a>
 				</li>
-				
+				<li>
+					<a href="/timeline">
+					進度
+					</a>
+				</li>
 			</ul>
 		</div>
 		<!-- END HORIZANTAL MENU -->
@@ -97,26 +101,6 @@ License: You must have a valid license purchased only from themeforest(the above
 </div>
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
-	<!-- BEGIN SIDEBAR -->
-	<div class="page-sidebar-wrapper">
-		<!-- BEGIN HORIZONTAL RESPONSIVE MENU -->
-		<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
-		<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
-		<div class="page-sidebar navbar-collapse collapse">
-			<ul class="page-sidebar-menu" data-slide-speed="200" data-auto-scroll="true">
-				<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
-				<!-- DOC: This is mobile version of the horizontal menu. The desktop version is defined(duplicated) in the header above -->
-				<li class="active">
-					<a href="/">
-					首頁 <span class="selected">
-					</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<!-- END HORIZONTAL RESPONSIVE MENU -->
-	</div>
-	<!-- END SIDEBAR -->
 	<!-- BEGIN CONTENT -->
 	<div class="page-content-wrapper">
 		<div class="page-content">
@@ -147,14 +131,14 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12">
 					<div class="dashboard-stat blue-madison">
 						<div class="visual">
-							<i class="fa fa-camera"></i>
+							<i class="fa fa-wrench"></i>
 						</div>
 						<div class="details">
 							<div class="number">
-								 10/100
+								 1/10
 							</div>
 						</div>
-						<div class="more">Photo Quota</div>
+						<div class="more">On Site Visit Quota</div>
 					</div>
 				</div>
 			</div>
@@ -176,6 +160,40 @@ License: You must have a valid license purchased only from themeforest(the above
 					</div>
 					<!-- END PORTLET-->
 				</div>
+				
+				<div class="col-md-6 col-sm-6">
+					<div class="portlet box blue-madison">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-bell-o"></i>Recent Activities
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="scroller" style="height: 300px;" data-always-visible="1" data-rail-visible="0">
+								<ul class="feeds">
+									<li>
+										<div class="col1">
+											<div class="cont">
+												<div class="cont-col1">
+													<div class="label label-sm label-info">
+														<i class="fa fa-check"></i>
+													</div>
+												</div>
+												<div class="cont-col2">
+													<div class="desc">
+														 1/6 已上門跟進，單位圖片、資料已更新。 
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 

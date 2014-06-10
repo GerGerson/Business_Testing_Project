@@ -34,15 +34,54 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <link href="../../assets/global/css/components.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
-<link id="style_color" href="../../assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="../../assets/admin/layout/css/themes/grey.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
-<body>
-
+<body  class="page-header-fixed page-full-width">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<!-- BEGIN LOGO 
+		<div class="page-logo">
+			<a href="index.html">
+			<img src="../../assets/admin/layout/img/logo.png" alt="logo" class="logo-default"/>
+			</a>
+		</div>
+		 END LOGO -->
+		<!-- BEGIN HORIZANTAL MENU -->
+		<!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+		<!-- DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) sidebar menu below. So the horizontal menu has 2 seperate versions -->
+		<div class="hor-menu hor-menu-light hidden-sm hidden-xs">
+			<ul class="nav navbar-nav">
+				<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
+				<li>
+					<a href="/">
+					首頁
+					</a>
+				</li>
+				<li class="active">
+					<a href="/timeline">
+					進度 <span class="selected">
+					</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- END HORIZANTAL MENU -->
+		
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<div class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</div>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
 <div class="clearfix">
 </div>
 <!-- BEGIN CONTAINER -->
@@ -72,7 +111,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 			<div class="row">
 				<div class="col-md-12">
 					<ul class="timeline">
-						<li class="timeline-blue">
+						<li class="timeline-blue-madison">
 							<div class="timeline-time">
 								<span class="time">
 									2014/06/01
