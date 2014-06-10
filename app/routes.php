@@ -22,3 +22,5 @@ Route::get('/timeline', function(){
 Route::get('/timeline/1', function(){
 	return View::make("1");
 });
+
+Route::get('/timeline/1/problem/{id}', 'ProblemController@detail');
