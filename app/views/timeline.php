@@ -138,7 +138,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 						<li class="timeline-grey">
 							<div class="timeline-time">
 								<span class="date">
-									2014/06/08
+									2014/06/11
 								</span>
 							</div>
 							<div class="timeline-icon">
