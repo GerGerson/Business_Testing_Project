@@ -129,7 +129,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 									問題發現圖 : 12張
 								</div>
 								<div class="timeline-footer">
-									<a href="/1" class="nav-link pull-right">
+									<a href="/timeline/1" class="nav-link pull-right">
 									詳情 <i class="m-icon-swapright m-icon-white"></i>
 									</a>
 								</div>

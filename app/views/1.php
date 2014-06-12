@@ -140,9 +140,6 @@ License: You must have a valid license purchased only from themeforest(the above
 								<a href="#photo" data-toggle="tab">工作進度圖</a>
 							</li>
 							<li class="">
-								<a href="#video" data-toggle="tab">影片</a>
-							</li>
-							<li class="">
 								<a href="#problem" data-toggle="tab">問題<i class="fa fa-exclamation-circle top-news-icon"></i></a>
 							</li>
 									
@@ -244,13 +241,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</div>
 							<!-- END TAB 1 -->
 									
-							<!-- BEGIN TAB 2 -->
-							<div class="tab-pane" id="video">
-								<div id="ytapiplayer">
-									You need Flash player 8+ and JavaScript enabled to view this video.
-								</div>
-							</div>
-							<!-- END TAB 2 -->
+
 									
 							<!-- BEGIN TAB 3 -->
 							<div class="tab-pane" id="problem">
@@ -304,7 +295,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2014 &copy; Metronic by keenthemes.
+		 2014 &copy; TBC.
 	</div>
 	<div class="page-footer-tools">
 		<span class="go-top">

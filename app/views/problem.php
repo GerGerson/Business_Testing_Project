@@ -207,7 +207,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2014 &copy; Metronic by keenthemes.
+		 2014 &copy; TBC.
 	</div>
 	<div class="page-footer-tools">
 		<span class="go-top">
