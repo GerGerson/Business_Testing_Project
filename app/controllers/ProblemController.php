@@ -1,9 +1,18 @@
 <?php
 
 class ProblemController extends BaseController {
-	public function detail()
+	public function detail($event, $id)
 	{
-		return View::make('problem');
+		$numOfDir = 0;
+		$dir = 'photo/'.$event.'/problem/';
+		$dirs = scandir($dir);
+		
+		foreach($dirs as $d){
+			$numOfDir++;
+		}
+		
+		return View::make('problem', array('numOfProblem' => $numOfDir,
+											'event' => $event));
 	}
 
 }

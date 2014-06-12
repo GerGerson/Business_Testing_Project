@@ -143,16 +143,46 @@ License: You must have a valid license purchased only from themeforest(the above
 			
 			<div class="row">
 				<div class="col-md-12 article-block">
+					<table class="table table-hover">
+						<tbody>
+							<?php for($i = 1;$i <= $numOfProblem;$i++){?>
+							<tr>
+								<td>
+									 <img src="/photo/<?=$event?>/problem/<?=$i?>/1_R.JPG" width="300px" height="300px" alt="layer image">
+								</td>
+							</tr>
+							<?php }?>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-md-12 article-block">
 					<div class="col-md-3"></div>
 					<div class="col-md-6">
 						<h3>問題位置圖片</h3>
-						<div id="layerslider" style="width: 800px; height: 400px;">
+						<div id="layerslider" style="width: 854px; height: 480px;">
 							<!-- The contents on your slider will be here -->
+							
+							<div class="ls-slide" data-ls="slidedelay: 4000; transition2d: 2,7,9;">
+								<div class="ls-l" data-ls="offsetxin: 0; offsetyin: 0;">
+									<!--<iframe width="1280px" height="720" src="//www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen></iframe>-->
+								</div>
+							</div>
 							<!-- first slide -->
 							<?php for($i = 21; $i <= 32; $i++){?>
 								<div class="ls-slide" data-ls="slidedelay: 4000; transition2d: 2,7,9;">
 									<!-- slide contents goes here -->
-									<img src="/photo/1/<?=$i?>.JPG" class="ls-bg" alt="Slide background">
+									
+									
+									<!--<img src="/photo/1/<?=$i?>.JPG" class="ls-bg" alt="">-->
+									<a href="/photo/1/<?=$i?>_R.JPG"  class="ls-l fancybox-button" data-ls="offsetxin: 500; offsetyin: 500 fadein: false;" >
+										<img src="/photo/1/<?=$i?>_S.JPG" alt="layer image">
+									</a>
+									
+									<h3 class="ls-l" style="top: 50%; left: 50%; font-size: 40px;">I'm a text layer!</h3>
 								</div>
 							<?php }?>
 						</div>
@@ -207,7 +237,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2014 &copy; TBC.
+		 2014 &copy; Metronic by keenthemes.
 	</div>
 	<div class="page-footer-tools">
 		<span class="go-top">
@@ -276,7 +306,9 @@ License: You must have a valid license purchased only from themeforest(the above
  
         // Calling LayerSlider on the target element
         $('#layerslider').layerSlider({
-			skinsPath: '/assets/global/plugins/slider-layer-slider/skins/'
+			skinsPath: '/assets/global/plugins/slider-layer-slider/skins/',
+			responsive: true
+			
             // Slider options goes here,
             // please check the 'List of slider options' section in the documentation
         });
