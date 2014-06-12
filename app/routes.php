@@ -24,3 +24,6 @@ Route::get('/timeline/1', function(){
 });
 
 Route::get('/timeline/1/problem/{id}', 'ProblemController@detail');
+
+Route::get('/timeline/photo/{id}', 'PhotoController@resize');
+Route::get('/timeline/photo/{id}/{problem_id}', 'PhotoController@resize_problem');
