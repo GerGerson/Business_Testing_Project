@@ -26,10 +26,22 @@ class ProblemController extends BaseController {
 				}
 			}
 		}
+		$arrDesc = array();
+		
+		if ($event == 1){
+			$arrDesc = null;
+		}else if ($event == 2){
+			$arrDesc[2] = array(1 => array('A', 'B'),
+								2 => array('C', 'D'));
+		}else{
+			$arrDesc = null;
+		}
+		
 		
 		return View::make('problem_photo', array('numOfPhoto' => $num,
 											'event' => $event,
-											'problem_id' => $id));		
+											'problem_id' => $id,
+											'desc' => $arrDesc));		
 	}
 	
 	public function video($event, $id){

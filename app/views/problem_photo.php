@@ -165,9 +165,8 @@ License: You must have a valid license purchased only from themeforest(the above
 													<!--<a href="#" class="btn btn-default add2cart">Add to cart</a>-->
 											</div>
 											<div class="note note-warning">
-												<h4 class="block">Warning! Some Header Goes Here</h4>
 												<p>
-													Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit mattis consectetur purus sit amet. Cras mattis consectetur purus sit amet fermentum.
+													<?=@$desc[$event][$problem_id][($i-1)]?>
 												</p>
 											</div>
 										</div>
