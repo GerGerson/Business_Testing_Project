@@ -280,7 +280,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														echo "大廳左下角新鋁窗";
 														break;
 													case 3;
-														echo "大廳右下角鋁窗";
+														echo "大廳鋁窗";
 														break;
 													case 4;
 														echo "大廳原大廈開口電話位置";
