@@ -150,7 +150,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-12 " >
 					<div class="col-md-3"></div>
 					<div class="col-md-6" >
-						<div id="layerslider" style="width: 720px; height: 480px;">
+						<div id="layerslider" style="width: 720px; height: 400px;">
 							<div class="ls-slide">
 								<!-- A regular slide background -->
 								<img src="" class="ls-bg" alt="">
@@ -165,6 +165,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<div class="col-md-3"></div>
 				</div>
 			</div>
+			<div class="clearfix"></div>
 			
 			<div class="row" >
 				<div class="col-md-12 " >
@@ -179,7 +180,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<div class="col-md-3"></div>
 				</div>
 			</div>
-			
+			<div class="clearfix"></div>
 			
 			<?php 
 				}
