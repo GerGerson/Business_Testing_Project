@@ -82,13 +82,13 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
 				<li>
 					<a href="/">
-					首頁 
+					首頁
 					</span>
 					</a>
 				</li>
 				<li class="classic-menu-dropdown active">
 					<a href="/timeline">
-					進度<span class="selected">
+					進度 <span class="selected">
 					</a>
 				</li>
 			</ul>
@@ -125,41 +125,77 @@ License: You must have a valid license purchased only from themeforest(the above
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
-							<a href="#">工作進度 <?=$event?></a>
+							<a href="/timeline/<?=$event?>">工作進度 <?=$event?></a>
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
-							<a href="../#problem">問題</a>
+							<a href="/timeline/<?=$event?>/problem">問題</a>
+							<i class="fa fa-angle-right"></i>
+						</li>
+						<li>
+							影片
 						</li>
 					</ul>
 					<!-- END PAGE TITLE & BREADCRUMB-->
 				</div>
 			</div>
 			<!-- END PAGE HEADER-->
+			<?php //var_dump($arrVideo[$event][$problem_id]['video'][0])?>
 			
-			<div class="row">
-				<div class="col-md-12 article-block">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
-						<table class="table table-hover">
-							<tbody>
-								<?php for($i = 1;$i < ($numOfProblem - 1);$i++){?>
-								<tr>
-									<td>
-										<img src="/photo/<?=$event?>/problem/<?=$i?>/1_R.JPG" width="300px" height="300px" alt="layer image">
-									</td>
-									<td>
-										<a href="/timeline/<?=$event?>/problem/<?=$i?>/photo" class="btn btn-lg blue-madison">圖片</a>
-										<a href="/timeline/<?=$event?>/problem/<?=$i?>/video" class="btn btn-lg green-meadow">影片</a>
-									</td>
-								</tr>
-								<?php }?>
-							</tbody>
-						</table>
+			<?php 
+				for($i = 0; $i < @sizeof($arrVideo[$event][$problem_id]['video']);$i++){
+			?>
+			
+			<div class="row" >
+				<div class="col-md-12 article-block" >
+					<div class="col-md-3"></div>
+					<div class="col-md-6" >
+						<iframe src="//www.youtube.com/embed/<?=$arrVideo[$event][$problem_id]['video'][$i]?>" frameborder="0" style="width:720px; height:480px;" allowfullscreen></iframe>
 					</div>
-					<div class="col-md-2"></div>
+					
+					<div class="col-md-3"></div>
 				</div>
 			</div>
+			
+			<div class="row" >
+				<div class="col-md-12 article-block" >
+					<div class="col-md-3"></div>
+					<div class="col-md-6" >
+						<div class="note note-warning" style="width:720px">
+							<p>
+								<?=$arrVideo[$event][$problem_id]['desc'][$i]?>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+			
+			
+			<?php 
+				}
+			?>
+			
+			<?php if (@sizeof($arrVideo[$event][$problem_id]['video']) == 0){?>
+				<div class="row" >
+					<div class="col-md-12 article-block" >
+						<div class="col-md-3"></div>
+						<div class="col-md-6" >
+							<div class="note note-warning">
+								<p>
+									No video for this problem
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+				</div>
+			<?php }?>
+			
+				<!--<iframe width="1280px" height="720" src="//www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen></iframe>-->
+				
+			
+			<div class="clearfix"></div>
 		</div>
 	</div>
 	<!-- END CONTENT -->

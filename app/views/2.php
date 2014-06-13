@@ -124,7 +124,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
-							<a href="#">工作進度 1</a>
+							<a href="#">工作進度 2</a>
 						</li>
 					</ul>
 					<!-- END PAGE TITLE & BREADCRUMB-->
@@ -156,15 +156,15 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="col-md-3 col-sm-4 col-xs-12">
 											<div class="product-item" style="margin:3px">
 												<div class="pi-img-wrapper">
-													<img src="../../photo/1/<?=$i?>.JPG" class="img-responsive" alt="">
+													<img src="../../photo/2/<?=$i?>.JPG" class="img-responsive" alt="">
 													<div>
-														<a href="../../photo/1/<?=$i?>.JPG" class="btn btn-default fancybox-button">Zoom</a>
+														<a href="../../photo/2/<?=$i?>.JPG" class="btn btn-default fancybox-button">Zoom</a>
 														<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
 													</div>
 												</div>
 												<h3>
 														
-													<?php
+													<?php/*
 												switch ($i) {
 													case 1;
 														echo "大門";
@@ -226,7 +226,7 @@ License: You must have a valid license purchased only from themeforest(the above
 													case 20;
 														echo "主人房";
 														break;
-												}
+												}*/
 											?>
 														
 												</h3>
