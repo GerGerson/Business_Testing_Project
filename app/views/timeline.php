@@ -147,10 +147,12 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 							<div class="timeline-body">
 								<h2>2014/06/11 工程進度圖、以及問題發現圖檢視</h2>
 								<div class="timeline-content">
-									<img class="timeline-img pull-left" src="\photo\1\1.JPG" alt="">
-									工程進度圖 : 20張
-									<br><br>
-									問題發現圖 : 12張
+									<img class="timeline-img pull-left" src="\photo\2\1.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\2\2.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\2\3.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\2\4.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\2\5.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\2\6.JPG" alt="">
 								</div>
 								<div class="timeline-footer">
 									<a href="/timeline/2" class="nav-link pull-right">
