@@ -162,73 +162,72 @@ License: You must have a valid license purchased only from themeforest(the above
 														<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
 													</div>
 												</div>
-												<h3>
-														
+												<h3>	
 													<?php
-													/*
-												switch ($i) {
-													case 1;
-														echo "大門";
-														break;
-													case 2;
-														echo "大門原入牆櫃位置";
-														break;
-													case 3;
-														echo "大廰影出大門";
-														break;
-													case 4;
-														echo "大門走廊影出大廰";
-														break;
-													case 5;
-														echo "大門走廊及大廰之間電線、銅喉路軌           ";
-														break;
-													case 6;
-														echo "大廰A";
-														break;
-													case 7;
-														echo "大廰B";
-														break;
-													case 8;
-														echo "大廰C(向客房方向影出)";
-														break;
-													case 9;
-														echo "廚房A";
-														break;
-													case 10;
-														echo "廚房B(煤氣錶)";
-														break;
-													case 11;
-														echo "廚房C(電線)";
-														break;
-													case 12;
-														echo "廚房D";
-														break;
-													case 13;
-														echo "廁所A(浴缸位置)";
-														break;
-													case 14;
-														echo "廁所B";
-														break;
-													case 15;
-														echo "廁所C(座廁位置)";
-														break;
-													case 16;
-														echo "廁所D(抽氣位置)";
-														break;	
-													case 17;
-														echo "客房A";
-														break;
-													case 18;
-														echo "客房B";
-														break;
-													case 19;
-														echo "客房C";
-														break;
-													case 20;
-														echo "主人房";
-														break;
-												}*/
-											?>
+													
+														switch ($i) {
+															case 1;
+																echo "大廈走廊連接水錶銅喉路軌";
+																break;
+															case 2;
+																echo "新銅喉入錶位";
+																break;
+															case 3;
+																echo "大廈走廊銅喉路軌位置";
+																break;
+															case 4;
+																echo "銅喉入屋地面";
+																break;
+															case 5;
+																echo "大門原入牆櫃位置";
+																break;
+															case 6;
+																echo "大廳影出大門";
+																break;
+															case 7;
+																echo "大廳影出大門走廊盡頭";
+																break;
+															case 8;
+																echo "大廳A";
+																break;
+															case 9;
+																echo "大廳B";
+																break;
+															case 10;
+																echo "大廳C";
+																break;
+															case 11;
+																echo "原大門走廊及大廳之間電線、銅喉路軌";
+																break;
+															case 12;
+																echo "大廳D";
+																break;
+															case 13;
+																echo "由大廳影入廁所";
+																break;
+															case 14;
+																echo "由大廳影入廚房";
+																break;
+															case 15;
+																echo "由客廳走廊影入主客房";
+																break;
+															case 16;
+																echo "廁所A";
+																break;	
+															case 17;
+																echo "廁所B(洗手盆位置)";
+																break;
+															case 18;
+																echo "廁所C(浴缸位置)";
+																break;
+															case 19;
+																echo "廁所D(浴缸位置放大圖)";
+																break;
+															case 20;
+																echo "廁所E(原熱水爐位置)";
+																break;
+														}
+													?>
 														
 												</h3>
 												<!--<div class="pi-price">$29.00</div>-->
@@ -252,7 +251,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img src="/photo/<?=$event?>/problem/<?=$i?>/1_R.JPG" width="100%" height="100%" alt="layer image">
 											<div class="row">
 												<?php
-													if (($i == 2) || ($i == 5) || ($i == 7) || ($i == 10)){
+													if (($i == 2) || ($i == 7) || ($i == 9) || ($i == 10)){
 												?>
 													<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 														<a href="/timeline/<?=$event?>/problem/<?=$i?>/photo" class="btn btn-block blue-madison"><i class="fa fa-camera top-news-icon"></i> </a>
@@ -269,9 +268,43 @@ License: You must have a valid license purchased only from themeforest(the above
 											</div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 note note-warning">
-											<h4 class="block">Warning! Some Header Goes Here</h4>
+											<!--<h4 class="block">Warning! Some Header Goes Here</h4>-->
 											<p>
-												Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit mattis consectetur purus sit amet. Cras mattis consectetur purus sit amet fermentum.
+											<?php
+													
+												switch ($i) {
+													case 1;
+														echo "大門鐵閘門口";
+														break;
+													case 2;
+														echo "大廳左下角新鋁窗";
+														break;
+													case 3;
+														echo "大廳右下角鋁窗";
+														break;
+													case 4;
+														echo "大廳原大廈開口電話位置";
+														break;
+													case 5;
+														echo "廁所天花";
+														break;
+													case 6;
+														echo "主人房與客房門框";
+														break;
+													case 7;
+														echo "客房牆身";
+														break;
+													case 8;
+														echo "客房牆身";
+														break;
+													case 9;
+														echo "全屋牆身";
+														break;
+													case 10;
+														echo "通往主客房走廊";
+														break;
+												}
+											?>
 											</p>
 										</div>
 									</div>
