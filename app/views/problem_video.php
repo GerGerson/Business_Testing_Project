@@ -129,7 +129,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
-							<a href="/timeline/<?=$event?>/problem">問題</a>
+							<a href="/timeline/<?=$event?>#problem">問題</a>
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
@@ -142,24 +142,14 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- END PAGE HEADER-->
 			<?php //var_dump($arrVideo[$event][$problem_id]['video'][0])?>
 			
-			<?php 
-				for($i = 0; $i < @sizeof($arrVideo[$event][$problem_id]['video']);$i++){
-			?>
+			<?php for($i = 0; $i < @sizeof($arrVideo[$event][$problem_id]['video']);$i++){?>
 			
 			<div class="row" >
 				<div class="col-md-12 " >
 					<div class="col-md-3"></div>
 					<div class="col-md-6" >
-						<div id="layerslider" style="width: 720px; height: 400px;">
-							<div class="ls-slide">
-								<!-- A regular slide background -->
-								<img src="" class="ls-bg" alt="">
-								<!-- The contents on your slider will be here -->
-								<div class="ls-l" data-ls="offsetxin: 0; offsetyin: 0;">
-									<!-- slide contents goes here -->
-									<iframe src="//www.youtube.com/embed/<?=$arrVideo[$event][$problem_id]['video'][$i]?>" frameborder="0" style="width:720px; height:480px;" allowfullscreen></iframe>
-								</div>
-							</div>
+						<div class="video-container">
+							<iframe width="720px" height="480px" src="//www.youtube.com/embed/<?=$arrVideo[$event][$problem_id]['video'][$i]?>" frameborder="0" allowfullscreen></iframe>
 						</div>
 					</div>
 					<div class="col-md-3"></div>
@@ -171,7 +161,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-12 " >
 					<div class="col-md-3"></div>
 					<div class="col-md-6" >
-						<div class="note note-warning" style="width:720px">
+						<div id="video_msg" class="note note-warning" style="width:720px">
 							<p>
 								<?=$arrVideo[$event][$problem_id]['desc'][$i]?>
 							</p>
@@ -180,11 +170,11 @@ License: You must have a valid license purchased only from themeforest(the above
 					<div class="col-md-3"></div>
 				</div>
 			</div>
+			<?php }?>
+			
 			<div class="clearfix"></div>
 			
-			<?php 
-				}
-			?>
+			
 			
 			<?php if (@sizeof($arrVideo[$event][$problem_id]['video']) == 0){?>
 				<div class="row" >
