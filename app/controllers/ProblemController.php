@@ -15,10 +15,10 @@ class ProblemController extends BaseController {
 			$arrVideo = null;
 			$arrDesc = null;
 		}else if ($event == 2){
-			$arrVIdeo = array("2;1;http://youtu.be/CopZZr7J4w8", 
-							"5;2;http://youtu.be/y9clqejrvOw;http://youtu.be/RWvgVy1NgT8",
-							"7;1;http://youtu.be/iqTqx2l6vOc",
-							"10;2;http://youtu.be/lwrSlzH2YBk;http://youtu.be/3jqxu8mczNs",);
+			$arrVIdeo = array("2;1;<iframe width='560' height='315' src='//www.youtube.com/embed/CopZZr7J4w8?rel=0' frameborder='0' allowfullscreen></iframe>", 
+							"5;2;<iframe width='420' height='315' src='//www.youtube.com/embed/y9clqejrvOw?rel=0' frameborder='0' allowfullscreen></iframe>;<iframe width='420' height='315' src='//www.youtube.com/embed/RWvgVy1NgT8?rel=0' frameborder='0' allowfullscreen></iframe>",
+							"7;1;<iframe width='560' height='315' src='//www.youtube.com/embed/iqTqx2l6vOc?rel=0' frameborder='0' allowfullscreen></iframe>",
+							"10;2;<iframe width='420' height='315' src='//www.youtube.com/embed/lwrSlzH2YBk?rel=0' frameborder='0' allowfullscreen></iframe>;<iframe width='420' height='315' src='//www.youtube.com/embed/3jqxu8mczNs?rel=0' frameborder='0' allowfullscreen></iframe>",);
 			$arrDesc = array("2;1;test1",
 								"5;2;test1;test2",
 								"7;1;test1",
