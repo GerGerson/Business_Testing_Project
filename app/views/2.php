@@ -114,7 +114,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-12">
 					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 					<h3 class="page-title">
-						將軍澳富寧花園裝修進度 <small> 已於 2014年6月2日 更新 </small>
+						將軍澳富寧花園裝修進度 <small> 已於 2014年6月11日 更新 </small>
 						<!-- testing -->
 					</h3>
 					<ul class="page-breadcrumb breadcrumb">
@@ -164,7 +164,8 @@ License: You must have a valid license purchased only from themeforest(the above
 												</div>
 												<h3>
 														
-													<?php/*
+													<?php
+													/*
 												switch ($i) {
 													case 1;
 														echo "大門";
@@ -245,29 +246,37 @@ License: You must have a valid license purchased only from themeforest(the above
 									
 							<!-- BEGIN TAB 3 -->
 							<div class="tab-pane" id="problem">
-								<div class="row">
-				<div class="col-md-12 article-block">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
-						<table class="table table-hover">
-							<tbody>
 								<?php for($i = 1;$i < ($numOfProblem - 1);$i++){?>
-								<tr>
-									<td>
-										<img src="/photo/<?=$event?>/problem/<?=$i?>/1_R.JPG" width="300px" height="300px" alt="layer image">
-									</td>
-									<td>
-										<a href="/timeline/<?=$event?>/problem/<?=$i?>/photo" class="btn btn-lg blue-madison">圖片</a>
-										<a href="/timeline/<?=$event?>/problem/<?=$i?>/video" class="btn btn-lg green-meadow">影片</a>
-									</td>
-								</tr>
-								<?php }?>
-							</tbody>
-						</table>
-					</div>
-					<div class="col-md-2"></div>
-				</div>
-			</div>
+									<div class="row">
+										<div class="col-xs-8 col-sm-8 col-md-4 col-lg-4">
+											<img src="/photo/<?=$event?>/problem/<?=$i?>/1_R.JPG" width="300px" height="300px" alt="layer image">
+										</div>
+										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 note note-warning">
+											<h4 class="block">Warning! Some Header Goes Here</h4>
+											<p>
+												Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit mattis consectetur purus sit amet. Cras mattis consectetur purus sit amet fermentum.
+											</p>
+										</div>
+										
+									</div>
+									<div class="row">
+																						
+											<?php
+												if (($i == 2) || ($i == 5) || ($i == 7) || ($i == 10)){
+											?>
+												<div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
+													<a href="/timeline/<?=$event?>/problem/<?=$i?>/photo" class="btn btn-block blue-madison"><i class="fa fa-camera top-news-icon"></i> </a>
+												</div>
+												<div class="col-xs-8 col-sm-8 col-md-6 col-lg-6">
+													<a href="/timeline/<?=$event?>/problem/<?=$i?>/video" class="btn btn-block green-meadow"><i class="fa fa-video-camera top-news-icon"></i></a>
+												</div>
+											<?php } else {?>
+												<div class="col-xs-2 col-sm-2 col-md-12 col-lg-12">
+													<a href="/timeline/<?=$event?>/problem/<?=$i?>/photo" class="btn btn-block blue-madison"><i class="fa fa-camera top-news-icon"></i> </a>
+												</div>
+											<?php }?>
+										<div>
+								<?php } ?>
 							</div>
 							<!-- END TAB 3 -->
 						</div>
