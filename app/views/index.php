@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Metronic | Page Layouts - Horizontal Mega Menu 1</title>
+<title>測試 - 將軍澳富寧花園</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="" name="description"/>
@@ -181,7 +181,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												</div>
 												<div class="cont-col2">
 													<div class="desc">
-														 1/6 已上門跟進，單位圖片、資料已更新。 
+														 11/6 已上門跟進，單位圖片、資料已更新。 
 														</span>
 													</div>
 												</div>
@@ -198,13 +198,14 @@ License: You must have a valid license purchased only from themeforest(the above
 												</div>
 												<div class="cont-col2">
 													<div class="desc">
-														 11/6 已上門跟進，單位圖片、資料已更新。 
+														 1/6 已上門跟進，單位圖片、資料已更新。 
 														</span>
 													</div>
 												</div>
 											</div>
 										</div>
 									</li>
+									
 								</ul>
 							</div>
 						</div>
