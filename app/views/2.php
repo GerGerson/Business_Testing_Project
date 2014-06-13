@@ -248,10 +248,33 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="tab-pane" id="problem">
 								<?php for($i = 1;$i < ($numOfProblem - 1);$i++){?>
 									<div class="row">
-										<div class="col-xs-8 col-sm-8 col-md-4 col-lg-4">
+										<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+											<img src="/photo/<?=$event?>/problem/<?=$i?>/1_R.JPG" width="100%" height="100%" alt="layer image">
+											<div class="row">
+												<?php
+													if (($i == 2) || ($i == 5) || ($i == 7) || ($i == 10)){
+												?>
+													<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+														<a href="/timeline/<?=$event?>/problem/<?=$i?>/photo" class="btn btn-block blue-madison"><i class="fa fa-camera top-news-icon"></i> </a>
+													</div>	
+													<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+														<a href="/timeline/<?=$event?>/problem/<?=$i?>/video" class="btn btn-block green-meadow"><i class="fa fa-video-camera top-news-icon"></i></a>
+													</div>
+												<?php } else {?>
+													<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+														<a href="/timeline/<?=$event?>/problem/<?=$i?>/photo" class="btn btn-block blue-madison"><i class="fa fa-camera top-news-icon"></i> </a>
+													</div>	
+												<?php } ?>
+													
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 note note-warning">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="col-md-4">
 											<img src="/photo/<?=$event?>/problem/<?=$i?>/1_R.JPG" width="300px" height="300px" alt="layer image">
 										</div>
-										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 note note-warning">
+										<div class="col-md-8 note note-warning">
 											<h4 class="block">Warning! Some Header Goes Here</h4>
 											<p>
 												Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit mattis consectetur purus sit amet. Cras mattis consectetur purus sit amet fermentum.
@@ -259,26 +282,28 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 										
 									</div>
-									<div class="row">
+									<br>
+									<div class="col-md-12">
 																						
 											<?php
 												if (($i == 2) || ($i == 5) || ($i == 7) || ($i == 10)){
 											?>
-												<div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
+												<div class="col-md-6">
 													<a href="/timeline/<?=$event?>/problem/<?=$i?>/photo" class="btn btn-block blue-madison"><i class="fa fa-camera top-news-icon"></i> </a>
 												</div>
-												<div class="col-xs-8 col-sm-8 col-md-6 col-lg-6">
+												<div class="col-md-6">
 													<a href="/timeline/<?=$event?>/problem/<?=$i?>/video" class="btn btn-block green-meadow"><i class="fa fa-video-camera top-news-icon"></i></a>
 												</div>
 											<?php } else {?>
-												<div class="col-xs-2 col-sm-2 col-md-12 col-lg-12">
+												<div class="col-md-12">
 													<a href="/timeline/<?=$event?>/problem/<?=$i?>/photo" class="btn btn-block blue-madison"><i class="fa fa-camera top-news-icon"></i> </a>
 												</div>
 											<?php }?>
-										<div>
+									</div>
+								</div>
 								<?php } ?>
-							</div>
 							<!-- END TAB 3 -->
+							</div>
 						</div>
 					</div>
 				</div>
