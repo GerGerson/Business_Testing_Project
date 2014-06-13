@@ -144,56 +144,28 @@ License: You must have a valid license purchased only from themeforest(the above
 			
 			<?php for($i = 0; $i < @sizeof($arrVideo[$event][$problem_id]['video']);$i++){?>
 			
-			<div class="row" >
-				<div class="col-md-12 " >
-					<div class="col-md-3"></div>
-					<div class="col-md-6" >
-						<div class="video-container">
-							<iframe width="720px" height="480px" src="//www.youtube.com/embed/<?=$arrVideo[$event][$problem_id]['video'][$i]?>" frameborder="0" allowfullscreen></iframe>
-						</div>
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6" >
+					<div class="video-container">
+						<iframe width="720px" height="480px" src="//www.youtube.com/embed/<?=$arrVideo[$event][$problem_id]['video'][$i]?>" frameborder="0" allowfullscreen></iframe>
 					</div>
-					<div class="col-md-3"></div>
 				</div>
-			</div>
-			<div class="clearfix"></div>
-			
-			<div class="row" >
-				<div class="col-md-12 " >
-					<div class="col-md-3"></div>
-					<div class="col-md-6" >
-						<div id="video_msg" class="note note-warning" style="width:720px">
+					
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6" >
+						<div id="video_msg" class="note note-warning">
 							<p>
 								<?=$arrVideo[$event][$problem_id]['desc'][$i]?>
 							</p>
 						</div>
 					</div>
-					<div class="col-md-3"></div>
 				</div>
 			</div>
-			<?php }?>
-			
 			<div class="clearfix"></div>
-			
-			
-			
-			<?php if (@sizeof($arrVideo[$event][$problem_id]['video']) == 0){?>
-				<div class="row" >
-					<div class="col-md-12 article-block" >
-						<div class="col-md-3"></div>
-						<div class="col-md-6" >
-							<div class="note note-warning">
-								<p>
-									No video for this problem
-								</p>
-							</div>
-						</div>
-						<div class="col-md-3"></div>
-					</div>
-				</div>
+
 			<?php }?>
-			
-				<!--<iframe width="1280px" height="720" src="//www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen></iframe>-->
-				
 			
 			<div class="clearfix"></div>
 		</div>
