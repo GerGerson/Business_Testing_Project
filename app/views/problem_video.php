@@ -147,18 +147,27 @@ License: You must have a valid license purchased only from themeforest(the above
 			?>
 			
 			<div class="row" >
-				<div class="col-md-12 article-block" >
+				<div class="col-md-12 " >
 					<div class="col-md-3"></div>
 					<div class="col-md-6" >
-						<iframe src="//www.youtube.com/embed/<?=$arrVideo[$event][$problem_id]['video'][$i]?>" frameborder="0" style="width:720px; height:480px;" allowfullscreen></iframe>
+						<div id="layerslider" style="width: 720px; height: 480px;">
+							<div class="ls-slide">
+								<!-- A regular slide background -->
+								<img src="" class="ls-bg" alt="">
+								<!-- The contents on your slider will be here -->
+								<div class="ls-l" data-ls="offsetxin: 0; offsetyin: 0;">
+									<!-- slide contents goes here -->
+									<iframe src="//www.youtube.com/embed/<?=$arrVideo[$event][$problem_id]['video'][$i]?>" frameborder="0" style="width:720px; height:480px;" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
 					</div>
-					
 					<div class="col-md-3"></div>
 				</div>
 			</div>
 			
 			<div class="row" >
-				<div class="col-md-12 article-block" >
+				<div class="col-md-12 " >
 					<div class="col-md-3"></div>
 					<div class="col-md-6" >
 						<div class="note note-warning" style="width:720px">
@@ -257,16 +266,6 @@ License: You must have a valid license purchased only from themeforest(the above
 </script>
 
 <script type="text/javascript">
-
-    var params = { allowScriptAccess: "always" };
-    var atts = { id: "myytplayer" };
-    swfobject.embedSWF("http://www.youtube.com/v/M7lc1UVf-VE?enablejsapi=1&playerapiid=ytplayer", 
-                       "ytapiplayer", "900", "506", "8", null, null, params, atts);
-
-</script>
-
-
-<script type="text/javascript">
  
     // Running the code when the document is ready
     $(document).ready(function(){
@@ -274,7 +273,7 @@ License: You must have a valid license purchased only from themeforest(the above
         // Calling LayerSlider on the target element
         $('#layerslider').layerSlider({
 			skinsPath: '/assets/global/plugins/slider-layer-slider/skins/',
-			responsive: true
+			autoPlayVideos: false
 			
             // Slider options goes here,
             // please check the 'List of slider options' section in the documentation
