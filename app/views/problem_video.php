@@ -115,7 +115,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-12">
 					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 					<h3 class="page-title">
-						將軍澳富寧花園裝修進度 <small> 已於 - 更新 </small>
+						將軍澳富寧花園裝修進度 <small> 已於 <?=$date?> 更新 </small>
 						<!-- testing -->
 					</h3>
 					<ul class="page-breadcrumb breadcrumb">
@@ -142,24 +142,22 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- END PAGE HEADER-->
 			<?php //var_dump($arrVideo[$event][$problem_id]['video'][0])?>
 			
-			<?php for($i = 0; $i < @sizeof($arrVideo[$event][$problem_id]['video']);$i++){?>
-			
 			<div class="row">
-
-				<div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6" >
-					<div class="video-container">
-						<iframe width="720px" height="480px" src="//www.youtube.com/embed/<?=$arrVideo[$event][$problem_id]['video'][$i]?>" frameborder="0" allowfullscreen></iframe>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+					<div id="video_msg" class="note note-warning">
+						<p>
+							<?=$arrDesc[$problem_id]?>
+						</p>
 					</div>
 				</div>
-					
-				
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6" >
-						<div id="video_msg" class="note note-warning">
-							<p>
-								<?=$arrVideo[$event][$problem_id]['desc'][$i]?>
-							</p>
-						</div>
+			</div>
+			
+			<?php for($i = 0; $i < @sizeof($arrVideo[$problem_id]);$i++){?>
+			
+			<div class="row" style="margin-bottom: 30px">
+				<div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6" >
+					<div class="video-container">
+						<iframe width="720px" height="480px" src="//www.youtube.com/embed/<?=$arrVideo[$problem_id][$i]?>" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>

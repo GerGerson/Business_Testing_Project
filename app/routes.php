@@ -19,7 +19,8 @@ Route::get('/timeline', function(){
 	return View::make("timeline");
 });
 
-Route::get('/timeline/{event}', 'ProblemController@detail');
+//Route::get('/timeline/{event}', 'ProblemController@detail');
+Route::get('/timeline/{event}', 'ProgressController@view');
 
 /*
 Route::get('/timeline/2', function(){

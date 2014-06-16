@@ -115,7 +115,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-12">
 					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 					<h3 class="page-title">
-						將軍澳富寧花園裝修進度 <small> 已於 - 更新 </small>
+						將軍澳富寧花園裝修進度 <small> 已於 <?=$date?> 更新 </small>
 						<!-- testing -->
 					</h3>
 					<ul class="page-breadcrumb breadcrumb">
@@ -143,45 +143,44 @@ License: You must have a valid license purchased only from themeforest(the above
 			
 			<div class="row">
 				<div class="col-md-12 article-block">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
-						<!-- BEGIN PRODUCT LIST -->
-								<div class="row product-list">
-									<!-- PRODUCT ITEM START -->
-									<?php for($i = 1;$i <= ($numOfPhoto / 2); $i++){?>
-										<div class="col-md-3 col-sm-4 col-xs-12">
-											<div class="product-item" style="margin:3px">
-												<div class="pi-img-wrapper">
-													<img src="/photo/<?=$event?>/problem/<?=$problem_id?>/<?=$i?>_R.JPG" class="img-responsive" alt="">
-													<div>
-														<a href="/photo/<?=$event?>/problem/<?=$problem_id?>/<?=$i?>.JPG" class="btn btn-default fancybox-button">Zoom</a>
-														<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
-													</div>
-												</div>
-												<h3>
-														
-												</h3>
-												<!--<div class="pi-price">$29.00</div>-->
-													<!--<a href="#" class="btn btn-default add2cart">Add to cart</a>-->
-											</div>
-											<div class="note note-warning">
-												<p>
-													<?=@$desc[$event][$problem_id][($i-1)]?>
-												</p>
-											</div>
-										</div>
-										
-									<?php }?>
-									<!-- PRODUCT ITEM END -->
-								</div>
-								<!-- END PRODUCT LIST -->
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="note note-warning">
+								<p>
+									<?=@$desc[$problem_id]?>
+								</p>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-2"></div>
+				
+					<!-- BEGIN PRODUCT LIST -->
+					<div class="row product-list">
+						<!-- PRODUCT ITEM START -->
+						<?php for($i = 1;$i <= $numOfPhoto; $i++){?>
+							<div class="col-md-3 col-sm-4 col-xs-12">
+								<div class="product-item" style="margin:3px">
+									<div class="pi-img-wrapper">
+										<img src="/photo/<?=$event?>/problem/<?=$problem_id?>/<?=$i?>_R.JPG" class="img-responsive" alt="">
+										<div>
+											<a href="/photo/<?=$event?>/problem/<?=$problem_id?>/<?=$i?>.JPG" class="btn btn-default fancybox-button">Zoom</a>
+											<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
+										</div>
+									</div>
+									<h3>
+														
+									</h3>
+									<!--<div class="pi-price">$29.00</div>-->
+										<!--<a href="#" class="btn btn-default add2cart">Add to cart</a>-->
+								</div>
+							</div>		
+						<?php }?>
+						<!-- PRODUCT ITEM END -->
+					</div>
+					<!-- END PRODUCT LIST -->
 				</div>
 			</div>
-				<!--<iframe width="1280px" height="720" src="//www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen></iframe>-->
-				
-			
+			<!--<iframe width="1280px" height="720" src="//www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen></iframe>-->
+
 			<div class="clearfix"></div>
 		</div>
 	</div>
