@@ -1,20 +1,6 @@
 <?php
 
 class ProblemController extends BaseController {
-	public function detail($event)
-	{
-		$numOfDir = 0;
-		$dir = 'photo/'.$event.'/problem/';
-		$dirs = scandir($dir);
-		
-		foreach($dirs as $d){
-			$numOfDir++;
-		}
-		
-		return View::make(''.$event.'', array('numOfProblem' => $numOfDir,
-											'event' => $event));
-	}
-	
 	public function photo($event, $id){
 		$num = 0;
 		$dir = 'photo/'.$event.'/problem/'.$id;
@@ -51,7 +37,7 @@ class ProblemController extends BaseController {
 					'-');
 		
 		
-		return View::make('problem_photo', array('numOfPhoto' => $num,
+		return View::make('problem/photo', array('numOfPhoto' => $num,
 											'event' => $event,
 											'problem_id' => $id,
 											'desc' => $arrDesc[$event],
@@ -86,7 +72,7 @@ class ProblemController extends BaseController {
 					'-');
 		
 	
-		return View::make('problem_video', array('numOfVideo' => 2,
+		return View::make('problem/video', array('numOfVideo' => 2,
 											'event' => $event,
 											'problem_id' => $id,
 											'arrVideo' => $arrVideo[$event],
