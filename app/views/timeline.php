@@ -161,17 +161,17 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 								</div>
 							</div>
 						</li>
-						<li class="timeline-grey">
+						<li class="timeline-blue-madison">
 							<div class="timeline-time">
 								<span class="date">
-									2014/06/15
+									2014/06/17
 								</span>
 							</div>
 							<div class="timeline-icon">
 								<i class="fa fa-calendar"></i>
 							</div>
 							<div class="timeline-body">
-								<h2>待跟進</h2>
+								<h2>2014/06/16 工程進度圖、以及問題發現圖檢視</h2>
 								<br><br><br>
 							</div>
 						</li>

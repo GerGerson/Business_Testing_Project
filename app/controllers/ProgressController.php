@@ -75,6 +75,23 @@ class ProgressController extends BaseController {
 							'',
 							'',
 							'');
+							
+		$photoDesc[3] = array('大門原入牆櫃位置',
+							'大廳影出大門',
+							'大廳影出大門走廊盡頭',
+							'大廳A',
+							'大廳B',
+							'大廳C',
+							'由客廳走廊影入主客房',
+							'廚房A',
+							'廚房B (地線銅喉)',
+							'由大廳影入廁所',
+							'廁所A (浴缸位置)',
+							'廁所B (原熱水爐位置)',
+							'廁所C (原洗手盆位置)',
+							'廁所C(浴缸位置)',
+							'客房',
+							'主人房');
 		
 		//Event problem description
 		$problemDesc = array();
@@ -89,6 +106,20 @@ class ProgressController extends BaseController {
 								'客房牆身',
 								'全屋牆身',
 								'通往主客房走廊');
+		$problemDesc[3] = array('大門鐵閘門口外面牆空隙(跟進項目)',
+								'大廳原大廈開口電話位置(跟進項目)',
+								'大廳左下角鋁窗(跟進項目)',
+								'新鋁窗仍未到(跟進項目)',
+								'廁所浴缸位置(新)',
+								'全屋牆身(跟進項目)',
+								'主人房(新)',
+								'客房牆身(跟進項目)',
+								'主人房與客房門框空隙(跟進項目)',
+								'通往主客房走廊',
+								'大廳B牆壁(新)',
+								'大廳B牆壁下角(新)',
+								'廚房&廁所天花(跟進項目)',
+								'廚房舊裝修(新)');
 								
 		//Video Check
 		$hasVideo = array();
@@ -103,12 +134,27 @@ class ProgressController extends BaseController {
 							false,
 							true,
 							true);
+		$hasVideo[3] = array(false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false);
+							
 							
 		//Update Date
 		$date = array('-',
 					'2014年6月01日',
 					'2014年6月11日',
-					'-',
+					'2014年6月16日',
 					'-',
 					'-');
 							

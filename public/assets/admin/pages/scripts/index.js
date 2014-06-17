@@ -144,9 +144,10 @@ var Index = function () {
                     backgroundColor: Metronic.getBrandColor('blue'),
 					url: '/timeline/2',
                 }, {
-                    title: '待跟進',
-                    start: new Date(2014,5, 15),
-                    backgroundColor: Metronic.getBrandColor('grey')
+                    title: '已跟進',
+                    start: new Date(2014,5, 16),
+                    backgroundColor: Metronic.getBrandColor('blue'),
+					url: '/timeline/3',
                 }, {
                     title: '待跟進',
                     start: new Date(2014, 5, 22),
