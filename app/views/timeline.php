@@ -163,8 +163,8 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 						</li>
 						<li class="timeline-blue-madison">
 							<div class="timeline-time">
-								<span class="date">
-									2014/06/17
+								<span class="time">
+									2014/06/16
 								</span>
 							</div>
 							<div class="timeline-icon">
@@ -172,7 +172,19 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 							</div>
 							<div class="timeline-body">
 								<h2>2014/06/16 工程進度圖、以及問題發現圖檢視</h2>
-								<br><br><br>
+								<div class="timeline-content">
+									<img class="timeline-img pull-left" src="\photo\3\1.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\3\2.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\3\3.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\3\4.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\3\5.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\3\6.JPG" alt="">
+								</div>
+								<div class="timeline-footer">
+									<a href="/timeline/3" class="nav-link pull-right">
+									詳情 <i class="m-icon-swapright m-icon-white"></i>
+									</a>
+								</div>
 							</div>
 						</li>
 						

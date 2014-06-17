@@ -135,7 +135,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</div>
 						<div class="details">
 							<div class="number">
-								 2/10
+								 3/10
 							</div>
 						</div>
 						<div class="more">On Site Visit Quota</div>
