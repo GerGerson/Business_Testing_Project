@@ -46,10 +46,10 @@
 		<div class="portlet-body ">
 			<ul class="nav nav-tabs ">
 				<li class="active">
-					<a href="#photo" data-toggle="tab">工作進度圖</a>
+					<a href="#photo" data-toggle="tab" id="tab_photo">工作進度圖</a>
 				</li>
 				<li class="">
-					<a href="#problem" data-toggle="tab">問題<i class="fa fa-exclamation-circle top-news-icon"></i></a>
+					<a href="#problem" data-toggle="tab" id="tab_problem">問題<i class="fa fa-exclamation-circle top-news-icon"></i></a>
 				</li>
 									
 			</ul>

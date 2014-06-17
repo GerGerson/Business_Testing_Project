@@ -139,7 +139,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="/assets/global/plugins/rateit/src/jquery.rateit.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script><!-- for slider-range -->
 <script src="/assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
-<script type="text/javascript" src="/assets/global/plugins/swfobject/swfobject.js"></script>  
+<script src="../../assets/frontend/layout/scripts/back-to-top.js" type="text/javascript"></script>  
 <!--END PAGE LEVEL PLUGINS-->
 
 <script src="/assets/global/scripts/metronic.js" type="text/javascript"></script>
@@ -151,6 +151,18 @@ License: You must have a valid license purchased only from themeforest(the above
 	   Layout.init(); // init current layout
 	   Index.init();;
     });
+</script>
+
+<script>
+	jQuery(document).ready(function() { 
+		$('#tab_photo').click(function(){
+			location.href = location.pathname + '#photo';
+		});
+		
+		$('#tab_problem').click(function(){
+			location.href = location.pathname + '#problem';
+		});
+	});
 </script>
   
 <!-- END JAVASCRIPTS -->
