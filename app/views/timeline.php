@@ -86,6 +86,30 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 </div>
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
+	<!-- BEGIN SIDEBAR -->
+	<div class="page-sidebar-wrapper">
+		<!-- BEGIN HORIZONTAL RESPONSIVE MENU -->
+		<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+		<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+		<div class="page-sidebar navbar-collapse collapse">
+			<ul class="page-sidebar-menu" data-slide-speed="200" data-auto-scroll="true">
+				<li>
+					<a href="/">
+					首頁 <span class="selected">
+					</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="/timeline">
+					進度
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- END HORIZONTAL RESPONSIVE MENU -->
+	</div>
+	<!-- END SIDEBAR -->
+	
 	<!-- BEGIN CONTENT -->
 	<div class="page-content-wrapper">
 		<div class="page-content">
