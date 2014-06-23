@@ -106,7 +106,7 @@ class ProgressController extends BaseController {
 							'由大廳影入廁所',
 							'廁所A (浴缸位置1)',
 							'廁所B (浴缸位置2)',
-							'廁所C(浴缸位置)',
+							'廁所C(熱水爐位置)',
 							'廁所D (原洗手盆位置)',
 							'客房',
 							'主人房');
