@@ -34,7 +34,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 <link href="../../assets/global/css/components.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
-<link id="style_color" href="../../assets/admin/layout/css/themes/grey.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="../../assets/admin/layout/css/themes/light.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
@@ -112,7 +112,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	
 	<!-- BEGIN CONTENT -->
 	<div class="page-content-wrapper">
-		<div class="page-content">
+		<div class="container">
 			<!-- BEGIN PAGE HEADER-->
 			<div class="row">
 				<div class="col-md-12">
@@ -239,9 +239,9 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 							</div>
 						</li>
 						
-						<li class="timeline-grey">
+						<li class="timeline-blue-madison">
 							<div class="timeline-time">
-								<span class="date">
+								<span class="time">
 									2014/06/29
 								</span>
 							</div>
@@ -249,8 +249,20 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 								<i class="fa fa-calendar"></i>
 							</div>
 							<div class="timeline-body">
-								<h2>待跟進</h2>
-								<br><br><br>
+								<h2>2014/06/29 工程進度圖、以及問題發現圖檢視</h2>
+								<div class="timeline-content">
+									<img class="timeline-img pull-left" src="\photo\5\1.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\5\2.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\5\3.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\5\4.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\5\5.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\5\6.JPG" alt="">
+								</div>
+								<div class="timeline-footer">
+									<a href="/timeline/5" class="nav-link pull-right">
+									詳情 <i class="m-icon-swapright m-icon-white"></i>
+									</a>
+								</div>
 							</div>
 						</li>
 						

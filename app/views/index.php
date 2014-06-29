@@ -40,7 +40,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="../../assets/global/css/components.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
-<link id="style_color" href="../../assets/admin/layout/css/themes/grey.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="../../assets/admin/layout/css/themes/light.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
@@ -151,127 +151,147 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- /.modal -->
 			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 			<!-- BEGIN DASHBOARD STATS -->
-			<div class="row">
-				<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12">
-					<div class="dashboard-stat blue-madison">
-						<div class="visual">
-							<i class="fa fa-wrench"></i>
-						</div>
-						<div class="details">
-							<div class="number">
-								 4/10
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12">
+						<div class="dashboard-stat blue-madison">
+							<div class="visual">
+								<i class="fa fa-wrench"></i>
 							</div>
+							<div class="details">
+								<div class="number">
+									 5/10
+								</div>
+							</div>
+							<div class="more">On Site Visit Quota</div>
 						</div>
-						<div class="more">On Site Visit Quota</div>
 					</div>
 				</div>
+				<!-- END DASHBOARD STATS -->
+				
+				<div class="row ">
+					<div class="col-md-6 col-sm-6">
+						<!-- BEGIN PORTLET-->
+						<div class="portlet box blue-madison calendar">
+							<div class="portlet-title">
+								<div class="caption">
+									<i class="fa fa-calendar"></i>Calendar
+								</div>
+							</div>
+							<div class="portlet-body light-grey">
+								<div id="calendar">
+								</div>
+							</div>
+						</div>
+						<!-- END PORTLET-->
+					</div>
+					
+					<div class="col-md-6 col-sm-6">
+						<div class="portlet box blue-madison">
+							<div class="portlet-title">
+								<div class="caption">
+									<i class="fa fa-bell-o"></i>Recent Activities
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="scroller" style="height: 300px;" data-always-visible="1" data-rail-visible="0">
+									<ul class="feeds">
+										<li>
+											<div class="col1">
+												<div class="cont">
+													<div class="cont-col1">
+														<div class="label label-sm label-info">
+															<i class="fa fa-check"></i>
+														</div>
+													</div>
+													<div class="cont-col2">
+														<div class="desc">
+															 29/6 已上門跟進，單位圖片、資料已更新。 
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="col1">
+												<div class="cont">
+													<div class="cont-col1">
+														<div class="label label-sm label-info">
+															<i class="fa fa-check"></i>
+														</div>
+													</div>
+													<div class="cont-col2">
+														<div class="desc">
+															 22/6 已上門跟進，單位圖片、資料已更新。 
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="col1">
+												<div class="cont">
+													<div class="cont-col1">
+														<div class="label label-sm label-info">
+															<i class="fa fa-check"></i>
+														</div>
+													</div>
+													<div class="cont-col2">
+														<div class="desc">
+															 16/6 已上門跟進，單位圖片、資料已更新。 
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="col1">
+												<div class="cont">
+													<div class="cont-col1">
+														<div class="label label-sm label-info">
+															<i class="fa fa-check"></i>
+														</div>
+													</div>
+													<div class="cont-col2">
+														<div class="desc">
+															 11/6 已上門跟進，單位圖片、資料已更新。 
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="col1">
+												<div class="cont">
+													<div class="cont-col1">
+														<div class="label label-sm label-info">
+															<i class="fa fa-check"></i>
+														</div>
+													</div>
+													<div class="cont-col2">
+														<div class="desc">
+															 1/6 已上門跟進，單位圖片、資料已更新。 
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
 			</div>
-			<!-- END DASHBOARD STATS -->
+			</div>
 			
-			<div class="row ">
-				<div class="col-md-6 col-sm-6">
-					<!-- BEGIN PORTLET-->
-					<div class="portlet box blue-madison calendar">
-						<div class="portlet-title">
-							<div class="caption">
-								<i class="fa fa-calendar"></i>Calendar
-							</div>
-						</div>
-						<div class="portlet-body light-grey">
-							<div id="calendar">
-							</div>
-						</div>
-					</div>
-					<!-- END PORTLET-->
-				</div>
-				
-				<div class="col-md-6 col-sm-6">
-					<div class="portlet box blue-madison">
-						<div class="portlet-title">
-							<div class="caption">
-								<i class="fa fa-bell-o"></i>Recent Activities
-							</div>
-						</div>
-						<div class="portlet-body">
-							<div class="scroller" style="height: 300px;" data-always-visible="1" data-rail-visible="0">
-								<ul class="feeds">
-									<li>
-										<div class="col1">
-											<div class="cont">
-												<div class="cont-col1">
-													<div class="label label-sm label-info">
-														<i class="fa fa-check"></i>
-													</div>
-												</div>
-												<div class="cont-col2">
-													<div class="desc">
-														 22/6 已上門跟進，單位圖片、資料已更新。 
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="col1">
-											<div class="cont">
-												<div class="cont-col1">
-													<div class="label label-sm label-info">
-														<i class="fa fa-check"></i>
-													</div>
-												</div>
-												<div class="cont-col2">
-													<div class="desc">
-														 16/6 已上門跟進，單位圖片、資料已更新。 
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="col1">
-											<div class="cont">
-												<div class="cont-col1">
-													<div class="label label-sm label-info">
-														<i class="fa fa-check"></i>
-													</div>
-												</div>
-												<div class="cont-col2">
-													<div class="desc">
-														 11/6 已上門跟進，單位圖片、資料已更新。 
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="col1">
-											<div class="cont">
-												<div class="cont-col1">
-													<div class="label label-sm label-info">
-														<i class="fa fa-check"></i>
-													</div>
-												</div>
-												<div class="cont-col2">
-													<div class="desc">
-														 1/6 已上門跟進，單位圖片、資料已更新。 
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
 
 	</div>
 	<!-- END CONTENT -->

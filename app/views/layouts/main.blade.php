@@ -44,7 +44,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="/assets/global/css/components.css" rel="stylesheet" type="text/css"/>
 <link href="/assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
 <link href="/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
-<link id="style_color" href="/assets/admin/layout/css/themes/grey.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="/assets/admin/layout/css/themes/light.css" rel="stylesheet" type="text/css"/>
 <link href="/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <link href="/assets/frontend/pages/css/style-shop.css" rel="stylesheet" type="text/css">
 <!-- END THEME STYLES -->
@@ -92,7 +92,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="clearfix">
 </div>
 <!-- BEGIN CONTAINER -->
-<div class="page-container">
+<div class="container">
 	<!-- BEGIN SIDEBAR -->
 	<div class="page-sidebar-wrapper">
 		<!-- BEGIN HORIZONTAL RESPONSIVE MENU -->
@@ -107,9 +107,9 @@ License: You must have a valid license purchased only from themeforest(the above
 	
 	<!-- BEGIN CONTENT -->
 	<div class="page-content-wrapper">
-		<div class="page-content">
+
 			@yield('main_content')
-		</div>
+
 	</div>
 	<!-- END CONTENT -->
 </div>

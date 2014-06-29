@@ -110,7 +110,29 @@ class ProgressController extends BaseController {
 							'廁所D (原洗手盆位置)',
 							'客房',
 							'主人房');
-		
+
+		$photoDesc[5] = array('大門原入牆櫃位置',
+							'大廳影出大門',
+							'大廳影出大門走廊盡頭',
+							'大廳A',
+							'大廳B',
+							'大廳C',
+							'由客廳走廊影入主客房',
+							'廚房A',
+							'廚房B (電箱牆位)',
+							'廚房C (廚櫃位置)',
+							'廚房D (石油氣錶位)',
+							'由大廳影入廁所 (不是黑白牆磚橫間分隔的嗎?)',
+							'廁所A (浴缸位置)',
+							'廁所B (原熱水爐位置)',
+							'廁所C (原洗手盆位置)',
+							'客房',
+							'主人房',
+							'廁所地磚',
+							'廚房地磚',
+							'廁所與廚房地磚對比',
+							'大廳地磚');
+							
 		//Event problem description
 		$problemDesc = array();
 		$problemDesc[1] = array('');
@@ -154,7 +176,24 @@ class ProgressController extends BaseController {
 								'廁所窗外(新)',
 								'廚房左上角牆身(新)',
 								'廚房新做鋪磚(新)');
-								
+		
+		$problemDesc[5] = array('大門鐵閘門口外面牆空隙(跟進項目)',
+								'大廳原大廈開口電話位置(跟進項目)',
+								'新鋁窗仍未到(跟進項目)',
+								'廁所浴缸位置(跟進項目)',
+								'全屋牆身(跟進項目)',
+								'主人房(跟進項目)',
+								'電制位置(新)',
+								'主人房與客房門框空隙(跟進項目)',
+								'窗檯雲石(新)',
+								'大廳喉管外露(跟進項目)',
+								'廁所窗外(跟進項目)',
+								'廚房左上角牆身(新)',
+								'廚房新做鋪磚(跟進項目)',
+								'廚房新做鋪磚(新)',
+								'地磚(新)',
+								'入牆櫃位置(新)');
+		
 		//Video Check
 		$hasVideo = array();
 		$hasVideo[1] = array(false);
@@ -199,6 +238,23 @@ class ProgressController extends BaseController {
 							false,
 							false
 							);
+		$hasVideo[5] = array(false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false
+							);
 							
 							
 		//Update Date
@@ -207,7 +263,7 @@ class ProgressController extends BaseController {
 					'2014年6月11日',
 					'2014年6月16日',
 					'2014年6月22日',
-					'-',
+					'2014年6月29日',
 					'-');
 							
 		
