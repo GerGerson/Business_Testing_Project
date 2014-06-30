@@ -17,6 +17,22 @@
 </ul>
 @stop
 
+@section('page_sidebar_menu')
+<ul class="page-sidebar-menu" data-slide-speed="200" data-auto-scroll="true">
+	<li>
+		<a href="/">
+		首頁
+		</a>
+	</li>
+	<li class="active">
+		<a href="/timeline">
+			進度 <span class="selected">
+			</span>
+		</a>
+	</li>
+</ul>
+@stop
+
 @section('main_content')
 <!-- BEGIN PAGE HEADER-->
 <div class="row">
