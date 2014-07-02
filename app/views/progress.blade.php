@@ -96,15 +96,18 @@
 											</li>
 										</ul>
 										
-										<div class="product-item">
-											<div class="pi-img-wrapper">
-												<img src="/photo/<?=$event?>/<?=$i?>.JPG" class="img-responsive" alt="">
-												<div>
-													<a href="/photo/<?=$event?>/<?=$i?>.JPG" class="btn btn-default fancybox-button">Zoom</a>
-													<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
+										<div class="sale-product">
+											<div class="product-item">
+												<div class="pi-img-wrapper">
+													<img src="/photo/<?=$event?>/<?=$i?>.JPG" class="img-responsive" alt="">
+													<div>
+														<a href="/photo/<?=$event?>/<?=$i?>.JPG" class="btn btn-default fancybox-button">Zoom</a>
+														<!--<a href="#product-pop-up_<?=$i?>" class="btn btn-default fancybox-fast-view">View</a>-->
+													</div>
 												</div>
 											</div>
 										</div>
+										
 									</div>
 								</div>
 								<!-- END PORTLET-->
