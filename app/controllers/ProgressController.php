@@ -133,6 +133,41 @@ class ProgressController extends BaseController {
 							'廁所與廚房地磚對比',
 							'大廳地磚');
 							
+		$photoDesc[6] = array('新到大木門',
+						'大門原入牆櫃位置	',
+						'大廳影出大門',
+						'大廳影出大門走廊盡頭',
+						'大廳A',
+						'大廳B',
+						'大廳C',
+						'由客廳走廊影入主客房',
+						'廚房A (新到廚房門框)',
+						'廚房B',
+						'廚房C (電箱牆位)',
+						'廚房D (廚櫃位置)',
+						'廚房D (廚櫃位置)',
+						'廚房D (廚櫃位置)',
+						'廚房E (石油氣錶位)',
+						'由大廳影入廁所',
+						'新到廁所木門',
+						'廁所A (浴缸位置)',
+						'廁所B (原熱水爐位置)',
+						'廁所C (吊櫃)',
+						'廁所C (吊櫃)',
+						'廁所D (原洗手盆位置)',
+						'廁所D (原洗手盆位置)',
+						'廁所D (原洗手盆位置)',
+						'客房 A',
+						'客房 B(新到木門)',
+						'主人房 A',
+						'主人房 B(新到木門)',
+						'廚房(左邊空位闊度: 63cm / 24.75")',
+						'廚房(左邊空位高度: 178.5cm / 70.25")',
+						'廚房(右邊空位闊度: 63.5cm / 25")',
+						'廚房(右邊空位高度: 178.5cm / 70.25")',
+						'油漆 (金裝抗甲醛 1L@6)',
+						'油漆 (金裝抗甲醛 5L@1)');				
+							
 		//Event problem description
 		$problemDesc = array();
 		$problemDesc[1] = array('');
@@ -193,6 +228,29 @@ class ProgressController extends BaseController {
 								'廚房新做鋪磚(新)',
 								'地磚(新)',
 								'入牆櫃位置(新)');
+								
+		$problemDesc[6] = array('大門鐵閘門口外面牆空隙(跟進項目)',
+								'大廳原大廈開口電話位置(跟進項目)',
+								'鋁窗(跟進項目)',
+								'廁所浴缸位置(跟進項目)',
+								'全屋牆身(跟進項目)',
+								'主人房(跟進項目)',
+								'主人房與客房門框空隙(跟進項目)',
+								'窗檯雲石(新)',
+								'廚房喉管外露(跟進項目)',
+								'廁所窗外(跟進項目)',
+								'廚房左上角牆身(跟進項目)',
+								'廚房新做鋪磚(跟進項目)',
+								'入牆櫃位置(跟進項目)',
+								'大門位置(新)',
+								'門與牆壁(新)',
+								'廁所企缸位置及地面(新)',
+								'櫃門與牆壁(新)',
+								'磁磚角位(新)',
+								'廁所及廚房門口(新)',
+								'廚房窗與吊櫃之間(新)',
+								'廚房吊櫃與牆壁(新)',
+								'地磚縫隙(新)');
 		
 		//Video Check
 		$hasVideo = array();
@@ -256,6 +314,30 @@ class ProgressController extends BaseController {
 							false
 							);
 							
+		$hasVideo[6] = array(false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false
+							);
+							
 							
 		//Update Date
 		$date = array('-',
@@ -264,6 +346,7 @@ class ProgressController extends BaseController {
 					'2014年6月16日',
 					'2014年6月22日',
 					'2014年6月29日',
+					'2014年7月13日',
 					'-');
 							
 		

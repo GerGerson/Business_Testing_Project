@@ -206,6 +206,23 @@ License: You must have a valid license purchased only from themeforest(the above
 													</div>
 													<div class="cont-col2">
 														<div class="desc">
+															 13/7 已上門跟進，單位圖片、資料已更新。 
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="col1">
+												<div class="cont">
+													<div class="cont-col1">
+														<div class="label label-sm label-info">
+															<i class="fa fa-check"></i>
+														</div>
+													</div>
+													<div class="cont-col2">
+														<div class="desc">
 															 29/6 已上門跟進，單位圖片、資料已更新。 
 															</span>
 														</div>

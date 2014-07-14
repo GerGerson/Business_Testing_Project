@@ -266,24 +266,9 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 							</div>
 						</li>
 						
-						<li class="timeline-grey">
+						<li class="timeline-blue-madison">
 							<div class="timeline-time">
-								<span class="date">
-									2014/07/06
-								</span>
-							</div>
-							<div class="timeline-icon">
-								<i class="fa fa-calendar"></i>
-							</div>
-							<div class="timeline-body">
-								<h2>待跟進</h2>
-								<br><br><br>
-							</div>
-						</li>
-						
-						<li class="timeline-grey">
-							<div class="timeline-time">
-								<span class="date">
+								<span class="time">
 									2014/07/13
 								</span>
 							</div>
@@ -291,8 +276,20 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 								<i class="fa fa-calendar"></i>
 							</div>
 							<div class="timeline-body">
-								<h2>待跟進</h2>
-								<br><br><br>
+								<h2>2014/07/13 工程進度圖、以及問題發現圖檢視</h2>
+								<div class="timeline-content">
+									<img class="timeline-img pull-left" src="\photo\6\1.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\6\2.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\6\3.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\6\4.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\6\5.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\6\6.JPG" alt="">
+								</div>
+								<div class="timeline-footer">
+									<a href="/timeline/6" class="nav-link pull-right">
+									詳情 <i class="m-icon-swapright m-icon-white"></i>
+									</a>
+								</div>
 							</div>
 						</li>
 						
