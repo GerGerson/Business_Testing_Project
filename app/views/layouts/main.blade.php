@@ -166,7 +166,7 @@ License: You must have a valid license purchased only from themeforest(the above
     jQuery(document).ready(function() {    
        Metronic.init(); // init metronic core components
 	   Layout.init(); // init current layout
-	   Layout.initImageZoom();
+	   //Layout.initImageZoom();
 	   Index.init();;
     });
 </script>
@@ -183,6 +183,10 @@ License: You must have a valid license purchased only from themeforest(the above
 			ga('send', 'event', 'tab', 'problem');
 		});
 	});
+</script>
+
+<script>
+	
 </script>
 
 <script>
