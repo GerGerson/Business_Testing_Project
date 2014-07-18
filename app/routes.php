@@ -34,3 +34,7 @@ Route::get('/timeline/{event}/problem/{id}/video', 'ProblemController@video');
 
 Route::get('/timeline/photo/{id}', 'PhotoController@resize');
 Route::get('/timeline/photo/{id}/{problem_id}', 'PhotoController@resize_problem');
+
+Route::get('/main', function(){
+	return View::make("onepage-index");
+});
