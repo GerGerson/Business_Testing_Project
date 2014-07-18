@@ -94,6 +94,10 @@ License: You must have a valid license purchased only from themeforest (the abov
     <div class="container">
       <h2><strong>置簡單</strong></h2>
       <h4>置業裝修‧話咁易‧Easy</h4>
+	  
+	  <div class="ab-trio">
+        <img src="../../assets/frontend/onepage/img/background.jpg" alt="" class="img-responsive">
+      </div>
     </div>
   </div>
   <!-- About block END -->
@@ -189,17 +193,17 @@ License: You must have a valid license purchased only from themeforest (the abov
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="pricing-item">
             <div class="pricing-head">
-              <h3>基本</h3>
+              <h3>Package A</h3>
             </div>
             <div class="pricing-content">
               <div class="pi-price">
-              	<strong>$<em>25</em></strong>
-              	<p>Per Month</p>
+              	<strong>$<em>700</em></strong>
               </div>
 	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-	            <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-	            <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
+	            <li><i class="fa fa-circle"></i> 2  次上門進度跟進</li>
+	            <li><i class="fa fa-circle"></i> 10 次詳細問題查閱</li>
+				<li><i class="fa fa-circle"></i> 6  個裝修問題跟進</li>
+	            <li><i class="fa fa-circle"></i> 2  次甲醛濃度檢查</li>
 	          </ul>
             </div>
             <div class="pricing-footer">
@@ -212,18 +216,17 @@ License: You must have a valid license purchased only from themeforest (the abov
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="pricing-item">
             <div class="pricing-head">
-              <h3>Expert</h3>
-              <p>Lorem ipsum dolor</p>
+              <h3>Package B</h3>
             </div>
             <div class="pricing-content">
               <div class="pi-price">
-              	<strong>$<em>59</em></strong>
-              	<p>Per Month</p>
+              	<strong>$<em>1300</em></strong>
               </div>
 	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-	            <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-	            <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
+	            <li><i class="fa fa-circle"></i> 4  次上門進度跟進</li>
+	            <li><i class="fa fa-circle"></i> 20 次詳細問題查閱</li>
+				<li><i class="fa fa-circle"></i> 12 個裝修問題跟進</li>
+	            <li><i class="fa fa-circle"></i> 4  次甲醛濃度檢查</li>
 	          </ul>
             </div>
             <div class="pricing-footer">
@@ -236,18 +239,17 @@ License: You must have a valid license purchased only from themeforest (the abov
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="pricing-item">
             <div class="pricing-head">
-              <h3>Hi-Tech</h3>
-              <p>Lorem ipsum dolor</p>
+              <h3>Package C</h3>
             </div>
             <div class="pricing-content">
               <div class="pi-price">
-              	<strong>$<em>98</em></strong>
-              	<p>Per Month</p>
+              	<strong>$<em>2300</em></strong>
               </div>
 	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-	            <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
-	            <li><i class="fa fa-circle"></i> Lorem ipsum dolor</li>
+	            <li><i class="fa fa-circle"></i> 8  次上門進度跟進</li>
+	            <li><i class="fa fa-circle"></i>  &infin; 次詳細問題查閱</li>
+				<li><i class="fa fa-circle"></i>  &infin; 個裝修問題跟進</li>
+	            <li><i class="fa fa-circle"></i>  &infin;  次甲醛濃度檢查</li>
 	          </ul>
             </div>
             <div class="pricing-footer">
