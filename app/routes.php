@@ -39,3 +39,7 @@ Route::get('/timeline/photo/{id}/{problem_id}', 'PhotoController@resize_problem'
 Route::get('/main', function(){
 	return View::make("onepage-index");
 });
+
+Route::get('/login',function(){
+	return View::make("login");
+});

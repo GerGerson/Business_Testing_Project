@@ -2,7 +2,7 @@
 Lock Page
 ***/
 body {
-  background-color: #ddd;
+  background-color: #fafafa;
   padding: 0;
   margin: 0;
 }
@@ -10,9 +10,9 @@ body {
 .page-lock {
   top: 50%;
   left: 50%;
-  position: absolute;
-  margin-top: -140px;
-  margin-left: -260px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: -240px;
 }
 
 .page-lock .page-logo {
@@ -20,9 +20,9 @@ body {
 }
 
 .page-lock .page-body {
-  width: 500px;
+  width: 400px;
   padding: 10px;
-  background: url(../img/bg-white-lock.png) repeat;
+  background-color: #ffffff
 }
 
 .page-lock .page-body:after,
@@ -50,9 +50,9 @@ body {
 }
 
 .page-lock .page-lock-info {
-  padding-left: 10px;
-  float: right;
-  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 }
 
 .page-lock .page-lock-info h1 {
@@ -80,7 +80,7 @@ body {
 }
 
 .page-lock .page-lock-info form {
-  margin: 28px 0;
+  margin: 28px 0px;
 }
 
 .page-lock .page-lock-info input {
@@ -94,6 +94,10 @@ body {
 .page-lock .relogin a {
   color: #e1e1e1;
 }
+
+   .page-lock .page-lock-info button {
+    width: 99% !important;
+  }
 
 /*Responsive*/
 @media (max-width: 768px) {
@@ -119,12 +123,19 @@ body {
   }
 
   .page-lock .page-lock-info {
-    float: none !important;
-    width: 260px;
-    margin: 0 auto;
+      padding-left: 12px;
+	  padding-right: 5px;
+	  width: 100%;
   }
 
   .page-lock .page-lock-info input {
     width: 200px !important;
   }
+  
+   .page-lock .page-lock-info button {
+	 padding-left: 12px;
+	 padding-right: 5px;
+	 width: 99% !important;
+  }
+  
 }

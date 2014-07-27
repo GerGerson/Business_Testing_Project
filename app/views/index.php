@@ -160,7 +160,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</div>
 							<div class="details">
 								<div class="number">
-									 5/10
+									 7/10
 								</div>
 							</div>
 							<div class="more">On Site Visit Quota</div>
@@ -196,6 +196,23 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="portlet-body">
 								<div class="scroller" style="height: 300px;" data-always-visible="1" data-rail-visible="0">
 									<ul class="feeds">
+										<li>
+											<div class="col1">
+												<div class="cont">
+													<div class="cont-col1">
+														<div class="label label-sm label-info">
+															<i class="fa fa-check"></i>
+														</div>
+													</div>
+													<div class="cont-col2">
+														<div class="desc">
+															 26/7 已上門跟進，單位圖片、資料已更新。 
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
 										<li>
 											<div class="col1">
 												<div class="cont">

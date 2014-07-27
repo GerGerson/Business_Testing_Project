@@ -293,6 +293,33 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 							</div>
 						</li>
 						
+						<li class="timeline-blue-madison">
+							<div class="timeline-time">
+								<span class="time">
+									2014/07/26
+								</span>
+							</div>
+							<div class="timeline-icon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="timeline-body">
+								<h2>2014/07/26 工程進度圖、以及問題發現圖檢視</h2>
+								<div class="timeline-content">
+									<img class="timeline-img pull-left" src="\photo\7\1.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\7\2.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\7\3.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\7\4.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\7\5.JPG" alt="">
+									<img class="timeline-img pull-left" src="\photo\7\6.JPG" alt="">
+								</div>
+								<div class="timeline-footer">
+									<a href="/timeline/7" class="nav-link pull-right">
+									詳情 <i class="m-icon-swapright m-icon-white"></i>
+									</a>
+								</div>
+							</div>
+						</li>
+						
 						<li class="timeline-grey">
 							<div class="timeline-time">
 								<span class="date">
