@@ -1,1 +1,56 @@
 /* here you can put your own css to customize and override the theme */
+
+/*Overide component.css*/
+.fa_danger {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Overide style.css*/
+.services-block .fa_danger {
+  background: #f05250;
+  color: #fff;
+  width: 99px;
+  height: 99px;  
+  line-height: 1;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.services-block .fa_danger:after {
+  bottom: -8px;
+  width: 0; 
+  height: 0;
+  left: 50%;
+  margin-left: -9px;
+  z-index: 2; 
+  content: " "; 
+  display: block; 
+  position: absolute;
+  border-top: 9px solid #f05250;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+
+.services-block .fa_danger {
+  font-size: 38px;
+  padding: 35px 0 0;
+}
+
+.services-block .item { /* remove border */
+  border-right: solid 0px #e8e7e7;
+  padding-top: 50px;
+}
+/*Overide blue.css(theme)*/
+.services-block .fa_danger{
+  background: #f05250;
+}
+.services-block .fa_danger:after {
+  border-top: 9px solid #f05250;
+}

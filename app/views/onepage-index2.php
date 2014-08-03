@@ -56,7 +56,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   <link href="../../assets/global/css/components.css" rel="stylesheet">
   <link href="../../assets/frontend/onepage/css/style.css" rel="stylesheet">
   <link href="../../assets/frontend/onepage/css/style-responsive.css" rel="stylesheet">
-  <link href="../../assets/frontend/onepage/css/themes/turquoise.css" rel="stylesheet" id="style-color">
+  <link href="../../assets/frontend/onepage/css/themes/blue.css" rel="stylesheet" id="style-color">
   <link href="../../assets/frontend/onepage/css/custom.css" rel="stylesheet">
   <!-- Theme styles END -->
 </head>
@@ -108,12 +108,12 @@ License: You must have a valid license purchased only from themeforest (the abov
       <h2><strong>甲醛檢測服務</strong></h2>
       <div class="row">
 		<div class="col-md-6 col-sm-6 col-xs-12 item">
-          <i style="background:#ff0000;" class="fa fa-exclamation"></i>
+          <i class="fa_danger fa-exclamation"></i>
           <h3>危險氣體</h3>
           <p>大部份裝修物料均含有甲醛，並可以持續數年放出</p>
         </div>
         <div  class="col-md-6 col-sm-6 col-xs-12 item">
-          <i style="background:#ff0000;" class="fa fa-bomb"></i>
+          <i class="fa_danger fa-bomb"></i>
           <h3>影響健康</h3>
           <p>長期吸入高濃度甲醛，會增加致癌風險</p>
         </div>
@@ -135,7 +135,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Choose us block BEGIN -->
   <div class="choose-us-block content text-center margin-bottom-40" id="benefits1">
     <div class="container">
-      <h2><strong>說明</strong></h2>
+      <h2><strong>網上平台</strong></h2>
 	  <div class="row">
 		<div class="col-md-6 col-sm-6 col-xs-12 margin-top-20 text-left">
 		  <img src="../../assets/frontend/onepage/img/check-us.png" alt="Why to choose us" class="img-responsive">
@@ -143,9 +143,9 @@ License: You must have a valid license purchased only from themeforest (the abov
 		<div class="col-md-6 col-sm-6 col-xs-12 text-left">
 			<div class="content">
 				<p><i class="fa fa-mobile"></i> 支援桌面電腦、手機</p>
-				<p><i class="fa fa-clock-o"></i> 24小時自由安排跟進時間、內容</p>
-				<p><i class="fa fa-edit"></i> 簡易安排跟進內容</p>
-				<p><i class="fa fa-search"></i> 專業、詳盡跟進工程問題</p>
+				<p><i class="fa fa-clock-o"></i> 24小時自由安排上門時間</p>
+				<p><i class="fa fa-edit"></i> 隨時查閱檢測結果</p>
+				<p><i class="fa fa-search"></i> 提供簡淺易明圖表、報表</p>
 			</div>
 		</div>
 	  </div>
