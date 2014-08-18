@@ -95,8 +95,10 @@ License: You must have a valid license purchased only from themeforest (the abov
     <div class="container">
       <h1><strong>甲醛檢測服務</strong></h1>
       <div class="row">
+		<div class="col-md-12">
+			<img src="/photo/sample.jpg"/>
+		</div>
 		<div class="col-md-6 col-md-offset-3">
-          <i class="fa_danger fa-exclamation"></i>
           <h2>甚麼是甲醛?</h2>
           <p>甲醛是最常見的室內空氣污染物,而大多數源頭多來自常用的建築及裝修物料中的甲醛樹脂。
 		  <br/>甲醛樹脂十分普遍用於以上物料(例如:粒子板、中等密度纖維板、膠合板及其他壓
