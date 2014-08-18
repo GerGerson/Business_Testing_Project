@@ -44,3 +44,11 @@ Route::get('/main', function(){
 Route::get('/login',function(){
 	return View::make("login");
 });
+
+Route::get('/gas', function(){
+	return View::make("onepage-index2");
+});
+
+Route::get('/gas/desc', function(){
+	return View::make("onepage-service-desc");
+});

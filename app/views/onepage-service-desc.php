@@ -89,182 +89,56 @@ License: You must have a valid license purchased only from themeforest (the abov
   </div>
   <!-- Header END -->
 
-  <!-- About block BEGIN -->
-  <div class="about-block content content-center" id="about">
-    <div class="container">
-      <h2><strong>置簡單</strong></h2>
-      <h4>置業裝修‧話咁易‧Easy</h4>
-	  
-	  <div class="ab-trio">
-        <img src="../../assets/frontend/onepage/img/background.jpg" alt="" class="img-responsive">
-      </div>
-    </div>
-  </div>
-  <!-- About block END -->
 
   <!-- Services block BEGIN -->
   <div class="services-block content content-center" id="services">
     <div class="container">
-      <h2><strong>甲醛檢測服務</strong></h2>
+      <h1><strong>甲醛檢測服務</strong></h1>
       <div class="row">
-		<div class="col-md-6 col-sm-6 col-xs-12 item">
+		<div class="col-md-6 col-md-offset-3">
           <i class="fa_danger fa-exclamation"></i>
-          <h3>危險氣體</h3>
-          <p>大部份裝修物料均含有甲醛，並可以持續數年放出</p>
-        </div>
-        <div  class="col-md-6 col-sm-6 col-xs-12 item">
-          <i class="fa_danger fa-bomb"></i>
-          <h3>影響健康</h3>
-          <p>長期吸入高濃度甲醛，會增加致癌風險</p>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12 item">
-          <i class="fa fa-gear"></i>
-          <h3>專業檢查</h3>
-          <p>工業級儀器，準確測量</p>
-        </div>
-		<div class="col-md-6 col-sm-6 col-xs-12 item">
-          <i class="fa fa-user"></i>
-          <h3>安排適合解決方法</h3>
-          <p>因應需求，提供合理解決服務</p>
+          <h2>甚麼是甲醛?</h2>
+          <p>甲醛是最常見的室內空氣污染物,而大多數源頭多來自常用的建築及裝修物料中的甲醛樹脂。
+		  <br/>甲醛樹脂十分普遍用於以上物料(例如:粒子板、中等密度纖維板、膠合板及其他壓
+				製木產品、發泡膠隔熱層、黏著劑、織物、地氈及樓面料等)。</p>
         </div>
       </div>
 	  <div class="row">
-			<a href="/gas/desc" class="btn btn-default">Read More</a>
+		<div  class="col-md-6 col-md-offset-3">
+          <i class="fa_danger fa-bomb"></i>
+          <h2>甲醛的影響</h2>
+          <p>
+			甲醛會緩慢持續放出甲醛,甚至可持續釋放數年以上。人類如吸入一定量甲醛,更會對咽喉和眼睛鼻腔等產生刺激性作用。
+			<br/>
+			美國國家毒理學項目於2011已經將甲醛列入“已知的人類致癌物”清單之中;2014年美國國家研究委員會更加明確指出甲醛是一種人類致癌物。
+		  </p>
+        </div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6 col-md-offset-3">
+          <i class="fa fa-gear"></i>
+          <h2>國際對甲醛之標準</h2>
+          <p>歐洲各國早已定明室內甲醛量不應超過0.08ppm;
+			美國於2012年更進一步收緊建築及裝修用之複合木質品標準,如復合板不可超過0.05ppm ;
+			香港亦參考世界衛生組織標準定立指標,分別「卓越級」- 少於0.24ppm、「良好級」- 少於0.24ppm。很可惜,大多新裝修單位都嚴重超標於上述指標。
+		  </p>
+        </div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6 col-md-offset-3">
+          <i class="fa fa-user"></i>
+          <h2>如何除甲醛</h2>
+          <p>坊間有很多方法去除甲醛,但都是被誤解的。除去剌鼻的味道,其實甲醛並未消失,並持續
+			地釋放。最好的方法當然是經常保持窒內空氣流通,用低甲醛物料,或請專人上門提供除甲
+			醛服務。
+			</p>
+        </div>
 	  </div>
     </div>
   </div>
   <!-- Services block END -->
 
-  <!-- Choose us block BEGIN -->
-  <div class="choose-us-block content text-center margin-bottom-40" id="benefits1">
-    <div class="container">
-      <h2><strong>網上平台</strong></h2>
-	  <div class="row">
-		<div class="col-md-6 col-sm-6 col-xs-12 margin-top-20 text-left">
-		  <img src="../../assets/frontend/onepage/img/check-us.png" alt="Why to choose us" class="img-responsive">
-		</div>
-		<div class="col-md-6 col-sm-6 col-xs-12 text-left">
-			<div class="content">
-				<p><i class="fa fa-mobile"></i> 支援桌面電腦、手機</p>
-				<p><i class="fa fa-clock-o"></i> 24小時自由安排上門時間</p>
-				<p><i class="fa fa-edit"></i> 隨時查閱檢測結果</p>
-				<p><i class="fa fa-search"></i> 提供簡淺易明圖表、報表</p>
-			</div>
-		</div>
-	  </div>
-    </div>
-  </div>
-  <!-- Choose us block END -->
   
-  <!-- Message block BEGIN -->
-  <div class="message-block content content-center valign-center" id="message-block">
-      <div class="valign-center-elem">
-        <h2>Try Now <strong>It is free for new users</strong></h2>
-      </div>
-  </div>
-  <!-- Message block END -->
-
-  <!-- Prices block BEGIN -->
-  <div class="prices-block content content-center" id="prices">
-  	<div class="container">
-      <h2 class="margin-bottom-50"><strong>收費</strong></h2>
-	  <div class="row">
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>新註冊用戶</h3>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-              	<strong>$<em>0</em></strong>
-              </div>
-	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> 1 次上門進度跟進</li>
-	            <li><i class="fa fa-circle"></i> 5 次詳細問題查閱</li>
-				<li><i class="fa fa-circle"></i> 3 個裝修問題跟進</li>
-	            <li><i class="fa fa-circle"></i> 1 次甲醛濃度檢查</li>
-	          </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Package A</h3>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-              	<strong>$<em>700</em></strong>
-              </div>
-	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> 2  次上門進度跟進</li>
-	            <li><i class="fa fa-circle"></i> 10 次詳細問題查閱</li>
-				<li><i class="fa fa-circle"></i> 6  個裝修問題跟進</li>
-	            <li><i class="fa fa-circle"></i> 2  次甲醛濃度檢查</li>
-	          </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Package B</h3>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-              	<strong>$<em>1300</em></strong>
-              </div>
-	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> 4  次上門進度跟進</li>
-	            <li><i class="fa fa-circle"></i> 20 次詳細問題查閱</li>
-				<li><i class="fa fa-circle"></i> 12 個裝修問題跟進</li>
-	            <li><i class="fa fa-circle"></i> 4  次甲醛濃度檢查</li>
-	          </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Package C</h3>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-              	<strong>$<em>2300</em></strong>
-              </div>
-	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> 8  次上門進度跟進</li>
-	            <li><i class="fa fa-circle"></i>  &infin; 次詳細問題查閱</li>
-				<li><i class="fa fa-circle"></i>  &infin; 個裝修問題跟進</li>
-	            <li><i class="fa fa-circle"></i>  &infin;  次甲醛濃度檢查</li>
-	          </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-      </div>
-    </div>
-  </div>
-  <!-- Prices block END -->
 
   <!-- Testimonials block BEGIN -->
   <div class="testimonials-block content content-center margin-bottom-65">
