@@ -93,46 +93,70 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Services block BEGIN -->
   <div class="services-block content content-center" id="services">
     <div class="container">
-      <h1><strong>甲醛檢測服務</strong></h1>
-      <div class="row">
-		<div class="col-md-12">
-			<img src="/photo/sample.jpg"/>
-		</div>
+      <h1><strong>甲醛FAQ</strong></h1>
+	  
+	  <div class="row">
 		<div class="col-md-6 col-md-offset-3">
-          <h2>甚麼是甲醛?</h2>
-          <p>甲醛是最常見的室內空氣污染物,而大多數源頭多來自常用的建築及裝修物料中的甲醛樹脂。
-		  <br/>甲醛樹脂十分普遍用於以上物料(例如:粒子板、中等密度纖維板、膠合板及其他壓
-				製木產品、發泡膠隔熱層、黏著劑、織物、地氈及樓面料等)。</p>
+			<h2>甚麼是甲醛?</h2>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-5">
+				<img src="/photo/sample.jpg"/>
+			</div>
+			<div class="col-md-7">
+			<p style="text-align: left; font-size:20px">
+				甲醛是最常見的室內<b style="color: red">空氣污染物</b>,而大多數源頭多來自常用的建築及裝修物料中的甲醛樹脂。
+				<br/><br/>甲醛樹脂十分普遍用於以上物料(例如:粒子板、中等密度纖維板、膠合板及其他壓
+				製木產品、發泡膠隔熱層、黏著劑、織物、地氈及樓面料等)。
+			</p>
+			</div>
         </div>
       </div>
-	  <div class="row">
-		<div  class="col-md-6 col-md-offset-3">
-          <i class="fa_danger fa-bomb"></i>
-          <h2>甲醛的影響</h2>
-          <p>
-			甲醛會緩慢持續放出甲醛,甚至可持續釋放數年以上。人類如吸入一定量甲醛,更會對咽喉和眼睛鼻腔等產生刺激性作用。
-			<br/>
-			美國國家毒理學項目於2011已經將甲醛列入“已知的人類致癌物”清單之中;2014年美國國家研究委員會更加明確指出甲醛是一種人類致癌物。
-		  </p>
-        </div>
-	  </div>
+	  <hr/>
 	  <div class="row">
 		<div class="col-md-6 col-md-offset-3">
-          <i class="fa fa-gear"></i>
-          <h2>國際對甲醛之標準</h2>
-          <p>歐洲各國早已定明室內甲醛量不應超過0.08ppm;
-			美國於2012年更進一步收緊建築及裝修用之複合木質品標準,如復合板不可超過0.05ppm ;
-			香港亦參考世界衛生組織標準定立指標,分別「卓越級」- 少於0.24ppm、「良好級」- 少於0.24ppm。很可惜,大多新裝修單位都嚴重超標於上述指標。
-		  </p>
+			<h2>甲醛的影響</h2>
+		</div>
+		<div  class="col-md-8 col-md-offset-2">
+			<div class="col-md-5">
+				<img src="/photo/sample.jpg"/>
+			</div>
+			<p style="text-align: left; font-size:20px">
+				甲醛會緩慢持續放出甲醛,甚至可持續釋放數年以上。人類如吸入一定量甲醛,更會對咽喉和眼睛鼻腔等<b style="color: red">產生刺激性作用</b>。
+				<br/><br/>
+				美國國家毒理學項目於2011已經將甲醛列入<b style="color: red">“已知的人類致癌物”</b>清單之中;2014年美國國家研究委員會更加明確指出甲醛是一種人類致癌物。
+			</p>
         </div>
 	  </div>
+	  <hr/>
 	  <div class="row">
 		<div class="col-md-6 col-md-offset-3">
-          <i class="fa fa-user"></i>
-          <h2>如何除甲醛</h2>
-          <p>坊間有很多方法去除甲醛,但都是被誤解的。除去剌鼻的味道,其實甲醛並未消失,並持續
-			地釋放。最好的方法當然是經常保持窒內空氣流通,用低甲醛物料,或請專人上門提供除甲
-			醛服務。
+			<h2>國際對甲醛之標準</h2>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-5">
+				<img src="/photo/sample.jpg"/>
+			</div>
+			<p style="text-align: left; font-size:20px">
+				歐洲各國早已定明室內甲醛量<b style="color: red">不應超過0.08ppm</b>;
+				美國於2012年更進一步收緊建築及裝修用之複合木質品標準,如復合板<b style="color: red">不可超過0.05ppm</b>;
+				香港亦參考世界衛生組織標準定立指標,分別<b style="color: red">「卓越級」- 少於0.24ppm</b>、<b style="color: red">「良好級」- 少於0.24ppm</b>。很可惜,大多新裝修單位都<b style="color: red">嚴重超標</b>於上述指標。
+			</p>
+        </div>
+	  </div>
+	  <hr/>
+	  <div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<h2>如何除甲醛</h2>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-5">
+				<img src="/photo/sample.jpg"/>
+			</div>
+			<p style="text-align: left; font-size:20px">
+				坊間有很多方法去除甲醛,但都是被誤解的。除去剌鼻的味道,其實<b style="color: red">甲醛並未消失</b>,並持續
+				地釋放。最好的方法當然是經常保持窒內空氣流通,用低甲醛物料,或請專人上門提供除甲
+				醛服務。
 			</p>
         </div>
 	  </div>
