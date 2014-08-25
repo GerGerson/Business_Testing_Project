@@ -52,3 +52,10 @@ Route::get('/gas', function(){
 Route::get('/gas/desc', function(){
 	return View::make("onepage-service-desc");
 });
+
+Route::get('/gas/desc2', function(){
+	return View::make("onepage-service-desc_2");
+});
+Route::get('/gas/desc3', function(){
+	return View::make("onepage-service-desc_3");
+});
