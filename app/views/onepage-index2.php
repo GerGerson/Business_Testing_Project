@@ -129,7 +129,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         </div>
       </div>
 	  <div class="row">
-			<a href="/gas/desc" class="btn btn-default">Read More</a>
+			<a href="/gas/desc3" class="btn blue">了解更多</a>
 	  </div>
     </div>
   </div>
@@ -145,8 +145,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-12 text-left">
 			<div class="content">
-				<p><i class="fa fa-mobile"></i> 支援桌面電腦、手機</p>
-				<p><i class="fa fa-clock-o"></i> 24小時自由安排上門時間</p>
+				<p><i class="fa fa-clock-o"></i> 隨時安排上門時間</p>
 				<p><i class="fa fa-edit"></i> 隨時查閱檢測結果</p>
 				<p><i class="fa fa-search"></i> 提供簡淺易明圖表、報表</p>
 			</div>
@@ -155,14 +154,6 @@ License: You must have a valid license purchased only from themeforest (the abov
     </div>
   </div>
   <!-- Choose us block END -->
-  
-  <!-- Message block BEGIN -->
-  <div class="message-block content content-center valign-center" id="message-block">
-      <div class="valign-center-elem">
-        <h2>Try Now <strong>It is free for new users</strong></h2>
-      </div>
-  </div>
-  <!-- Message block END -->
 
   <!-- Prices block BEGIN -->
   <div class="prices-block content content-center" id="prices">
@@ -170,21 +161,21 @@ License: You must have a valid license purchased only from themeforest (the abov
       <h2 class="margin-bottom-50"><strong>收費</strong></h2>
 	  <div class="row">
         <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-xs-12">
           <div class="pricing-item">
             <div class="pricing-head">
-              <h3>新註冊用戶</h3>
+              <h3>Openning Gift</h3>
             </div>
             <div class="pricing-content">
               <div class="pi-price">
               	<strong>$<em>0</em></strong>
               </div>
 	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> 1 次上門進度跟進</li>
-	            <li><i class="fa fa-circle"></i> 5 次詳細問題查閱</li>
-				<li><i class="fa fa-circle"></i> 3 個裝修問題跟進</li>
-	            <li><i class="fa fa-circle"></i> 1 次甲醛濃度檢查</li>
+	            <li><i class="fa fa-circle"></i> 6個指定地點檢查</li>
+	            <li><i class="fa fa-circle"></i> 1小時測量服務</li>
 	          </ul>
+			  <br><br><br>
+			  *每次上門將再重新計算
             </div>
             <div class="pricing-footer">
               <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
@@ -192,75 +183,7 @@ License: You must have a valid license purchased only from themeforest (the abov
           </div>
         </div>
         <!-- Pricing item END -->
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Package A</h3>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-              	<strong>$<em>700</em></strong>
-              </div>
-	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> 2  次上門進度跟進</li>
-	            <li><i class="fa fa-circle"></i> 10 次詳細問題查閱</li>
-				<li><i class="fa fa-circle"></i> 6  個裝修問題跟進</li>
-	            <li><i class="fa fa-circle"></i> 2  次甲醛濃度檢查</li>
-	          </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Package B</h3>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-              	<strong>$<em>1300</em></strong>
-              </div>
-	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> 4  次上門進度跟進</li>
-	            <li><i class="fa fa-circle"></i> 20 次詳細問題查閱</li>
-				<li><i class="fa fa-circle"></i> 12 個裝修問題跟進</li>
-	            <li><i class="fa fa-circle"></i> 4  次甲醛濃度檢查</li>
-	          </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
-        <!-- Pricing item BEGIN -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3>Package C</h3>
-            </div>
-            <div class="pricing-content">
-              <div class="pi-price">
-              	<strong>$<em>2300</em></strong>
-              </div>
-	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> 8  次上門進度跟進</li>
-	            <li><i class="fa fa-circle"></i>  &infin; 次詳細問題查閱</li>
-				<li><i class="fa fa-circle"></i>  &infin; 個裝修問題跟進</li>
-	            <li><i class="fa fa-circle"></i>  &infin;  次甲醛濃度檢查</li>
-	          </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- Pricing item END -->
+        
       </div>
     </div>
   </div>
