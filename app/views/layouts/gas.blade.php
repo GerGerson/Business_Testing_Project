@@ -210,6 +210,8 @@ License: You must have a valid license purchased only from themeforest(the above
 						}
 					});
 			}else{
+				$('#record_graph_div').hide();
+				$('#record_table_div').hide();
 				$('#msg').empty();
 				$('#msg').append("No Order Selected");
 				$('#msg').show();

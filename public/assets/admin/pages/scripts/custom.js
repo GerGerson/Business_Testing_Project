@@ -8,6 +8,21 @@ var Custom = function () {
     var myFunc = function(text) {
         alert(text);
     }
+	
+	function showTooltip(x, y, contents) {
+		$('<div id="tooltip">' + contents + '</div>').css({
+				position: 'absolute',
+				display: 'none',
+				top: y + 5,
+				left: x + 15,
+				border: '1px solid #333',
+				padding: '4px',
+				color: '#fff',
+				'border-radius': '3px',
+				'background-color': '#333',
+				opacity: 0.80
+			}).appendTo("body").fadeIn(200);
+	}
 
     // public functions
     return {
@@ -42,9 +57,10 @@ var Custom = function () {
 						data: data1,
 						bars: {
 							show: true,
-							barWidth: 0.5,
+							barWidth: 0.8,
 							fill: true,
-							order: 1
+							order: 1,
+							align: 'left'
 						},
 						color: ['#BAD9F5']
 					},
@@ -53,9 +69,10 @@ var Custom = function () {
 						data: data2,
 						bars: {
 							show: true,
-							barWidth: 0.5,
+							barWidth: 0.8,
 							fill: true,
-							order: 2
+							order: 2,
+							align: 'left'
 						},
 						color: ['#baf5d6']
 					}
@@ -97,10 +114,13 @@ var Custom = function () {
                         },
 						series: {
 							shadowSize: 1
+						},
+						legend: {
+							show: true
 						}
-						
                     });
-
+					
+				
                 $("#site_activities").bind("plothover", function (event, pos, item) {
                     $("#x").text(pos.x.toFixed(2));
                     $("#y").text(pos.y.toFixed(2));
@@ -110,7 +130,7 @@ var Custom = function () {
                             $("#tooltip").remove();
                             var x = item.datapoint[0].toFixed(2),
                                 y = item.datapoint[1].toFixed(2);
-                            showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + 'M$');
+                            showTooltip(item.pageX, item.pageY, y);
                         }
                     }
                 });
@@ -118,6 +138,8 @@ var Custom = function () {
                 $('#site_activities').bind("mouseleave", function () {
                     $("#tooltip").remove();
                 });
+				
+				
       
             }       
         }
