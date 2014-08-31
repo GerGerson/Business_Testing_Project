@@ -160,8 +160,11 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <!-- for chart -->
 <script src="../../assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.valuelabels.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+
+
 <!-- for chart -->
 <!--END PAGE LEVEL PLUGINS-->
 

@@ -13,8 +13,8 @@ var Custom = function () {
 		$('<div id="tooltip">' + contents + '</div>').css({
 				position: 'absolute',
 				display: 'none',
-				top: y + 5,
-				left: x + 15,
+				top: y - 40,
+				left: x + 45,
 				border: '1px solid #333',
 				padding: '4px',
 				color: '#fff',
@@ -22,6 +22,14 @@ var Custom = function () {
 				'background-color': '#333',
 				opacity: 0.80
 			}).appendTo("body").fadeIn(200);
+	}
+	
+	function showValue(chart){
+		var series = chart.getAxes();
+		console.log(series);
+		for (var i = 0; i < series.length; ++i){
+			console.log(series);
+		}
 	}
 
     // public functions
@@ -115,7 +123,7 @@ var Custom = function () {
 						series: {
 							shadowSize: 1
 						},
-						legend: {
+						valueLabels: {
 							show: true
 						}
                     });
@@ -131,6 +139,7 @@ var Custom = function () {
                             var x = item.datapoint[0].toFixed(2),
                                 y = item.datapoint[1].toFixed(2);
                             showTooltip(item.pageX, item.pageY, y);
+							console.log(item.pageX + ' - ' + item.pageY);
                         }
                     }
                 });
