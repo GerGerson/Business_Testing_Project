@@ -64,10 +64,10 @@
 			</div>
 			<div class="details">
 				<div class="number">
-					 5
+					 10
 				</div>
 				<div class="desc">
-					 最新讀數
+					 位置#1讀數
 				</div>
 			</div>
 			<a class="more" href="#">
@@ -83,10 +83,10 @@
 			</div>
 			<div class="details">
 				<div class="number">
-					 7
+					 9
 				</div>
 				<div class="desc">
-					 上次讀數
+					 位置#2讀數
 				</div>
 			</div>
 			<a class="more" href="#">
@@ -102,10 +102,69 @@
 			</div>
 			<div class="details">
 				<div class="number">
-					 -40%
+					 7
 				</div>
 				<div class="desc">
-					 讀數+/-
+					 位置#3讀數
+				</div>
+			</div>
+			<a class="more" href="#">
+			View more <i class="m-icon-swapright m-icon-white"></i>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="dashboard-stat blue-madison">
+			<div class="visual">
+				<i class="fa fa-comments"></i>
+			</div>
+			<div class="details">
+				<div class="number">
+					 8
+				</div>
+				<div class="desc">
+					 位置#4讀數
+				</div>
+			</div>
+			<a class="more" href="#">
+			View more <i class="m-icon-swapright m-icon-white"></i>
+			</a>
+		</div>
+	</div>
+		
+	<div class="col-md-4">
+		<div class="dashboard-stat blue-madison">
+			<div class="visual">
+				<i class="fa fa-comments"></i>
+			</div>
+			<div class="details">
+				<div class="number">
+					 5
+				</div>
+				<div class="desc">
+					 位置#5讀數
+				</div>
+			</div>
+			<a class="more" href="#">
+			View more <i class="m-icon-swapright m-icon-white"></i>
+			</a>
+		</div>
+	</div>
+	
+	<div class="col-md-4">
+		<div class="dashboard-stat blue-madison">
+			<div class="visual">
+				<i class="fa fa-comments"></i>
+			</div>
+			<div class="details">
+				<div class="number">
+					 1
+				</div>
+				<div class="desc">
+					 位置#6讀數
 				</div>
 			</div>
 			<a class="more" href="#">
@@ -135,6 +194,136 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>
+						 位置#
+					</th>
+					<th>
+						 讀數
+					</th>
+					<th>
+						 標準值
+					</th>
+					<th>
+						 讀數與標準值差
+					</th>
+					<th>
+						 濃度水平
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						 1
+					</td>
+					<td class="">
+						 10
+					</td>
+					<td class="">
+						 2
+					</td>
+					<td class="danger">
+						 500%
+					</td>
+					<td class="danger">
+						 偏高
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 2
+					</td>
+					<td class="">
+						 9
+					</td>
+					<td class="">
+						 2
+					</td>
+					<td class="danger">
+						 450%
+					</td>
+					<td class="danger">
+						偏高
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 3
+					</td>
+					<td class="">
+						 7
+					</td>
+					<td class="">
+						 2
+					</td>
+					<td class="danger">
+						 350%
+					</td>
+					<td class="danger">
+						偏高
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 4
+					</td>
+					<td class="">
+						 8
+					</td>
+					<td class="">
+						 2
+					</td>
+					<td class="danger">
+						 400%
+					</td>
+					<td class="danger">
+						偏高
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 5
+					</td>
+					<td class="">
+						 5
+					</td>
+					<td class="">
+						 2
+					</td>
+					<td class="warning">
+						 250%
+					</td>
+					<td class="warning">
+						 中等
+					</td>
+				</tr>
+				<tr>
+					<td>
+						 6
+					</td>
+					<td class="">
+						1
+					</td>
+					<td class="">
+						2
+					</td>
+					<td class="success">
+						 50%
+					</td>
+					<td class="success">
+						 低
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 @stop

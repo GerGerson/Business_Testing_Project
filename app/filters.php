@@ -88,17 +88,17 @@ Route::filter('csrf', function()
 
 Route::filter('login_auth_check', function()
 {
-	if (isset($_COOKIE["decoration_uid"]) == false || isset($_COOKIE["decoration_cname"]) == false || isset($_COOKIE["decoration_ename"]) == false)
+	if (isset($_COOKIE["uid"]) == false || isset($_COOKIE["email"]) == false )
 	{
-		return View::make("simple_login");
+		return View::make("login");
 	}else{
-		return Redirect::to("/quotation");
+		return Redirect::to("/");
 	}
 });
 
 Route::filter('quotation_auth_check', function()
 {
-	if (isset($_COOKIE["decoration_uid"]) == false || isset($_COOKIE["decoration_cname"]) == false || isset($_COOKIE["decoration_ename"]) == false)
+	if (isset($_COOKIE["uid"]) == false || isset($_COOKIE["email"]) == false)
 	{
 		return Redirect::to("/login");;
 	}

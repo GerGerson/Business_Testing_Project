@@ -20,61 +20,54 @@ var Custom = function () {
                 $('#site_activities_loading').hide();
                 $('#site_activities_content').show();
 
-                var data1 = [
-                    ['DEC', 10],
-                    ['JAN', 9],
-                    ['FEB', 8],
-                    ['MAR', 7],
-                    ['APR', 6], 
-                    ['MAY', 5],
-                    ['JUN', 4],
-                    ['JUL', 3],
-                    ['AUG', 2],
-                    ['SEP', 1],
-                ]; 
 
-				data1 = gas_value;
-           
+				//data1 = gas_value;
+				data1= [
+					['位置#1讀數', 10],
+					['位置#2讀數', 9],
+					['位置#3讀數', 7],
+					['位置#4讀數', 8],
+					['位置#5讀數', 5],
+					['位置#6讀數', 1]
+				];
+				data2 = [
+					['標準', 2]
+				];
+				
+				var data = [
+					{
+						label: "Read Value",
+						data: data1,
+						bars: {
+							show: true,
+							barWidth: 0.5,
+							fill: true,
+							order: 1
+						},
+						color: ['#BAD9F5']
+					},
+					{
+						label: "Standard",
+						data: data2,
+						bars: {
+							show: true,
+							barWidth: 0.5,
+							fill: true,
+							order: 2
+						},
+						color: ['#baf5d6']
+					}
+				];
                         
-                var plot_statistics = $.plot($("#site_activities"),
-
-                    [{
-                        data: data1,
-                        lines: {
-                            fill: 0.2,
-                            lineWidth: 0,
-                        },
-                        color: ['#BAD9F5']
-                    }, {
-                        data: data1,
-                        points: {
-                            show: true,
-                            fill: true,
-                            radius: 4,
-                            fillColor: "#9ACAE6",
-                            lineWidth: 2
-                        },
-                        color: '#9ACAE6',
-                        shadowSize: 1
-                    }, {
-                        data: data1,     
-                        lines: { 
-                            show: true, 
-                            fill: false,
-                            lineWidth: 3 
-                        },                   
-                        color: '#9ACAE6',
-                        shadowSize: 0
-                    } 
-                    ],
-
-                    {
-
-                        xaxis: {
+                var plot_statistics = $.plot($("#site_activities"), data,{
+						xaxis: {
+							min: 0,
+							max: 7,
                             tickLength: 0,
-                            tickDecimals: 0,
+							tickSize: 1,
+                            tickDecimals: 5,
                             mode: "categories",
-                            min: 0,
+							axisLabelPadding: 5,
                             font: {
                                 lineHeight: 18,
                                 style: "normal",
@@ -90,7 +83,7 @@ var Custom = function () {
                                 lineHeight: 14,
                                 style: "normal",
                                 variant: "small-caps",
-                                color: "#6F7B8A"
+                                color: "#6F7B8A",
                             }
                         },
                         grid: {
@@ -99,7 +92,11 @@ var Custom = function () {
                             tickColor: "#eee",
                             borderColor: "#eee",
                             borderWidth: 1
-                        }
+                        },
+						series: {
+							shadowSize: 1
+						}
+						
                     });
 
                 $("#site_activities").bind("plothover", function (event, pos, item) {

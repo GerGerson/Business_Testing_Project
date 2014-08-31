@@ -58,7 +58,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="page-lock">
 	<div class="page-body">
 		<div class="page-lock-info">
-			<form class="form-horzontal" action="index.html">
+			<div id="LoginFail"></div>
+		
+			<form id="login" class="form-horzontal" action="">
 				
 				<div class="form-group">
 					<div class="input-inline">
@@ -66,7 +68,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							<span class="input-group-addon">
 								<i class="fa fa-envelope"></i>
 							</span>
-							<input type="text" class="form-control" placeholder="電郵">
+							<input type="text" class="form-control" placeholder="電郵" id="email">
 						</div>
 					</div>
 				</div>
@@ -77,13 +79,13 @@ License: You must have a valid license purchased only from themeforest(the above
 							<span class="input-group-addon">
 								<i class="fa fa-lock"></i>
 							</span>
-							<input type="text" class="form-control" placeholder="密碼">
+							<input type="text" class="form-control" placeholder="密碼" id="password">
 						</div>
 					</div>
 				</div>
 				
 
-				<button type="button"  class="btn  blue">登記</button>
+				<button type="submit"  class="btn  blue">登記</button>
 
 				
 				
@@ -125,6 +127,36 @@ jQuery(document).ready(function() {
 	Metronic.init(); // init metronic core components
 	Layout.init(); // init current layout
 	//QuickSidebar.init() // init quick sidebar
+	
+	$("#login").submit(function(e){
+		var strHtml;
+		
+		e.preventDefault();
+		
+		$.ajax({
+			type: "POST",
+			url: "/login_check",
+			data: {email: $("#email").val(), password: $("#password").val()},
+			success: function(data){
+						if (data == "OK"){
+							window.location = "/gas"
+						}else{
+							if (parseInt(data) == 0 ){
+								strHtml = "<div class='alert alert-danger'>";
+								strHtml += "<button class='close' data-close='alert'></button>";
+								strHtml += "<span>";
+								strHtml += "登入用戶名或密碼不正確";
+								strHtml += "</span>";
+								strHtml += "</div>";
+								
+								$("#LoginFail" ).append(strHtml);
+							}
+						}
+			}
+		});
+		
+		return false;
+	  });
 });
 </script>
 <!-- END JAVASCRIPTS -->
