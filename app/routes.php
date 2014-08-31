@@ -60,6 +60,8 @@ Route::get('/gas/desc3', function(){
 	return View::make("onepage-service-desc_3");
 });
 
+Route::get('/gas/getRecord/{order_id}', 'GasController@getRecord');
+
 //Login Part
 Route::post('/login_check', 'MemberController@LoginCheck');
 
@@ -67,11 +69,11 @@ Route::group(array('before' => 'login_auth_check'), function()
 {
 	Route::get('/login', '');
 });
-/*
+
 Route::group(array('before' => 'quotation_auth_check'), function()
 {
 	Route::get('/gasDetail', 'GasController@index');
 });
-*/
-Route::get('/gasDetail', 'GasController@index');
+
+//Route::get('/gasDetail', 'GasController@index');
 Route::get('/logout', 'MemberController@Logout');

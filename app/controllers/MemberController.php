@@ -7,7 +7,7 @@ class MemberController extends BaseController {
 		$password = hash('md5',Input::get('password'));
 		//$SaveMode = Input::get('SaveMode');
 		
-		$data = DB::Select("SELECT * FROM user WHERE email = '". $email ."' AND password = '" . $password . "'");
+		$data = DB::Select("SELECT * FROM UserInfo WHERE email = '". $email ."' AND login_password = '" . $password . "'");
 
 		if (count($data) == 0){
 			echo (string)count($data);
@@ -18,7 +18,7 @@ class MemberController extends BaseController {
 			//Reset Cookie
 			$this->resetCookie();
 			
-			setcookie("uid", $data[0]->uid, $e_time, "/");
+			setcookie("uid", $data[0]->id, $e_time, "/");
 			setcookie("email", $email, $e_time, "/");
 			
 			return "OK";

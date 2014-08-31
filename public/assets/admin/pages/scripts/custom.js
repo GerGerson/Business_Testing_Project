@@ -21,7 +21,8 @@ var Custom = function () {
                 $('#site_activities_content').show();
 
 
-				//data1 = gas_value;
+				data1 = gas_value;
+				/*
 				data1= [
 					['位置#1讀數', 10],
 					['位置#2讀數', 9],
@@ -30,6 +31,7 @@ var Custom = function () {
 					['位置#5讀數', 5],
 					['位置#6讀數', 1]
 				];
+				*/
 				data2 = [
 					['標準', 2]
 				];

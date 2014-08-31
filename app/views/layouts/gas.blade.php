@@ -171,13 +171,50 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="/assets/admin/pages/scripts/custom.js" type="text/javascript"></script>
 <script>
     jQuery(document).ready(function() {    
-		var gas_value = <?php echo json_encode($gas_value)?>;
 	
 		Metronic.init(); // init metronic core components
 		Layout.init(); // init current layout
 		//Layout.initImageZoom();
 		Index.init();
-		Custom.chart(gas_value);
+		//gas_value);
+		
+		$('#record_graph_div').hide();
+		$('#record_table_div').hide();
+		
+		$('#order_selector').live('change', function(){
+			if($('#order_selector').val() != 0){
+				$.get('/gas/getRecord/' +$('#order_selector').val())
+					.done(function(data){
+						if(data.length > 0){
+							$('#record_graph_div').show();
+							$('#record_table > tbody:last').empty();
+							$.each(data, function(i, v){
+								var standard_over_value = Math.round((v[1]/2)*100);
+								if(standard_over_value >= 200){
+									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="danger">'+standard_over_value+'%</td><td class="danger">高</td></tr>');
+								}else if(standard_over_value > 50 && standard_over_value < 200){
+									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="warning">'+standard_over_value+'%</td><td class="warning">中</td></tr>');
+								}else{
+									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="success">'+standard_over_value+'%</td><td class="success">低</td></tr>');
+								}
+							});
+							$('#record_table_div').show();
+							$('#msg').hide();
+							Custom.chart(data);
+						}else{
+							$('#record_graph_div').hide();
+							$('#record_table_div').hide();
+							$('#msg').empty();
+							$('#msg').append("No Data Found");
+							$('#msg').show();
+						}
+					});
+			}else{
+				$('#msg').empty();
+				$('#msg').append("No Order Selected");
+				$('#msg').show();
+			}
+		});
     });
 </script>
 
