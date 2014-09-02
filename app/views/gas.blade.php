@@ -9,11 +9,6 @@
 		</span>
 		</a>
 	</li>
-	<li class="classic-menu-dropdown active">
-		<a href="/timeline">
-		進度<span class="selected">
-		</a>
-	</li>
 </ul>
 @stop
 
@@ -67,6 +62,8 @@
 	</div>
 </div>
 
+<hr/>
+
 <div class="row">
 	<div class="col-md-12">
 		<div id="msg" class="alert alert-warning">
@@ -74,6 +71,8 @@
 		</div>
 	</div>
 </div>
+
+<hr/>
 			
 <div id="record_graph_div" class="row">
 	<div class="col-md-12 article-block">
@@ -97,6 +96,8 @@
 		</div>
 	</div>
 </div>
+
+<hr/>
 
 <div id="record_table_div" class="row">
 	<div class="col-md-12">
