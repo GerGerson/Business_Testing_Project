@@ -35,4 +35,13 @@ class MemberController extends BaseController {
 		setcookie("uid", "", 0);
 		setcookie("email", "", 0);
 	}
+	
+	public function IsLoggedUser(){
+		$uid = $_COOKIE["uid"];
+		if (isset($_COOKIE["uid"])){
+			index();
+		}else{
+			return View::make('/main');
+		}
+	}
 }

@@ -52,10 +52,33 @@
   border-right: solid 0px #e8e7e7;
   padding-top: 50px;
 }
+
 /*Overide blue.css(theme)*/
 .services-block .fa_danger{
   background: #f05250;
 }
 .services-block .fa_danger:after {
   border-top: 9px solid #f05250;
+}
+
+.signin{
+  padding: 1px 10px;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none !important;
+  background-image: none !important;
+  filter: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+
+.header-navigation li .btn-sign-in {
+  float: left;
+  padding: 0;
+  margin: -5px 0 0 25px;
+  font-size: 18px;
+  font-weight: 700;
 }

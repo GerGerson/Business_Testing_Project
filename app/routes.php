@@ -36,10 +36,7 @@ Route::get('/gas', 'GasController@index');
 
 Route::get('/timeline/photo/{id}', 'PhotoController@resize');
 Route::get('/timeline/photo/{id}/{problem_id}', 'PhotoController@resize_problem');
-Route::get('/main', function(){
-	//return View::make("onepage-index");
-	return View::make("onepage-index2");
-});
+Route::get('/main', 'MemberController@IsLoggedUser');
 
 Route::get('/login',function(){
 	return View::make("login");

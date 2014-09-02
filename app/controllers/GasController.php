@@ -28,4 +28,5 @@ class GasController extends BaseController {
 		
 		return $gas_value;
 	}
+	
 }
