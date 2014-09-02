@@ -74,7 +74,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
         <!-- Navigation BEGIN -->
-        <div class="col-md-10 pull-right">
+        <div class="col-md-8">
           <ul class="header-navigation">
             <li class="current"><a href="#about">關於置簡單</a></li>
             <li><a href="#services">服務</a></li>
@@ -83,6 +83,7 @@ License: You must have a valid license purchased only from themeforest (the abov
             <li><a href="#contact">聯絡我們</a></li>
 			<li class="btn-register"><a href="/register" class="btn red signin">註冊</a></li>
 			<li class="btn-sign-in"><a href="/login" class="btn blue signin">登入</a></li>
+
           </ul>
         </div>
         <!-- Navigation END -->
