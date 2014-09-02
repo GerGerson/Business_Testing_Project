@@ -85,7 +85,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</div>
 				
 
-				<button type="submit"  class="btn  blue">註冊</button>
+				<button type="submit"  class="btn  blue">登記</button>
 
 				
 				
@@ -134,7 +134,7 @@ jQuery(document).ready(function() {
 		
 		$.ajax({
 			type: "POST",
-			url: "/login_check",
+			url: "/register",
 			data: {email: $("#email").val(), password: $("#password").val()},
 			success: function(data){
 						if (data == "OK"){
@@ -144,7 +144,7 @@ jQuery(document).ready(function() {
 								strHtml = "<div class='alert alert-danger'>";
 								strHtml += "<button class='close' data-close='alert'></button>";
 								strHtml += "<span>";
-								strHtml += "登入用戶名或密碼不正確";
+								strHtml += "伺服器錯誤";
 								strHtml += "</span>";
 								strHtml += "</div>";
 								

@@ -35,3 +35,9 @@ Route::group(array('before' => 'gas_detail_auth_check'), function()
 
 //Route::get('/gasDetail', 'GasController@index');
 Route::get('/logout', 'MemberController@Logout');
+
+Route::get('/register', function(){
+	return View::make('register');
+});
+
+Route::post('/register', 'MemberController@Register');
