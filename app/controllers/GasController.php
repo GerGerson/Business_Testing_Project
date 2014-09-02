@@ -11,6 +11,8 @@ class GasController extends BaseController {
 		return View::make('gas', array('orders' => $data));
 	}
 	
+	//Testing
+	
 	public function getRecord($order_id){
 		if(!is_numeric($order_id)){
 			$order_id = 0;
