@@ -88,18 +88,16 @@ Route::filter('csrf', function()
 
 Route::filter('login_auth_check', function()
 {
-	if (isset($_COOKIE["uid"]) == false || isset($_COOKIE["email"]) == false )
+	if (isset($_COOKIE["uid"]) == true)
 	{
-		return View::make("login");
-	}else{
-		return Redirect::to("/");
+		return Redirect::to("/gas");
 	}
 });
 
-Route::filter('quotation_auth_check', function()
+Route::filter('gas_detail_auth_check', function()
 {
-	if (isset($_COOKIE["uid"]) == false || isset($_COOKIE["email"]) == false)
+	if (isset($_COOKIE["uid"]) == false)
 	{
-		return Redirect::to("/login");;
+		return Redirect::to("/login");
 	}
 });
