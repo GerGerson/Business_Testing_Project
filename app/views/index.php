@@ -81,7 +81,8 @@ License: You must have a valid license purchased only from themeforest (the abov
             <li><a href="#benefits1">說明</a></li>
             <li><a href="#prices">收費</a></li>
             <li><a href="#contact">聯絡我們</a></li>
-			<li><a href="/login" class="btn blue signin">註冊</a></li>
+			<li class="btn-sign-in"><a href="/register" class="btn red signin">註冊</a></li>
+			<li class="btn-sign-in"><a href="/login" class="btn blue signin">登入</a></li>
           </ul>
         </div>
         <!-- Navigation END -->

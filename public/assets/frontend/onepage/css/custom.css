@@ -74,11 +74,17 @@
   text-shadow: none;
 }
 
-
 .header-navigation li .btn-sign-in {
   float: left;
   padding: 0;
-  margin: -5px 0 0 25px;
+  margin: -5px 0 0 10px;
   font-size: 18px;
   font-weight: 700;
+}
+
+.register_font {
+	color : #2e7af7;
+	font-size : 25px;
+	font-weight: 700;
+	padding : 5px 0;
 }

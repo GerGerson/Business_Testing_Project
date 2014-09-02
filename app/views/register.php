@@ -39,7 +39,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
 <link id="style_color" href="../../assets/admin/layout/css/themes/blue.css" rel="stylesheet" type="text/css"/>
-<link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/frontend/onepage/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
 </head>
@@ -61,7 +61,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div id="LoginFail"></div>
 		
 			<form id="login" class="form-horzontal" action="">
-				
+				<p class="register_font">立即註冊，體驗新服務！</p>
 				<div class="form-group">
 					<div class="input-inline">
 						<div class="input-group">
@@ -85,7 +85,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</div>
 				
 
-				<button type="submit"  class="btn  blue">登記</button>
+				<button type="submit"  class="btn  blue">註冊</button>
 
 				
 				
