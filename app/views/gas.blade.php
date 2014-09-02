@@ -62,7 +62,10 @@
 	</div>
 </div>
 
+
 <hr/>
+
+
 
 <div class="row">
 	<div class="col-md-12">
@@ -72,7 +75,6 @@
 	</div>
 </div>
 
-<hr/>
 			
 <div id="record_graph_div" class="row">
 	<div class="col-md-12 article-block">
@@ -97,7 +99,9 @@
 	</div>
 </div>
 
-<hr/>
+<div class="line">
+	<hr/>
+</div>
 
 <div id="record_table_div" class="row">
 	<div class="col-md-12">

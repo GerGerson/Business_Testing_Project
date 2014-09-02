@@ -183,6 +183,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		
 		$('#record_graph_div').hide();
 		$('#record_table_div').hide();
+		$('.line').hide();
 		
 		$('#order_selector').live('change', function(){
 			if($('#order_selector').val() != 0){
@@ -202,11 +203,13 @@ License: You must have a valid license purchased only from themeforest(the above
 								}
 							});
 							$('#record_table_div').show();
+							$('.line').show();
 							$('#msg').hide();
 							Custom.chart(data);
 						}else{
 							$('#record_graph_div').hide();
 							$('#record_table_div').hide();
+							$('.line').hide();
 							$('#msg').empty();
 							$('#msg').append("No Data Found");
 							$('#msg').show();
@@ -215,6 +218,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			}else{
 				$('#record_graph_div').hide();
 				$('#record_table_div').hide();
+				$('.line').hide();
 				$('#msg').empty();
 				$('#msg').append("No Order Selected");
 				$('#msg').show();
