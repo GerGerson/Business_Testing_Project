@@ -61,6 +61,32 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Theme styles END -->
 </head>
 <body>
+
+	<!-- BEGIN TOP BAR -->
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <!-- BEGIN TOP BAR LEFT PART -->
+                <div class="col-md-6 col-sm-6 additional-shop-info">
+                    <ul class="list-unstyled list-inline">
+                        <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
+                        <li><i class="fa fa-envelope-o"></i><span>info@keenthemes.com</span></li>
+                    </ul>
+                </div>
+                <!-- END TOP BAR LEFT PART -->
+                <!-- BEGIN TOP BAR MENU -->
+                <div class="col-md-6 col-sm-6 additional-nav">
+                    <ul class="list-unstyled list-inline pull-right">
+                        <li><a href="/login">登入</a></li>
+                        <li><a href="/register">註冊</a></li>
+                    </ul>
+                </div>
+                <!-- END TOP BAR MENU -->
+            </div>
+        </div>        
+    </div>
+    <!-- END TOP BAR -->
+
   <!-- Header BEGIN -->
   <div class="header header-mobi-ext">
     <div class="container">
@@ -74,16 +100,13 @@ License: You must have a valid license purchased only from themeforest (the abov
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
         <!-- Navigation BEGIN -->
-        <div class="col-md-8">
+        <div class="col-md-10">
           <ul class="header-navigation">
             <li class="current"><a href="#about">關於置簡單</a></li>
             <li><a href="#services">服務</a></li>
             <li><a href="#benefits1">說明</a></li>
             <li><a href="#prices">收費</a></li>
             <li><a href="#contact">聯絡我們</a></li>
-			<li class="btn-register"><a href="/register" class="btn red signin">註冊</a></li>
-			<li class="btn-sign-in"><a href="/login" class="btn blue signin">登入</a></li>
-
           </ul>
         </div>
         <!-- Navigation END -->
