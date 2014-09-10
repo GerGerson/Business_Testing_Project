@@ -104,7 +104,7 @@ License: You must have a valid license purchased only from themeforest (the abov
           <ul class="header-navigation">
             <li class="current"><a href="#about">關於置簡單</a></li>
             <li><a href="#services">服務</a></li>
-            <li><a href="#benefits1">說明</a></li>
+            <li><a href="#benefits1">簡介</a></li>
             <li><a href="#prices">收費</a></li>
             <li><a href="#contact">聯絡我們</a></li>
           </ul>
@@ -171,7 +171,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-12 text-left">
 			<div class="content">
-				<p><i class="fa fa-clock-o"></i> 隨時安排上門時間</p>
+				<p><i class="fa fa-clock-o"></i> 安排上門時間</p>
 				<p><i class="fa fa-edit"></i> 隨時查閱檢測結果</p>
 				<p><i class="fa fa-search"></i> 提供簡淺易明圖表、報表</p>
 			</div>
@@ -216,31 +216,32 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Prices block END -->
 
   <!-- Testimonials block BEGIN -->
+  <!--
   <div class="testimonials-block content content-center margin-bottom-65">
     <div class="container">
-      <h2>Customer <strong>testimonials</strong></h2>
-      <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h4>
+      <h2>用戶 <strong>感想</strong></h2>
+	  <br>
 
       <div class="carousel slide" data-ride="carousel" id="testimonials-block">
-        <!-- Wrapper for slides -->
+        
         <div class="carousel-inner">
-          <!-- Carousel items -->
+          
           <div class="active item">
-            <blockquote><p>This is the most awesome, full featured, easy, costomizeble theme. It’s extremely responsive and very helpful to all suggestions.</p></blockquote>
-            <span class="testimonials-name">Mark Doe</span>
+            <blockquote><p>一試先知屋企甲醛超曬標</p></blockquote>
+            <span class="testimonials-name">將軍澳粱先生</span>
           </div>
-          <!-- Carousel items -->
+          
           <div class="item">
             <blockquote><p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse.</p></blockquote>
             <span class="testimonials-name">Joe Smith</span>
           </div>
-          <!-- Carousel items -->
+          
           <div class="item">
             <blockquote><p>Williamsburg carles vegan helvetica. Cosby sweater eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.</p></blockquote>
             <span class="testimonials-name">Linda Adams</span>
           </div>
         </div>
-        <!-- Indicators -->
+        
         <ol class="carousel-indicators">
           <li data-target="#testimonials-block" data-slide-to="0" class="active"></li>
           <li data-target="#testimonials-block" data-slide-to="1"></li>
@@ -248,7 +249,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         </ol>
       </div>
     </div>
-  </div>
+  </div>-->
   <!-- Testimonials block END -->
 
   <!-- BEGIN PRE-FOOTER -->
@@ -256,44 +257,25 @@ License: You must have a valid license purchased only from themeforest (the abov
     <div class="container">
       <div class="row">
         <!-- BEGIN BOTTOM ABOUT BLOCK -->
-        <div class="col-md-4 col-sm-6 pre-footer-col">
-          <h2>About us</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat. Nostrud exerci tation ullamcorper suscipit lobortis nisl aliquip  commodo consequat. </p>
-          <p>Duis autem vel eum iriure dolor vulputate velit esse molestie at dolore.</p>
+        <div class="col-md-6 col-sm-6 pre-footer-col">
+          <h2>關於置簡單</h2>
+          <p>安居置業都係大陪份打工仔既目標，但置業往往用盡大家積蓄，而忽略居住質素。</p>
+          <p>置簡單希望可以從多方面提供資訊、服務，以幫助大家易安居‧易置業。</p>
         </div>
         <!-- END BOTTOM ABOUT BLOCK -->
 
-        <!-- BEGIN TWITTER BLOCK --> 
-        <div class="col-md-4 col-sm-6 pre-footer-col">
-          <h2 class="margin-bottom-0">Latest Tweets</h2>
-          <a class="twitter-timeline" href="https://twitter.com/twitterapi" data-tweet-limit="2" data-theme="dark" data-link-color="#57C8EB" data-widget-id="455411516829736961" data-chrome="noheader nofooter noscrollbar noborders transparent">Loading tweets by @keenthemes...</a>      
-        </div>
-        <!-- END TWITTER BLOCK -->
         
-        <div class="col-md-4 col-sm-6 pre-footer-col">
+        <div class="col-md-5 col-md-offset-1 col-sm-6 pre-footer-col">
           <!-- BEGIN BOTTOM CONTACTS -->
-          <h2>Our Contacts</h2>
+          <h2>聯絡我們</h2>
           <address class="margin-bottom-20">
             35, Lorem Lis Street, Park Ave<br>
             California, US<br>
             Phone: 300 323 3456<br>
             Fax: 300 323 1456<br>
             Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
-            Skype: <a href="skype:metronic">metronic</a>
           </address>
           <!-- END BOTTOM CONTACTS -->
-
-          <div class="pre-footer-subscribe-box">
-            <h2>Newsletter</h2>
-            <form action="javascript:void(0);">
-              <div class="input-group">
-                <input type="text" placeholder="youremail@mail.com" class="form-control">
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="submit">Subscribe</button>
-                </span>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
     </div>
@@ -312,13 +294,8 @@ License: You must have a valid license purchased only from themeforest (the abov
         <!-- BEGIN SOCIAL ICONS -->
         <div class="col-md-6 col-sm-6 pull-right">
           <ul class="social-icons">
-            <li><a class="rss" data-original-title="rss" href="javascript:void(0);"></a></li>
             <li><a class="facebook" data-original-title="facebook" href="javascript:void(0);"></a></li>
-            <li><a class="twitter" data-original-title="twitter" href="javascript:void(0);"></a></li>
-            <li><a class="googleplus" data-original-title="googleplus" href="javascript:void(0);"></a></li>
-            <li><a class="linkedin" data-original-title="linkedin" href="javascript:void(0);"></a></li>
             <li><a class="youtube" data-original-title="youtube" href="javascript:void(0);"></a></li>
-            <li><a class="vimeo" data-original-title="vimeo" href="javascript:void(0);"></a></li>
             <li><a class="skype" data-original-title="skype" href="javascript:void(0);"></a></li>
           </ul>
         </div>
