@@ -76,8 +76,10 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- BEGIN HORIZANTAL MENU -->
 		<!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
 		<!-- DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) sidebar menu below. So the horizontal menu has 2 seperate versions -->
-		<div class="hor-menu hor-menu-light hidden-sm hidden-xs">
-			@yield('horizontal_menu')
+		<div class="hor-menu hor-menu-light hidden-sm hidden-xs" style="text-align: right; float: right">
+			<div class="col-md-12" >
+				@yield('horizontal_menu')
+			</div>
 		</div>
 		<!-- END HORIZANTAL MENU -->
 		
@@ -195,11 +197,11 @@ License: You must have a valid license purchased only from themeforest(the above
 							$.each(data, function(i, v){
 								var standard_over_value = Math.round((v[1]/2)*100);
 								if(standard_over_value >= 200){
-									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="danger">'+standard_over_value+'%</td><td class="danger">高</td></tr>');
+									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="danger">'+standard_over_value+'%</td></tr>');
 								}else if(standard_over_value > 50 && standard_over_value < 200){
-									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="warning">'+standard_over_value+'%</td><td class="warning">中</td></tr>');
+									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="warning">'+standard_over_value+'%</td></tr>');
 								}else{
-									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="success">'+standard_over_value+'%</td><td class="success">低</td></tr>');
+									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="success">'+standard_over_value+'%</td></tr>');
 								}
 							});
 							$('#record_table_div').show();

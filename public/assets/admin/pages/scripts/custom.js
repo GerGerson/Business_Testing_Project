@@ -14,7 +14,7 @@ var Custom = function () {
 				position: 'absolute',
 				display: 'none',
 				top: y - 40,
-				left: x + 45,
+				left: x - 15,
 				border: '1px solid #333',
 				padding: '4px',
 				color: '#fff',
@@ -45,6 +45,7 @@ var Custom = function () {
 
 
 				data1 = gas_value;
+				console.log(gas_value);
 				/*
 				data1= [
 					['位置#1讀數', 10],
@@ -56,7 +57,12 @@ var Custom = function () {
 				];
 				*/
 				data2 = [
-					['標準', 2]
+					[gas_value[0][0], 2],
+					[gas_value[1][0], 2],
+					[gas_value[2][0], 2],
+					[gas_value[3][0], 2],
+					[gas_value[4][0], 2],
+					[gas_value[5][0], 2]
 				];
 				
 				var data = [
@@ -68,11 +74,11 @@ var Custom = function () {
 							barWidth: 0.8,
 							fill: true,
 							order: 1,
-							align: 'left'
+							align: 'center'
 						},
 						color: ['#BAD9F5']
 					},
-					{
+					/*{
 						label: "Standard",
 						data: data2,
 						bars: {
@@ -80,21 +86,28 @@ var Custom = function () {
 							barWidth: 0.8,
 							fill: true,
 							order: 2,
-							align: 'left'
+							align: 'center'
 						},
 						color: ['#baf5d6']
+					},*/
+					{
+						label: "Standard",
+						data: data2,
+						//yaxis: 2,
+						color: "#FF0000",
+						lines: {show:true}
 					}
 				];
                         
                 var plot_statistics = $.plot($("#site_activities"), data,{
 						xaxis: {
-							min: 0,
+							min: -0.5,
 							max: 7,
                             tickLength: 0,
 							tickSize: 1,
                             tickDecimals: 5,
                             mode: "categories",
-							axisLabelPadding: 5,
+							axisLabelPadding: 500,
                             font: {
                                 lineHeight: 18,
                                 style: "normal",
@@ -102,17 +115,19 @@ var Custom = function () {
                                 color: "#6F7B8A"
                             }
                         },
-                        yaxis: {
-                            ticks: 5,
-                            tickDecimals: 0,
-                            tickColor: "#eee",
-                            font: {
-                                lineHeight: 14,
-                                style: "normal",
-                                variant: "small-caps",
-                                color: "#6F7B8A",
-                            }
-                        },
+                        yaxis: 
+						{ 
+							position: "left",
+							ticks: 5,
+							tickDecimals: 0,
+							tickColor: "#eee",
+							font: {
+								lineHeight: 14,
+								style: "normal",
+								variant: "small-caps",
+								color: "#6F7B8A"
+							}
+						},
                         grid: {
                             hoverable: true,
                             clickable: true,
@@ -121,10 +136,8 @@ var Custom = function () {
                             borderWidth: 1
                         },
 						series: {
+							
 							shadowSize: 1
-						},
-						valueLabels: {
-							show: true
 						}
                     });
 					

@@ -1,11 +1,10 @@
 @extends('layouts/gas')
-
 @section('horizontal_menu')
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav" >
 	<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
-	<li >
-		<a href="/">
-		首頁 
+	<li>
+		<a href="/logout">
+		登出 
 		</span>
 		</a>
 	</li>
@@ -34,19 +33,9 @@
 	<div class="col-md-12">
 		<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 		<h3 class="page-title">
-			氣體讀數 <small> 已於 - 更新 </small>
+			氣體讀數 <small> </small>
 			<!-- testing -->
 		</h3>
-		<ul class="page-breadcrumb breadcrumb">
-			<li>
-				<i class="fa fa-home"></i>
-				<a href="/">首頁</a>
-				<i class="fa fa-angle-right"></i>
-			</li>
-			<li>
-				<a href="#">氣體讀數</a>
-			</li>
-		</ul>
 		<!-- END PAGE TITLE & BREADCRUMB-->
 	</div>
 </div>
@@ -119,9 +108,6 @@
 					</th>
 					<th>
 						 讀數與標準值差
-					</th>
-					<th>
-						 濃度水平
 					</th>
 				</tr>
 			</thead>
