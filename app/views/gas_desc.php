@@ -76,11 +76,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         <!-- Navigation BEGIN -->
         <div class="col-md-10 pull-right">
           <ul class="header-navigation">
-            <li class="current"><a href="#about">關於置簡單</a></li>
-            <li><a href="#services">服務</a></li>
-            <li><a href="#benefits1">簡介</a></li>
-            <li><a href="#prices">收費</a></li>
-            <li><a href="#contact">聯絡我們</a></li>
+            <li><a href="/">回主頁</a></li>
           </ul>
         </div>
         <!-- Navigation END -->

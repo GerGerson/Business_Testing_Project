@@ -197,14 +197,13 @@ License: You must have a valid license purchased only from themeforest (the abov
               	<strong>$<em>0</em></strong>
               </div>
 	          <ul class="list-unstyled">
-	            <li><i class="fa fa-circle"></i> 6個指定地點檢查</li>
-	            <li><i class="fa fa-circle"></i> 1小時測量服務</li>
+				<li><i class="fa fa-circle"></i> 不設任何收費 </li>
+	            <li><i class="fa fa-circle"></i> 6 個指定地點檢查 </li>
+	            <li><i class="fa fa-circle"></i> 即時免費意見諮詢 </li>
 	          </ul>
-			  <br><br><br>
-			  *每次上門將再重新計算
             </div>
             <div class="pricing-footer">
-              <a class="btn btn-default" href="javascript:void(0);">Sign Up</a>
+              <a class="btn btn-default" href="/register">立即註冊</a>
             </div>
           </div>
         </div>
