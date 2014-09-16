@@ -29,4 +29,7 @@ class GasController extends BaseController {
 		return $gas_value;
 	}
 	
+	public function getStandardValue(){
+		return 0.08;
+	}
 }

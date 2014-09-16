@@ -36,7 +36,7 @@ var Custom = function () {
     return {
 
         //main function
-        chart: function (gas_value) {
+        chart: function (gas_value, standard_value) {
              if ($('#site_activities').size() != 0) {
                 //site activities
                 var previousPoint2 = null;
@@ -57,17 +57,18 @@ var Custom = function () {
 				];
 				*/
 				data2 = [
-					[gas_value[0][0], 2],
-					[gas_value[1][0], 2],
-					[gas_value[2][0], 2],
-					[gas_value[3][0], 2],
-					[gas_value[4][0], 2],
-					[gas_value[5][0], 2]
+					["位置", standard_value],
+					[" ", standard_value],
+					[" ", standard_value],
+					[" ", standard_value],
+					[" ", standard_value],
+					[" ", standard_value]
 				];
+				
 				
 				var data = [
 					{
-						label: "Read Value",
+						label: "Read Value (ppm)",
 						data: data1,
 						bars: {
 							show: true,
@@ -76,7 +77,8 @@ var Custom = function () {
 							order: 1,
 							align: 'center'
 						},
-						color: ['#BAD9F5']
+						color: ['#BAD9F5'],
+						xaxis: 1
 					},
 					/*{
 						label: "Standard",
@@ -91,30 +93,68 @@ var Custom = function () {
 						color: ['#baf5d6']
 					},*/
 					{
-						label: "Standard",
+						label: "Standard Value (ppm)",
 						data: data2,
 						//yaxis: 2,
 						color: "#FF0000",
-						lines: {show:true}
+						lines: {
+							show:true,
+						},
+						xaxis: 2
 					}
 				];
                         
                 var plot_statistics = $.plot($("#site_activities"), data,{
+						xaxes: [
+							{
+								min: -0.5,
+								max: 7,
+								tickLength: 0,
+								tickSize: 1,
+								tickDecimals: 5,
+								mode: "categories",
+								axisLabelPadding: 500,
+								font: {
+									lineHeight: 18,
+									style: "normal",
+									variant: "small-caps",
+									color: "#6F7B8A"
+								}
+							},
+							{
+								min: 0,
+								max: 0,
+								tickLength: 0,
+								tickSize: 1,
+								tickDecimals: 5,
+								mode: "categories",
+								axisLabelPadding: 500,
+								font: {
+									lineHeight: 18,
+									style: "normal",
+									variant: "small-caps",
+									color: "#6F7B8A"
+								}
+							}
+						],
+						
+						/*
 						xaxis: {
 							min: -0.5,
 							max: 7,
-                            tickLength: 0,
+							tickLength: 0,
 							tickSize: 1,
-                            tickDecimals: 5,
-                            mode: "categories",
+							tickDecimals: 5,
+							mode: "categories",
 							axisLabelPadding: 500,
-                            font: {
-                                lineHeight: 18,
-                                style: "normal",
-                                variant: "small-caps",
-                                color: "#6F7B8A"
-                            }
-                        },
+							font: {
+								lineHeight: 18,
+								style: "normal",
+								variant: "small-caps",
+								color: "#6F7B8A"
+							}
+						},
+						*/
                         yaxis: 
 						{ 
 							position: "left",
@@ -138,7 +178,10 @@ var Custom = function () {
 						series: {
 							
 							shadowSize: 1
-						}
+						},
+						valueLabels: {
+							show: true
+						}	
                     });
 					
 				

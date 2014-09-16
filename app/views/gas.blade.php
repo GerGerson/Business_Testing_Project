@@ -40,12 +40,16 @@
 	</div>
 </div>
 <!-- END PAGE HEADER-->
+
 <div class="row">
 	<div class="col-md-12">
 		<select id="order_selector">
 			<option value="0"> --- Select a Order --- </option>
 			@foreach($orders as $order)
-				<option value="{{{$order->order_id}}}">{{{$order->order_name}}}</option>
+				<?php 
+					$datetime = new DateTime($order->create_dt);
+				?>
+				<option value="{{{$order->order_id}}}">{{{$order->order_name}}} [ <?=$datetime->format('Y-m-d')?> ]</option>
 			@endforeach
 		</select>
 	</div>
