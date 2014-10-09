@@ -14,7 +14,7 @@ var Custom = function () {
 				position: 'absolute',
 				display: 'none',
 				top: y - 40,
-				left: x + 45,
+				left: x - 15,
 				border: '1px solid #333',
 				padding: '4px',
 				color: '#fff',
@@ -36,7 +36,7 @@ var Custom = function () {
     return {
 
         //main function
-        chart: function (gas_value) {
+        chart: function (gas_value, standard_value) {
              if ($('#site_activities').size() != 0) {
                 //site activities
                 var previousPoint2 = null;
@@ -45,6 +45,7 @@ var Custom = function () {
 
 
 				data1 = gas_value;
+				console.log(gas_value);
 				/*
 				data1= [
 					['位置#1讀數', 10],
@@ -56,23 +57,30 @@ var Custom = function () {
 				];
 				*/
 				data2 = [
-					['標準', 2]
+					["位置", standard_value],
+					[" ", standard_value],
+					[" ", standard_value],
+					[" ", standard_value],
+					[" ", standard_value],
+					[" ", standard_value]
 				];
+				
 				
 				var data = [
 					{
-						label: "Read Value",
+						label: "Read Value (ppm)",
 						data: data1,
 						bars: {
 							show: true,
 							barWidth: 0.8,
 							fill: true,
 							order: 1,
-							align: 'left'
+							align: 'center'
 						},
-						color: ['#BAD9F5']
+						color: ['#BAD9F5'],
+						xaxis: 1
 					},
-					{
+					/*{
 						label: "Standard",
 						data: data2,
 						bars: {
@@ -80,39 +88,86 @@ var Custom = function () {
 							barWidth: 0.8,
 							fill: true,
 							order: 2,
-							align: 'left'
+							align: 'center'
 						},
 						color: ['#baf5d6']
+					},*/
+					{
+						label: "Standard Value (ppm)",
+						data: data2,
+						//yaxis: 2,
+						color: "#FF0000",
+						lines: {
+							show:true,
+						},
+						xaxis: 2
 					}
 				];
                         
                 var plot_statistics = $.plot($("#site_activities"), data,{
+						xaxes: [
+							{
+								min: -0.5,
+								max: 7,
+								tickLength: 0,
+								tickSize: 1,
+								tickDecimals: 5,
+								mode: "categories",
+								axisLabelPadding: 500,
+								font: {
+									lineHeight: 18,
+									style: "normal",
+									variant: "small-caps",
+									color: "#6F7B8A"
+								}
+							},
+							{
+								min: 0,
+								max: 0,
+								tickLength: 0,
+								tickSize: 1,
+								tickDecimals: 5,
+								mode: "categories",
+								axisLabelPadding: 500,
+								font: {
+									lineHeight: 18,
+									style: "normal",
+									variant: "small-caps",
+									color: "#6F7B8A"
+								}
+							}
+						],
+						
+						/*
 						xaxis: {
-							min: 0,
+							min: -0.5,
 							max: 7,
-                            tickLength: 0,
+							tickLength: 0,
 							tickSize: 1,
-                            tickDecimals: 5,
-                            mode: "categories",
-							axisLabelPadding: 5,
-                            font: {
-                                lineHeight: 18,
-                                style: "normal",
-                                variant: "small-caps",
-                                color: "#6F7B8A"
-                            }
-                        },
-                        yaxis: {
-                            ticks: 5,
-                            tickDecimals: 0,
-                            tickColor: "#eee",
-                            font: {
-                                lineHeight: 14,
-                                style: "normal",
-                                variant: "small-caps",
-                                color: "#6F7B8A",
-                            }
-                        },
+							tickDecimals: 5,
+							mode: "categories",
+							axisLabelPadding: 500,
+							font: {
+								lineHeight: 18,
+								style: "normal",
+								variant: "small-caps",
+								color: "#6F7B8A"
+							}
+						},
+						*/
+                        yaxis: 
+						{ 
+							position: "left",
+							ticks: 5,
+							tickDecimals: 0,
+							tickColor: "#eee",
+							font: {
+								lineHeight: 14,
+								style: "normal",
+								variant: "small-caps",
+								color: "#6F7B8A"
+							}
+						},
                         grid: {
                             hoverable: true,
                             clickable: true,
@@ -121,11 +176,12 @@ var Custom = function () {
                             borderWidth: 1
                         },
 						series: {
+							
 							shadowSize: 1
 						},
 						valueLabels: {
 							show: true
-						}
+						}	
                     });
 					
 				

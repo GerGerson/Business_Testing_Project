@@ -76,8 +76,10 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- BEGIN HORIZANTAL MENU -->
 		<!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
 		<!-- DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) sidebar menu below. So the horizontal menu has 2 seperate versions -->
-		<div class="hor-menu hor-menu-light hidden-sm hidden-xs">
-			@yield('horizontal_menu')
+		<div class="hor-menu hor-menu-light hidden-sm hidden-xs" style="text-align: right; float: right">
+			<div class="col-md-12" >
+				@yield('horizontal_menu')
+			</div>
 		</div>
 		<!-- END HORIZANTAL MENU -->
 		
@@ -163,6 +165,8 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="../../assets/global/plugins/flot/jquery.flot.valuelabels.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.labels.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.valuelabels.js" type="text/javascript"></script>
 
 
 <!-- for chart -->
@@ -188,32 +192,40 @@ License: You must have a valid license purchased only from themeforest(the above
 		$('#order_selector').live('change', function(){
 			if($('#order_selector').val() != 0){
 				$.get('/gas/getRecord/' +$('#order_selector').val())
-					.done(function(data){
-						if(data.length > 0){
-							$('#record_graph_div').show();
-							$('#record_table > tbody:last').empty();
-							$.each(data, function(i, v){
-								var standard_over_value = Math.round((v[1]/2)*100);
-								if(standard_over_value >= 200){
-									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="danger">'+standard_over_value+'%</td><td class="danger">高</td></tr>');
-								}else if(standard_over_value > 50 && standard_over_value < 200){
-									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="warning">'+standard_over_value+'%</td><td class="warning">中</td></tr>');
+					.done(function(graphData){
+					
+						$.get('/gas/getStandardValue')
+							.done(function(standradValue){
+								if(graphData.length > 0){
+									$('#record_graph_div').show();
+									$('#record_table > tbody:last').empty();
+									
+									$.each(graphData, function(i, v){
+										var standard_over_value = Math.round((v[1]/standradValue)*100);
+										if(standard_over_value >= 200){
+											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td class="danger">'+standard_over_value+'%</td></tr>');
+										}else if(standard_over_value > 50 && standard_over_value < 200){
+											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td class="warning">'+standard_over_value+'%</td></tr>');
+										}else{
+											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td class="success">'+standard_over_value+'%</td></tr>');
+										}
+									});
+									
+									$('#record_table_div').show();
+									$('.line').show();
+									$('#msg').hide();
+									Custom.chart(graphData, standradValue);
+									
+									
 								}else{
-									$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td>2</td><td class="success">'+standard_over_value+'%</td><td class="success">低</td></tr>');
+									$('#record_graph_div').hide();
+									$('#record_table_div').hide();
+									$('.line').hide();
+									$('#msg').empty();
+									$('#msg').append("No Data Found");
+									$('#msg').show();
 								}
 							});
-							$('#record_table_div').show();
-							$('.line').show();
-							$('#msg').hide();
-							Custom.chart(data);
-						}else{
-							$('#record_graph_div').hide();
-							$('#record_table_div').hide();
-							$('.line').hide();
-							$('#msg').empty();
-							$('#msg').append("No Data Found");
-							$('#msg').show();
-						}
 					});
 			}else{
 				$('#record_graph_div').hide();
@@ -227,10 +239,8 @@ License: You must have a valid license purchased only from themeforest(the above
     });
 </script>
 
-<script>
-	
-</script>
 
+<!--
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -241,7 +251,7 @@ License: You must have a valid license purchased only from themeforest(the above
   ga('send', 'pageview');
 
 </script>
-  
+  -->
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->

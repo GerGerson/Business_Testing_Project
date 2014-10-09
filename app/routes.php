@@ -31,6 +31,7 @@ Route::group(array('before' => 'gas_detail_auth_check'), function()
 	Route::get('/gas','GasController@index');
 	
 	Route::get('/gas/getRecord/{order_id}', 'GasController@getRecord');
+	Route::get('/gas/getStandardValue', 'GasController@getStandardValue');
 });
 
 //Route::get('/gasDetail', 'GasController@index');
