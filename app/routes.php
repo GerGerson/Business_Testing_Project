@@ -41,3 +41,8 @@ Route::get('/register', function(){
 });
 
 Route::post('/register', 'MemberController@Register');
+
+
+Route::get('/booking',function(){
+	return View::make('booking');
+});
