@@ -47,3 +47,45 @@ Route::post('/register', 'MemberController@Register');
 Route::get('/booking',function(){
 	return View::make('booking');
 });
+
+
+
+/*	Parameters for Submit of reserve:
+		name : date
+		type : date
+	
+		name : period
+		type : int (0-2)
+	
+		*Login required
+	
+	Return (int):
+		Last insert id or 0
+*/
+Route::post('/booking/submit/{date}/{period}/{uid}', 'BookingController@submit');
+
+
+/*	Parameters for Get Reserves By Date:
+		name : date_from
+		type : date
+	
+		name :date_to
+		type : date
+	
+	Return:
+		Object or NULL
+*/
+Route::post('/booking/getReservesByDate/{date_from}/{date_to}', 'BookingController@getReservesByDate');
+
+/*	Parameters for Booking Check: 
+		name : date	
+		type : date
+	
+		name : period
+		type : int (0-2)
+	
+	Return (String):
+		false => Not available
+		true => Available
+*/
+Route::post('/booking/check', 'BookingController@checkReserve');
