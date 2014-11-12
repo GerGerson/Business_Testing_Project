@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>Metronic One Page</title>
+  <title>Homeasy</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -70,7 +70,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <div class="col-md-6 col-sm-6 additional-shop-info">
                     <ul class="list-unstyled list-inline">
                         <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
-                        <li><i class="fa fa-envelope-o"></i><span>info@keenthemes.com</span></li>
+                        <li><i class="fa fa-envelope-o"></i><span>info@homeasy.house</span></li>
                     </ul>
                 </div>
                 <!-- END TOP BAR LEFT PART -->
@@ -119,13 +119,15 @@ License: You must have a valid license purchased only from themeforest (the abov
   <div class="about-block content content-center" id="about">
     <div class="container">
       <h2><strong>置簡單</strong></h2>
-      <h4>置業裝修‧話咁易‧Easy</h4>
+      <h4>置業‧裝修‧話咁易</h4>
 	  
-	  <div class="ab-trio">
-        <img src="../../assets/frontend/onepage/img/background.jpg" alt="" class="img-responsive">
-      </div>
-    </div>
-  </div>
+	</div>
+	<div class="row">
+		<div>
+			<img src="../../assets/frontend/onepage/img/background.jpg" alt="" class="img-responsive center-block">
+		</div>
+	</div>
+  </div> 
   <!-- About block END -->
 
   <!-- Services block BEGIN -->
