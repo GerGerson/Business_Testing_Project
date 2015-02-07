@@ -167,7 +167,7 @@ License: You must have a valid license purchased only from themeforest(the above
        Metronic.init(); // init metronic core components
 	   Layout.init(); // init current layout
 	   //Layout.initImageZoom();
-	   Index.init();;
+	   Index.init();
     });
 </script>
 

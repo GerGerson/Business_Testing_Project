@@ -23,8 +23,23 @@ Route::get('/gas_desc', function(){
 	return View::make("gas_desc");
 });
 
-//Login Part
+/*
+	User Route
+*/
 Route::post('/login_check', 'MemberController@LoginCheck');
+
+Route::get('/logout', 'MemberController@Logout');
+
+Route::get('/register', function(){
+	return View::make('register');
+});
+
+Route::post('/register', 'MemberController@Register');
+
+
+/*
+	Gas Route
+*/
 
 Route::group(array('before' => 'gas_detail_auth_check'), function()
 {
@@ -34,14 +49,13 @@ Route::group(array('before' => 'gas_detail_auth_check'), function()
 	Route::get('/gas/getStandardValue', 'GasController@getStandardValue');
 });
 
-//Route::get('/gasDetail', 'GasController@index');
-Route::get('/logout', 'MemberController@Logout');
+Route::get('/gas/create/{id}', ['as' => 'front.gas.create.get', 'uses' => 'GasController@createGasRecord']);
+Route::post('/gas/store', ['as' => 'front.gas.store.post', 'uses' => 'GasController@storeGasRecord']);
 
-Route::get('/register', function(){
-	return View::make('register');
-});
-
-Route::post('/register', 'MemberController@Register');
+/*
+	Order Route
+*/
+Route::get('/order', ['as' => 'front.order.index.get', 'uses' => 'OrderController@showOrderList']);
 
 
 Route::get('/booking',function(){
