@@ -23,15 +23,14 @@ Route::get('/gas_desc', function(){
 	return View::make("gas_desc");
 });
 
-<<<<<<< HEAD
 Route::post('/contact', 'MemberController@SaveContact');
 
 //Login Part
-=======
+
 /*
 	User Route
 */
->>>>>>> 304c8ffb981638cae1bf8f48cbb9eaed8bcab69b
+
 Route::post('/login_check', 'MemberController@LoginCheck');
 
 Route::get('/logout', 'MemberController@Logout');
