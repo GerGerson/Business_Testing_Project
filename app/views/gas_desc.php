@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>Metronic One Page</title>
+  <title>HomeEasy</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -100,8 +100,8 @@ License: You must have a valid license purchased only from themeforest (the abov
 			</div>
 			<div class="col-md-7">
 			<ul>
-				<li>甲醛是最常見的室內空氣污染物。</li>
-				<li>大多數源頭多來自常用的建築及裝修物料中的甲醛樹脂。</li>
+				<li>甲醛是一種有害的室內空氣污染物。</li>
+				<li>大多數源頭多來自建築及裝修物料中的甲醛樹脂。</li>
 				<li>甲醛樹脂十分普遍用於以上物料(例如:纖維板、壓製木產品、發泡膠隔熱層、黏著劑、織物、地氈等)。</li>
 			</ul>
 			</div>
@@ -120,7 +120,6 @@ License: You must have a valid license purchased only from themeforest (the abov
 			<ul>
 				<li>甲醛會緩慢持續放出釋放數年以上。</li>
 				<li>人類如吸入一定量甲醛,更會對咽喉和眼睛鼻腔等產生刺激性作用。</li>
-				<li>美國國家毒理學項目於2011已經將甲醛列入“已知的人類致癌物”清單之中。</li>
 				<li>美國國家研究委員會於2014年明確指出甲醛是一種人類致癌物。</li>
 			</ul>
 			</div>

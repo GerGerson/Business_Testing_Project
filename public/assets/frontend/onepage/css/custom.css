@@ -138,3 +138,16 @@ Pre-Header and pre-header elements
 .pre-header .fa {
 	margin-right: 4px;
 }
+
+/*Contact Block*/
+.contact-block {
+  background: #f6f6f6;
+  padding: 60px 0 10px;
+}
+.contact-item {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.contact-item label {
+  font: 400 18px "PT Sans Narrow", Arial, sans-serif;
+}

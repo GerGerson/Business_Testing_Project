@@ -1,6 +1,17 @@
 <?php
 
 class MemberController extends BaseController {	
+	public function SaveContact()
+	{
+		$contact_name = Input::get('name');
+		$contact_method = Input::get('method');
+		$contact_content = Input::get('content');
+		
+		DB::insert('INSERT INTO contact (name, contact, content) VALUES (?, ?, ?)', array($contact_name, $contact_method, $contact_content));
+		
+		return "OK";
+	}
+
 	public function LoginCheck()
 	{
 		$email = Input::get('email');

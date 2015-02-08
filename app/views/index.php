@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>Homeasy</title>
+  <title>HomEasy</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -138,12 +138,12 @@ License: You must have a valid license purchased only from themeforest (the abov
 		<div class="col-md-6 col-sm-6 col-xs-12 item">
           <i class="fa_danger fa-exclamation"></i>
           <h3>危險氣體</h3>
-          <p>大部份裝修物料均含有甲醛，並可以持續數年放出</p>
+          <p>裝修物料及傢俬均有機會含有甲醛，並可以持續數年放出</p>
         </div>
         <div  class="col-md-6 col-sm-6 col-xs-12 item">
           <i class="fa_danger fa-bomb"></i>
           <h3>影響健康</h3>
-          <p>長期吸入高濃度甲醛，會增加致癌風險</p>
+          <p>長期吸入甲醛，會增加致癌風險</p>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 item">
           <i class="fa fa-gear"></i>
@@ -166,42 +166,43 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Choose us block BEGIN -->
   <div class="choose-us-block content text-center margin-bottom-40" id="benefits1">
     <div class="container">
-      <h2><strong>網上平台</strong></h2>
-	  <div class="row">
-		<div class="col-md-6 col-sm-6 col-xs-12 margin-top-20 text-left">
-		  <img src="../../assets/frontend/onepage/img/check-us.png" alt="Why to choose us" class="img-responsive">
-		</div>
-		<div class="col-md-6 col-sm-6 col-xs-12 text-left">
-			<div class="content">
-				<p><i class="fa fa-clock-o"></i> 安排上門時間</p>
-				<p><i class="fa fa-edit"></i> 隨時查閱檢測結果</p>
-				<p><i class="fa fa-search"></i> 提供簡淺易明圖表、報表</p>
-			</div>
-		</div>
-	  </div>
-    </div>
-  </div>
-  <!-- Choose us block END -->
-
-  <!-- Prices block BEGIN -->
-  <div class="prices-block content content-center" id="prices">
-  	<div class="container">
-      <h2 class="margin-bottom-50"><strong>收費</strong></h2>
+	  <h2 class="margin-bottom-50"><strong>收費</strong></h2>
 	  <div class="row">
         <!-- Pricing item BEGIN -->
-        <div class="col-md-4 col-md-offset-4 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-md-offset-2 col-sm-4 col-xs-12">
           <div class="pricing-item">
             <div class="pricing-head">
-              <h3>Openning Gift</h3>
+              <h3>新居大禮</h3>
             </div>
             <div class="pricing-content">
               <div class="pi-price">
               	<strong>$<em>0</em></strong>
               </div>
 	          <ul class="list-unstyled">
-				<li><i class="fa fa-circle"></i> 不設任何收費 </li>
-	            <li><i class="fa fa-circle"></i> 6 個指定地點檢查 </li>
-	            <li><i class="fa fa-circle"></i> 即時免費意見諮詢 </li>
+				<li><i class="fa fa-circle"></i> 一年內新裝修單位，一律免費 </li>
+	            <li><i class="fa fa-circle"></i> 包半小時詳細檢查 </li>
+	            <li><i class="fa fa-circle"></i> 即時結果查閱 </li>
+	          </ul>
+            </div>
+            <div class="pricing-footer">
+              <a class="btn btn-default" href="/register">立即註冊</a>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="pricing-item">
+            <div class="pricing-head">
+              <h3>一般檢查</h3>
+            </div>
+            <div class="pricing-content">
+              <div class="pi-price">
+              	<strong>$<em>200</em></strong>
+              </div>
+	          <ul class="list-unstyled">
+				<li><i class="fa fa-circle"></i> 裝修超過一年之單位</li>
+	            <li><i class="fa fa-circle"></i> 包半小時詳細檢查 </li>
+	            <li><i class="fa fa-circle"></i> 即時結果查閱 </li>
 	          </ul>
             </div>
             <div class="pricing-footer">
@@ -210,12 +211,47 @@ License: You must have a valid license purchased only from themeforest (the abov
           </div>
         </div>
         <!-- Pricing item END -->
-        
       </div>
     </div>
   </div>
-  <!-- Prices block END -->
+  <!-- Choose us block END -->
 
+  <!-- Services block BEGIN -->
+  <div class="contact-block content text-center" id="contact">
+	<div class="container">
+		<h2><strong>聯絡我們</strong></h2>
+		<div class= "row">
+			<form id="contact" action="#" role="form">
+				<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 item">
+					<div class="form-group">
+						<div class="contact-item">
+							<label>姓名</label>
+							<input type="text" class="form-control" id="contact_name" arial-required="true" aria-invalid="true">
+							<span id="name-error" class="help-block help-block-error">Please enter name.</span>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="contact-item">
+							<label>聯絡方法</label>
+							<input type="text" class="form-control" id="contact_method">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="contact-item">
+							<label>留言</label>
+							<textarea class="form-control" rows="5" id="contact_content"></textarea>
+						</div>
+					</div>
+					<button type="submit" class="btn blue"><i class="icon-ok"></i> 送出 </button>
+				</div>
+			</form>
+		</div>
+	</div>
+  </div>
+  <!-- Services block END -->
+  
   <!-- Testimonials block BEGIN -->
   <!--
   <div class="testimonials-block content content-center margin-bottom-65">
@@ -331,6 +367,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   <script src="../../assets/global/plugins/jquery.parallax.js"></script>
   <script src="../../assets/global/plugins/jquery.scrollTo.min.js"></script>
   <script src="../../assets/frontend/onepage/scripts/jquery.nav.js"></script>
+  <script src="../../assets/global/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
   <!-- Core plugins END (required only for current page) -->
 
   <!-- Global js BEGIN -->
@@ -338,6 +375,27 @@ License: You must have a valid license purchased only from themeforest (the abov
   <script>
     $(document).ready(function() {
       Layout.init();
+	  
+ 	  $("#contact").submit(function(e){
+		e.preventDefault();
+		
+		$.ajax({
+			type: "POST",
+			url: "/contact",
+			data: {name: $("#contact_name").val(), method: $("#contact_method").val(), content: $("#contact_content").val()},
+			success: function(data){
+				if (data == "OK"){
+					bootbox.alert("多謝您的留言，我們會盡快回覆。");   
+					//bootbox.alert(data);   
+				}else{
+					bootbox.alert("未成功留言，請再嘗試！");   
+
+				} 
+			}
+		});
+		
+		return false; 
+	  }); 
     });
   </script>
   <!-- Global js END -->

@@ -23,6 +23,8 @@ Route::get('/gas_desc', function(){
 	return View::make("gas_desc");
 });
 
+Route::post('/contact', 'MemberController@SaveContact');
+
 //Login Part
 Route::post('/login_check', 'MemberController@LoginCheck');
 
