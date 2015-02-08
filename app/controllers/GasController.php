@@ -8,7 +8,7 @@ class GasController extends BaseController {
 		}
 		$data = DB::Select("SELECT * FROM `order` WHERE user_id = '". $uid ."'");
 					
-		return View::make('gas', array('orders' => $data));
+		return View::make('gas/report', array('orders' => $data));
 	}
 	
 	//Testing
@@ -17,12 +17,14 @@ class GasController extends BaseController {
 		if(!is_numeric($order_id)){
 			$order_id = 0;
 		}
-		$data = DB::Select("SELECT * FROM `gas_record` WHERE order_id = '". $order_id ."'");
+		//$data = DB::Select("SELECT * FROM `gas_record` WHERE order_id = '". $order_id ."'");
+		
+		$data = Order::find($order_id);
 		
 		$i = 0;
 		$gas_value = array();
-		foreach($data as $d){
-			$gas_value[$i] = array($d->location , round($d->gas_value, 2));
+		foreach($data->gas as $d){
+			$gas_value[$i] = array($d->getLocation() , round($d->getGasValue(), 2));
 			$i++;
 		}
 		
@@ -31,5 +33,31 @@ class GasController extends BaseController {
 	
 	public function getStandardValue(){
 		return 0.08;
+	}
+	
+	
+	
+	public function createGasRecord($id){
+		$gas = new Gas;
+		return View::make('gas/create')
+					->with('order', Order::find($id))
+					->with('gas', $gas);
+	}
+	
+	public function storeGasRecord(){
+		$orderId = Input::get('order_id');
+		$value = Input::get('value');
+		$location = Input::get('location');
+		
+		$gas = new Gas;
+		
+		$order = Order::find($orderId);
+		$gas->order()->associate($order);
+		
+		$gas->setGasValue($value);
+		$gas->setLocation($location);
+		$gas->save();
+		
+		return Redirect::route('front.gas.create.get', ['id' => $orderId]);
 	}
 }

@@ -176,68 +176,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
 <script src="/assets/admin/pages/scripts/index.js" type="text/javascript"></script>
 <script src="/assets/admin/pages/scripts/custom.js" type="text/javascript"></script>
-<script>
-    jQuery(document).ready(function() {    
-	
-		Metronic.init(); // init metronic core components
-		Layout.init(); // init current layout
-		//Layout.initImageZoom();
-		Index.init();
-		//gas_value);
-		
-		$('#record_graph_div').hide();
-		$('#record_table_div').hide();
-		$('.line').hide();
-		
-		$('#order_selector').live('change', function(){
-			if($('#order_selector').val() != 0){
-				$.get('/gas/getRecord/' +$('#order_selector').val())
-					.done(function(graphData){
-					
-						$.get('/gas/getStandardValue')
-							.done(function(standradValue){
-								if(graphData.length > 0){
-									$('#record_graph_div').show();
-									$('#record_table > tbody:last').empty();
-									
-									$.each(graphData, function(i, v){
-										var standard_over_value = Math.round((v[1]/standradValue)*100);
-										if(standard_over_value >= 200){
-											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td class="danger">'+standard_over_value+'%</td></tr>');
-										}else if(standard_over_value > 50 && standard_over_value < 200){
-											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td class="warning">'+standard_over_value+'%</td></tr>');
-										}else{
-											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td class="success">'+standard_over_value+'%</td></tr>');
-										}
-									});
-									
-									$('#record_table_div').show();
-									$('.line').show();
-									$('#msg').hide();
-									Custom.chart(graphData, standradValue);
-									
-									
-								}else{
-									$('#record_graph_div').hide();
-									$('#record_table_div').hide();
-									$('.line').hide();
-									$('#msg').empty();
-									$('#msg').append("No Data Found");
-									$('#msg').show();
-								}
-							});
-					});
-			}else{
-				$('#record_graph_div').hide();
-				$('#record_table_div').hide();
-				$('.line').hide();
-				$('#msg').empty();
-				$('#msg').append("No Order Selected");
-				$('#msg').show();
-			}
-		});
-    });
-</script>
+
+@yield('script')
+
 
 
 <!--

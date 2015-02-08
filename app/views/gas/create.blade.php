@@ -33,7 +33,7 @@
 	<div class="col-md-12">
 		<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 		<h3 class="page-title">
-			氣體讀數 <small> </small>
+			Add Gas Record <small> {{$order->getOrderName()}} </small>
 			<!-- testing -->
 		</h3>
 		<!-- END PAGE TITLE & BREADCRUMB-->
@@ -41,60 +41,42 @@
 </div>
 <!-- END PAGE HEADER-->
 
-<div class="row">
-	<div class="col-md-12">
-		<select id="order_selector">
-			<option value="0"> --- Select a Order --- </option>
-			@foreach($orders as $order)
-				<?php 
-					$datetime = new DateTime($order->create_dt);
-				?>
-				<option value="{{{$order->order_id}}}">{{{$order->order_name}}} [ <?=$datetime->format('Y-m-d')?> ]</option>
-			@endforeach
-		</select>
-	</div>
-</div>
-
-
 <hr/>
 
-
-
 <div class="row">
 	<div class="col-md-12">
-		<div id="msg" class="alert alert-warning">
-			No Order Selected
-		</div>
-	</div>
-</div>
+		{{ Form::model($gas, ['route' => ['front.gas.store.post'], 'class' => 'form-horizontal group-border-dashed', 'method' => 'post', 'style' => 'border-radius: 0px;']) }}
+			{{ Form::hidden('order_id', $order->getId()) }}	
 
 			
-<div id="record_graph_div" class="row">
-	<div class="col-md-12 article-block">
-		<div class="portlet-body ">
-			<div class="portlet solid grey-cararra bordered">
-				<div class="portlet-title">
-					<div class="caption">
-						<i class="fa fa-bullhorn"></i>氣體讀數圖表
-					</div>
-				</div>
-				<div class="portlet-body">
-					<div id="site_activities_loading">
-						<img src="../../assets/admin/layout/img/loading.gif" alt="loading"/>
-					</div>
-					<div id="site_activities_content" class="display-none">
-						<div id="site_activities" style="height: 228px;">
-						</div>
-					</div>
+			<div class="form-group">
+				{{ Form::label('value', 'Value', ['class' => 'col-sm-3 control-label']) }}
+				<div class="col-sm-6">
+					{{ Form::text('value', '', ['class' => 'form-control', 'id' => 'value']) }}
 				</div>
 			</div>
-		</div>
+			
+			<div class="form-group">
+				{{ Form::label('location', 'Location', ['class' => 'col-sm-3 control-label']) }}
+				<div class="col-sm-6">
+					{{ Form::text('location', '', ['class' => 'form-control', 'id' => 'location']) }}
+				</div>
+			</div>
+			
+
+			<div class="form-group">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-6">
+					<button class="btn btn-primary" type="submit">Submit</button>
+				</div>
+				
+			</div>
+			
+		{{ Form::close() }}
 	</div>
 </div>
 
-<div class="line">
-	<hr/>
-</div>
+<hr/>
 
 <div id="record_table_div" class="row">
 	<div class="col-md-12">
@@ -107,18 +89,23 @@
 					<th>
 						 讀數
 					</th>
-					<th>
-						 標準值
-					</th>
-					<th>
-						 讀數與標準值差
-					</th>
 				</tr>
 			</thead>
 			<tbody>
+				@foreach($order->gas as $g)
+					<tr>
+						<td>{{$g->getLocation()}}</td>
+						<td>{{$g->getGasValue()}}</td>
+					</tr>
 				
+				@endforeach
 			</tbody>
 		</table>
 	</div>
 </div>
+
+@stop
+
+@section('script')
+
 @stop

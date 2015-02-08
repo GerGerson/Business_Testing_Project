@@ -62,7 +62,7 @@ class MemberController extends BaseController {
 		}
 	}
 	
-	public function Logout()
+	public function logout()
 	{
 		$this->resetCookie();
 		return Redirect::to('/');
