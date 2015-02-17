@@ -151,8 +151,14 @@ Pre-Header and pre-header elements
 .contact-item label {
   font: 400 18px "PT Sans Narrow", Arial, sans-serif;
 }
+
 .contact-error {
   font: 400 18px "PT Sans Narrow", Arial, sans-serif;
   color: #FF0000;
 }
 
+.error-text {
+	font: 400 18px "PT Sans Narrow", Arial, sans-serif;
+	font-weight: 900;
+	color: #FF0000;
+}
