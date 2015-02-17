@@ -228,7 +228,6 @@ License: You must have a valid license purchased only from themeforest (the abov
 							<label>姓名</label>
 							<input type="text" class="form-control" id="contact_name">
 							<span id="name-error" class="contact-error">請輸入姓名！</span>
-							<span id="name-error" class="error-text">請輸入姓名!</span>
 						</div>
 					</div>
 					
@@ -237,7 +236,6 @@ License: You must have a valid license purchased only from themeforest (the abov
 							<label>聯絡方法</label>
 							<input type="text" class="form-control" id="contact_method">
 							<span id="method-error" class="contact-error">請輸入聯絡方法！</span>
-							<span id="method-error" class="error-text">請輸入聯絡方法!</span>
 						</div>
 					</div>
 					
@@ -246,7 +244,6 @@ License: You must have a valid license purchased only from themeforest (the abov
 							<label>留言</label>
 							<textarea class="form-control" rows="5" id="contact_content"></textarea>
 							<span id="content-error" class="contact-error">請輸入留言內容！</span>
-							<span id="content-error" class="error-text">請輸入留言內容!</span>
 						</div>
 					</div>
 					<button type="submit" class="btn blue"><i class="icon-ok"></i> 送出 </button>
@@ -385,35 +382,14 @@ License: You must have a valid license purchased only from themeforest (the abov
 	  $("#name-error").hide();
 	  $("#method-error").hide();
 	  $("#content-error").hide();
-	  
-	  	$("#name-error").hide();
-		$("#method-error").hide();
-		$("#content-error").hide();
-	  
- 	  $("#contact").submit(function(e){
-		e.preventDefault();
-		
-		$("#name-error").hide();
-		$("#method-error").hide();
-		$("#content-error").hide();
-		
-		if ($.trim($("#contact_name").val()) == "") {
-			$("#name-error").show();
-			isValid = false;
-		}
-		if ($.trim($("#contact_method").val())== "") {
-			$("#method-error").show();
-			isValid = false;
-		}
-		if ($.trim($("#contact_content").val())=="") {
-			$("#content-error").show();
-			isValid = false;
-		}
-		if (isValid == false) {return false;}
 		
  	  $("#contact").submit(function(e){		
 		isValid = true;
 		e.preventDefault();
+		
+		$("#name-error").hide();
+	    $("#method-error").hide();
+	    $("#content-error").hide();
 		
 		if ($.trim($("#contact_name").val()) == '') {
 			$("#name-error").show();
@@ -449,10 +425,6 @@ License: You must have a valid license purchased only from themeforest (the abov
 					$("#contact_content").val("");
 					
 					bootbox.alert("多謝您的留言，我們會盡快回覆。");   
-					
-					$("#contact_name").val("");
-					$("#contact_method").val("");
-					$("#contact_content").val("");
 				}else{
 					bootbox.alert("未成功留言，請再嘗試！");   
 
