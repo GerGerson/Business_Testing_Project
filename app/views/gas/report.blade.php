@@ -68,33 +68,54 @@
 	</div>
 </div>
 
-			
-<div id="record_graph_div" class="row">
-	<div class="col-md-12 article-block">
-		<div class="portlet-body ">
-			<div class="portlet solid grey-cararra bordered">
-				<div class="portlet-title">
-					<div class="caption">
-						<i class="fa fa-bullhorn"></i>氣體讀數圖表
-					</div>
-				</div>
-				<div class="portlet-body">
-					<div id="site_activities_loading">
-						<img src="../../assets/admin/layout/img/loading.gif" alt="loading"/>
-					</div>
-					<div id="site_activities_content" class="display-none">
-						<div id="site_activities" style="height: 228px;">
-						</div>
-					</div>
+
+
+<div class="alert alert-info" id="info">
+	<h2>安全指標簡介</h2>
+	<hr/>
+	<div class="row">
+		<div class="col-md-3">
+			<h4><b>安全</b></h4>
+		</div>
+		<div class="col-md-3">
+			<div class="progress progress-striped active" >
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	
+	<div class="row">
+		<div class="col-md-3">
+			<h4><b>危險</b></h4>
+		</div>
+		<div class="col-md-3">
+			<div class="progress progress-striped active">
+				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
 
-<div class="line">
-	<hr/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="row">
+		<div class="col-md-3">
+			<h4><b>嚴重</b></h4>
+		</div>
+		<div class="col-md-3">
+			<div class="progress progress-striped active">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
 </div>
+							
+</hr>
 
 <div id="record_table_div" class="row">
 	<div class="col-md-12">
@@ -110,9 +131,11 @@
 					<th>
 						 標準值
 					</th>
-					<th>
-						 讀數與標準值差
+					<th colspan="2">
+						安全指標
 					</th>
+
+					<th >讀數與標準值差</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -135,9 +158,10 @@
 		
 		$('#record_graph_div').hide();
 		$('#record_table_div').hide();
-		$('.line').hide();
+		$('#info').hide();
 		
 		$('#order_selector').live('change', function(){
+			var progress_value = 0;
 			if($('#order_selector').val() != 0){
 				$.get('/gas/getRecord/' +$('#order_selector').val())
 					.done(function(graphData){
@@ -145,30 +169,35 @@
 						$.get('/gas/getStandardValue')
 							.done(function(standradValue){
 								if(graphData.length > 0){
-									$('#record_graph_div').show();
+									//$('#record_graph_div').show();
 									$('#record_table > tbody:last').empty();
 									
 									$.each(graphData, function(i, v){
 										var standard_over_value = Math.round((v[1]/standradValue)*100);
-										if(standard_over_value >= 200){
-											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td class="danger">'+standard_over_value+'%</td></tr>');
-										}else if(standard_over_value > 50 && standard_over_value < 200){
-											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td class="warning">'+standard_over_value+'%</td></tr>');
+										if(standard_over_value > 100){
+											progress_value = 100;
+										}else if(standard_over_value < 1){
+											progress_value = 1;
 										}else{
-											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td class="success">'+standard_over_value+'%</td></tr>');
+											progress_value = standard_over_value;
+										}
+										
+										if(standard_over_value >= 200){
+											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td colspan="2" style="width: 30%"><div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="'+progress_value+'" aria-valuemin="0" aria-valuemax="100" style="width: '+progress_value+'%"></div></div></td><td class="danger">'+standard_over_value+'%</td></tr>');
+										}else if(standard_over_value > 50 && standard_over_value < 200){
+											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td colspan="2"><div class="progress progress-striped active"><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="'+progress_value+'" aria-valuemin="0" aria-valuemax="100" style="width: '+progress_value+'%"></div></div></td><td class="warning">'+standard_over_value+'%</td></tr>');
+										}else{
+											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td colspan="2"><div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="'+progress_value+'" aria-valuemin="0" aria-valuemax="100" style="width: '+progress_value+'%"></div></div></td><td class="success">'+standard_over_value+'%</td></tr>');
 										}
 									});
-									
+									$('#info').show();
 									$('#record_table_div').show();
-									$('.line').show();
 									$('#msg').hide();
-									Custom.chart(graphData, standradValue);
+									//Custom.chart(graphData, standradValue);
 									
 									
 								}else{
-									$('#record_graph_div').hide();
 									$('#record_table_div').hide();
-									$('.line').hide();
 									$('#msg').empty();
 									$('#msg').append("No Data Found");
 									$('#msg').show();
@@ -176,9 +205,7 @@
 							});
 					});
 			}else{
-				$('#record_graph_div').hide();
 				$('#record_table_div').hide();
-				$('.line').hide();
 				$('#msg').empty();
 				$('#msg').append("No Order Selected");
 				$('#msg').show();
