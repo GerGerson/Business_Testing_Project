@@ -33,7 +33,7 @@
 	<div class="col-md-12">
 		<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 		<h3 class="page-title">
-			Add Gas Record <small> {{$order->getOrderName()}} - {{{$order->user->getUserNameChi()}}} - {{{$order->user->getUserNameEng()}}} - {{{$order->user->getPhone()}}}</small>
+			Add Gas Record <small> {{$order->getOrderName()}} - {{{$order->user->getUserNameChi()}}} - {{{$order->getRefId()}}}</small>
 			<!-- testing -->
 		</h3>
 		<!-- END PAGE TITLE & BREADCRUMB-->

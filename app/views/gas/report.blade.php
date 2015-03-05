@@ -75,7 +75,7 @@
 	<hr/>
 	<div class="row">
 		<div class="col-md-3">
-			<h4><b>安全</b></h4>
+			<h4><b>無超標</b></h4>
 		</div>
 		<div class="col-md-3">
 			<div class="progress progress-striped active" >
@@ -88,21 +88,7 @@
 	
 	<div class="row">
 		<div class="col-md-3">
-			<h4><b>危險</b></h4>
-		</div>
-		<div class="col-md-3">
-			<div class="progress progress-striped active">
-				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-	<div class="row">
-		<div class="col-md-3">
-			<h4><b>嚴重</b></h4>
+			<h4><b>超標</b></h4>
 		</div>
 		<div class="col-md-3">
 			<div class="progress progress-striped active">
@@ -131,11 +117,14 @@
 					<th>
 						 標準值
 					</th>
+					<th>
+						差距
+					</th>
 					<th colspan="2">
 						安全指標
 					</th>
 
-					<th >讀數與標準值差</th>
+					<th >超標</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -182,12 +171,10 @@
 											progress_value = standard_over_value;
 										}
 										
-										if(standard_over_value >= 200){
-											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td colspan="2" style="width: 30%"><div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="'+progress_value+'" aria-valuemin="0" aria-valuemax="100" style="width: '+progress_value+'%"></div></div></td><td class="danger">'+standard_over_value+'%</td></tr>');
-										}else if(standard_over_value > 50 && standard_over_value < 200){
-											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td colspan="2"><div class="progress progress-striped active"><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="'+progress_value+'" aria-valuemin="0" aria-valuemax="100" style="width: '+progress_value+'%"></div></div></td><td class="warning">'+standard_over_value+'%</td></tr>');
+										if(standard_over_value > 100){
+											$('#record_table > tbody:last').append('<tr><td><h4>'+v[0]+'</h4></td><td><h4>'+v[1]+' ppm</h4></td><td><h4>'+standradValue+' ppm</h4></td><td><h4>+/-'+(Math.round(Math.abs(v[1] - standradValue) * 100)/ 100)+' ppm</h4></td><td colspan="2" style="width: 30%"><div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></td><td class="danger"><h4>'+(standard_over_value/100)+'倍</h4></td></tr>');
 										}else{
-											$('#record_table > tbody:last').append('<tr><td>'+v[0]+'</td><td>'+v[1]+' ppm</td><td>'+standradValue+' ppm</td><td colspan="2"><div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="'+progress_value+'" aria-valuemin="0" aria-valuemax="100" style="width: '+progress_value+'%"></div></div></td><td class="success">'+standard_over_value+'%</td></tr>');
+											$('#record_table > tbody:last').append('<tr><td><h4>'+v[0]+'</h4></td><td><h4>'+v[1]+' ppm</h4></td><td><h4>'+standradValue+' ppm</h4></td><td><h4>+/-'+(Math.round(Math.abs(v[1] - standradValue) * 100)/ 100)+' ppm</h4></td><td colspan="2"><div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></td><td class="success"><h4>無超標</h4></td></tr>');
 										}
 									});
 									$('#info').show();

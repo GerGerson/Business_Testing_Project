@@ -27,8 +27,17 @@ class Order extends Entity{
 		return $this->order_name;
 	}
 	
+	public function getRefId(){
+		return $this->ref_id;
+	}
+	
 	public function setOrderName($name){
 		$this->order_name = $name;
+		return $this;
+	}
+	
+	public function setRefId($refId){
+		$this->ref_id = $refId;
 		return $this;
 	}
 

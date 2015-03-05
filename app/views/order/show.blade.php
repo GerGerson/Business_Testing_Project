@@ -41,19 +41,29 @@
 </div>
 <!-- END PAGE HEADER-->
 
+<hr/>
+<div class="row">
+	<div class="col-md-12">
+		<input type="text" class="input input-medium" name="search" id="search"/>
+		<button id="search_btn" class="btn btn-default">Search</button>
+	</div>
+</div>
+
+<hr/>
+
 <div id="record_table_div" class="row">
 	<div class="col-md-12">
 		<table id="record_table" class="table table-bordered table-hover">
 			<thead>
 				<tr>
 					<th>
+						Reference ID
+					</th>
+					<th>
 						 User Name Chi
 					</th>
 					<th>
-						 User Name Eng
-					</th>
-					<th>
-						Email
+						Phone
 					</th>
 					<th>
 						 Order Name
@@ -63,12 +73,12 @@
 					</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody id="order_table">
 				@foreach($orders as $order)
 					<tr>
+						<td>{{$order->getRefId()}}</td>
 						<td>{{$order->user->getUserNameChi()}}</td>
-						<td>{{$order->user->getUserNameEng()}}</td>
-						<td>{{$order->user->getEmail()}}</td>
+						<td>{{$order->user->getPhone()}}</td>
 						<td>{{$order->getOrderName()}}</td>
 						<td><a href="/gas/create/{{$order->getId()}}">Add Gas Value </a></td>
 					</tr>
@@ -83,5 +93,30 @@
 @stop
 
 @section('script')
-
+<script>
+	$(document).ready(function(){
+		$('#search_btn').click(function(){
+			$.post("{{URL::route('front.order.search.post')}}",
+                    {
+                        search: $('#search').val()
+                    })
+                    .done(function(data){
+                        $('#order_table tr').empty();
+                        $.each(data, function(k, v){
+                            //console.log("", v);
+                            var row = $("<tr>");
+                            var col = "";
+                            
+                            col += '<td>'+v.ref_id+'</td>';
+							col += '<td>'+v.user.user_chi_name+'</td>';
+							col += '<td>'+v.user.phone+'</td>';
+							col += '<td>'+v.order_name+'</td>';
+							col += '<td><a href="/gas/create/'+v.id+'">Add Gas Value </a></td>';
+                            row.append(col);
+                            $('#order_table tr:last').after(row);
+                        });
+                    });
+		});
+	});
+</script>
 @stop
