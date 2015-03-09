@@ -38,6 +38,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
 <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"><!-- for slider-range -->
 <link href="/assets/global/plugins/rateit/src/rateit.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/assets/global/plugins/select2/select2.css"/>
 <!-- END PAGE LEVEL PLUGIN STYLES -->
 
 <!-- BEGIN THEME STYLES -->
@@ -63,20 +64,20 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
 <body class="page-header-fixed page-full-width">
 <!-- BEGIN HEADER -->
-<div class="page-header navbar navbar-fixed-top">
+<div class="page-header navbar navbar-fixed-top" style="background-color: rgba(255,255,255,0.95); box-shadow: 0 1px 4px rgba(228, 228, 228, 0.95); height: 90px; ">
 	<!-- BEGIN HEADER INNER -->
 	<div class="page-header-inner">
-		<!-- BEGIN LOGO 
+		<!-- BEGIN LOGO -->
 		<div class="page-logo">
-			<a href="index.html">
-			<img src="../../assets/admin/layout/img/logo.png" alt="logo" class="logo-default"/>
+			<a href="/">
+			<img src="/assets/frontend/onepage/img/logo/turquoise.png" alt="logo" class="logo-default"/>
 			</a>
 		</div>
-		 END LOGO -->
+		<!-- END LOGO -->
 		<!-- BEGIN HORIZANTAL MENU -->
 		<!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
 		<!-- DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) sidebar menu below. So the horizontal menu has 2 seperate versions -->
-		<div class="hor-menu hor-menu-light hidden-sm hidden-xs" style="text-align: right; float: right">
+		<div class="hor-menu hor-menu-light hidden-sm hidden-xs" style="text-align: right; float: right; ">
 			<div class="col-md-12" >
 				@yield('horizontal_menu')
 			</div>
@@ -110,7 +111,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- END SIDEBAR -->
 			
 			<!-- BEGIN CONTENT -->
-			<div class="page-content-wrapper">
+			<div class="page-content-wrapper" style="margin-top: 60px">
 
 					@yield('main_content')
 
@@ -124,12 +125,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2014 &copy; TBC.
-	</div>
-	<div class="page-footer-tools">
-		<span class="go-top">
-		<i class="fa fa-angle-up"></i>
-		</span>
+		 2014 &copy; Homeasy.
 	</div>
 </div>
 <!-- END FOOTER -->
@@ -158,7 +154,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="/assets/global/plugins/rateit/src/jquery.rateit.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script><!-- for slider-range -->
 <script src="/assets/frontend/layout/scripts/layout.js" type="text/javascript"></script>
-<script src="/assets/frontend/layout/scripts/back-to-top.js" type="text/javascript"></script>  
 
 <!-- for chart -->
 <script src="../../assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
@@ -176,6 +171,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
 <script src="/assets/admin/pages/scripts/index.js" type="text/javascript"></script>
 <script src="/assets/admin/pages/scripts/custom.js" type="text/javascript"></script>
+<script type="text/javascript" src="/assets/global/plugins/select2/select2.min.js"></script>
 
 @yield('script')
 

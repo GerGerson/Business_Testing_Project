@@ -12,4 +12,9 @@ class OrderController extends BaseController {
 		 
 		 return $orders;
 	}
+	
+	public function getOrderInfo($id){
+		$order = Order::find($id)->load('user');
+		return $order;
+	}
 }

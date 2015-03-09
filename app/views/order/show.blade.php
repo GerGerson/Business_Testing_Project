@@ -4,7 +4,7 @@
 	<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
 	<li>
 		<a href="/logout">
-		登出 
+		X
 		</span>
 		</a>
 	</li>
@@ -33,7 +33,7 @@
 	<div class="col-md-12">
 		<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 		<h3 class="page-title">
-			Order List <small> </small>
+			訂單列表 <small> </small>
 			<!-- testing -->
 		</h3>
 		<!-- END PAGE TITLE & BREADCRUMB-->
@@ -45,7 +45,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<input type="text" class="input input-medium" name="search" id="search"/>
-		<button id="search_btn" class="btn btn-default">Search</button>
+		<button id="search_btn" class="btn btn-sm btn-default">Search</button>
 	</div>
 </div>
 
@@ -57,16 +57,16 @@
 			<thead>
 				<tr>
 					<th>
-						Reference ID
+						編號
 					</th>
 					<th>
-						 User Name Chi
+						 用戶名稱
 					</th>
 					<th>
-						Phone
+						電話號碼
 					</th>
 					<th>
-						 Order Name
+						訂單名稱
 					</th>
 					<th>
 						
@@ -80,7 +80,7 @@
 						<td>{{$order->user->getUserNameChi()}}</td>
 						<td>{{$order->user->getPhone()}}</td>
 						<td>{{$order->getOrderName()}}</td>
-						<td><a href="/gas/create/{{$order->getId()}}">Add Gas Value </a></td>
+						<td><a href="/gas/create/{{$order->getId()}}">新增讀數</a></td>
 					</tr>
 				@endforeach
 				

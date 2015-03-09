@@ -4,7 +4,7 @@
 	<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
 	<li>
 		<a href="/logout">
-		登出 
+		X 
 		</span>
 		</a>
 	</li>
@@ -33,7 +33,7 @@
 	<div class="col-md-12">
 		<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 		<h3 class="page-title">
-			氣體讀數 <small> </small>
+			氣體讀數 <br/><small id="info"> </small>
 			<!-- testing -->
 		</h3>
 		<!-- END PAGE TITLE & BREADCRUMB-->
@@ -49,7 +49,7 @@
 				<?php 
 					$datetime = new DateTime($order->created_at);
 				?>
-				<option value="{{{$order->id}}}">{{{$order->order_name}}} [ <?=$datetime->format('Y-m-d')?> ]</option>
+				<option value="{{{$order->id}}}">{{{$order->ref_id}}} [ <?=$datetime->format('Y-m-d')?> ]</option>
 			@endforeach
 		</select>
 	</div>
@@ -74,7 +74,7 @@
 	<h2>安全指標簡介</h2>
 	<hr/>
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-md-1">
 			<h4><b>無超標</b></h4>
 		</div>
 		<div class="col-md-3">
@@ -84,10 +84,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-3">
+		<div class="col-md-1">
 			<h4><b>超標</b></h4>
 		</div>
 		<div class="col-md-3">
@@ -105,20 +102,20 @@
 
 <div id="record_table_div" class="row">
 	<div class="col-md-12">
-		<table id="record_table" class="table table-bordered table-hover">
+		<table id="record_table" class="table table=striped table-bordered table-hover">
 			<thead>
 				<tr>
 					<th>
 						 位置#
 					</th>
 					<th>
-						 讀數
+						 讀數 (ppm)
 					</th>
 					<th>
-						 標準值
+						 標準值 (ppm)
 					</th>
 					<th>
-						差距
+						差距 (ppm)
 					</th>
 					<th colspan="2">
 						安全指標
@@ -152,8 +149,20 @@
 		$('#order_selector').live('change', function(){
 			var progress_value = 0;
 			if($('#order_selector').val() != 0){
+				
+				//$('#info').empty();
+				//$('#info').append();
+				
 				$.get('/gas/getRecord/' +$('#order_selector').val())
 					.done(function(graphData){
+						
+						$.get('/order/get/' + $('#order_selector').val())
+							.done(function(data){
+								$('#info').empty();
+								$('#info').append(data.order_name + ' - ' + data.user.user_chi_name + ' - ' + data.user.phone + ' - ' + data.ref_id);
+							});
+						
+						
 					
 						$.get('/gas/getStandardValue')
 							.done(function(standradValue){
@@ -163,6 +172,8 @@
 									
 									$.each(graphData, function(i, v){
 										var standard_over_value = Math.round((v[1]/standradValue)*100);
+										var row = "";
+										
 										if(standard_over_value > 100){
 											progress_value = 100;
 										}else if(standard_over_value < 1){
@@ -172,15 +183,30 @@
 										}
 										
 										if(standard_over_value > 100){
-											$('#record_table > tbody:last').append('<tr><td><h4>'+v[0]+'</h4></td><td><h4>'+v[1]+' ppm</h4></td><td><h4>'+standradValue+' ppm</h4></td><td><h4>+/-'+(Math.round(Math.abs(v[1] - standradValue) * 100)/ 100)+' ppm</h4></td><td colspan="2" style="width: 30%"><div class="progress progress-striped active"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></td><td class="danger"><h4>'+(standard_over_value/100)+'倍</h4></td></tr>');
+											row = '<tr><td><h4 style="margin: 0px;">'+v[0]+'</h4></td>';
+											row += '<td><h4 style="margin: 0px; text-align: right;">'+(Math.round(Math.abs(v[1]) * 100)/ 100).toFixed(2)+'</h4></td>';
+											row += '<td><h4 style="margin: 0px; text-align: right;">'+standradValue+'</h4></td>';
+											row += '<td class="danger"><h4 style="margin: 0px; text-align: right;">'+(Math.round(Math.abs(v[1] - standradValue) * 100)/ 100)+'</h4></td>';
+											row += '<td colspan="2" style="width: 30%"><div class="progress progress-striped active" style="margin: 0px;"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></td>';
+											row += '<td class="danger"><h4 style="margin: 0px;text-align: right;">'+(standard_over_value/100).toFixed(2)+'倍</h4></td></tr>';
+											$('#record_table > tbody:last').append(row);
 										}else{
-											$('#record_table > tbody:last').append('<tr><td><h4>'+v[0]+'</h4></td><td><h4>'+v[1]+' ppm</h4></td><td><h4>'+standradValue+' ppm</h4></td><td><h4>+/-'+(Math.round(Math.abs(v[1] - standradValue) * 100)/ 100)+' ppm</h4></td><td colspan="2"><div class="progress progress-striped active"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></td><td class="success"><h4>無超標</h4></td></tr>');
+											row = '<tr><td><h4 style="margin: 0px;">'+v[0]+'</h4></td>';
+											row += '<td><h4 style="margin: 0px; text-align: right;">'+(Math.round(Math.abs(v[1]) * 100)/ 100).toFixed(2)+'</h4></td>';
+											row += '<td><h4 style="margin: 0px; text-align: right;">'+standradValue+'</h4></td>';
+											row += '<td class="success"><h4 style="margin: 0px; text-align: right;">'+(Math.round(Math.abs(v[1] - standradValue) * 100)/ 100)+'</h4></td>';
+											row += '<td colspan="2" style="width: 30%"><div class="progress progress-striped active" style="margin: 0px;"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></td>';
+											row += '<td class="success"><h4 style="margin: 0px;text-align: center;">無超標</h4></td></tr>';
+											$('#record_table > tbody:last').append(row);
+											
 										}
 									});
 									$('#info').show();
 									$('#record_table_div').show();
 									$('#msg').hide();
 									//Custom.chart(graphData, standradValue);
+									
+									
 									
 									
 								}else{

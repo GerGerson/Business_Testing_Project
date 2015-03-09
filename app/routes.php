@@ -62,6 +62,7 @@ Route::post('/gas/store', ['as' => 'front.gas.store.post', 'uses' => 'GasControl
 */
 Route::get('/order', ['as' => 'front.order.index.get', 'uses' => 'OrderController@showOrderList']);
 Route::post('/order/search', ['as' => 'front.order.search.post', 'uses' => 'OrderController@search']);
+Route::any('/order/get/{id}', ['as' => 'front.order.get.any', 'uses' => 'OrderController@getOrderInfo']);
 
 
 Route::get('/booking',function(){

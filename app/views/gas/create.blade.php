@@ -4,7 +4,7 @@
 	<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
 	<li>
 		<a href="/logout">
-		登出 
+		X 
 		</span>
 		</a>
 	</li>
@@ -30,10 +30,10 @@
 @section('main_content')
 <!-- BEGIN PAGE HEADER-->
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-xs-12 col-md-4 col-md-offset-4">
 		<!-- BEGIN PAGE TITLE & BREADCRUMB-->
 		<h3 class="page-title">
-			Add Gas Record <small> {{$order->getOrderName()}} - {{{$order->user->getUserNameChi()}}} - {{{$order->getRefId()}}}</small>
+			新增讀數 <br/><small> {{$order->getOrderName()}} - {{{$order->user->getUserNameChi()}}} - {{{$order->user->phone}}} - {{{$order->getRefId()}}}</small>
 			<!-- testing -->
 		</h3>
 		<!-- END PAGE TITLE & BREADCRUMB-->
@@ -44,22 +44,22 @@
 <hr/>
 
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-xs-12 col-md-4 col-md-offset-4">
 		{{ Form::model($gas, ['route' => ['front.gas.store.post'], 'class' => 'form-horizontal group-border-dashed', 'method' => 'post', 'style' => 'border-radius: 0px;']) }}
 			{{ Form::hidden('order_id', $order->getId()) }}	
 
 			
 			<div class="form-group">
-				{{ Form::label('value', 'Value', ['class' => 'col-sm-3 control-label']) }}
+				{{ Form::label('value', '讀數', ['class' => 'col-sm-3 control-label']) }}
 				<div class="col-sm-6">
 					{{ Form::text('value', '', ['class' => 'form-control', 'id' => 'value']) }}
 				</div>
 			</div>
 			
 			<div class="form-group">
-				{{ Form::label('location', 'Location', ['class' => 'col-sm-3 control-label']) }}
+				{{ Form::label('location', '地點', ['class' => 'col-sm-3 control-label']) }}
 				<div class="col-sm-6">
-					{{ Form::text('location', '', ['class' => 'form-control', 'id' => 'location']) }}
+					<input type="hidden" id="location" name="location" class="form-control select2" >
 				</div>
 			</div>
 			
@@ -67,7 +67,7 @@
 			<div class="form-group">
 				<div class="col-sm-3"></div>
 				<div class="col-sm-6">
-					<button class="btn btn-primary" type="submit">Submit</button>
+					<button class="btn btn-primary" type="submit">新增</button>
 				</div>
 				
 			</div>
@@ -79,15 +79,15 @@
 <hr/>
 
 <div id="record_table_div" class="row">
-	<div class="col-md-12">
+	<div class="col-xs-12 col-md-4 col-md-offset-4">
 		<table id="record_table" class="table table-bordered table-hover">
 			<thead>
 				<tr>
 					<th>
 						 位置#
 					</th>
-					<th>
-						 讀數
+					<th style="text-align: right">
+						 讀數(ppm)
 					</th>
 				</tr>
 			</thead>
@@ -95,7 +95,7 @@
 				@foreach($order->gas as $g)
 					<tr>
 						<td>{{$g->getLocation()}}</td>
-						<td>{{$g->getGasValue()}}</td>
+						<td style="text-align: right">{{{number_format($g->getGasValue(), 2, '.', '')}}}</td>
 					</tr>
 				
 				@endforeach
@@ -107,5 +107,11 @@
 @stop
 
 @section('script')
-
+<script>
+$(document).ready(function(){
+	$("#location").select2({
+            tags: ["大門", "大廳", "客廳", "飯廳", "廁所1", "廁所2", "主人房", "主人房廁所", "客房1", "客房2", "客房3"]
+	});
+});
+</script>
 @stop
