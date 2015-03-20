@@ -78,7 +78,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="/login">登入</a></li>
-                        <li><a href="/register">註冊</a></li>
+                        <!--<li><a href="/register">註冊</a></li>-->
                     </ul>
                 </div>
                 <!-- END TOP BAR MENU -->
@@ -93,7 +93,7 @@ License: You must have a valid license purchased only from themeforest (the abov
       <div class="row">
         <!-- Logo BEGIN -->
         <div class="col-md-2 col-sm-2">
-          <a class="scroll site-logo" href="#promo-block"><img src="../../assets/frontend/onepage/img/logo/turquoise.png" alt="Metronic One Page"></a>
+          <a class="scroll site-logo" href="/"><img src="../../assets/frontend/onepage/img/logo/turquoise.png" alt="Metronic One Page"></a>
         </div>
         <!-- Logo END -->
 
@@ -104,7 +104,6 @@ License: You must have a valid license purchased only from themeforest (the abov
           <ul class="header-navigation">
             <li class="current"><a href="#about">關於置簡單</a></li>
             <li><a href="#services">服務</a></li>
-            <li><a href="#benefits1">簡介</a></li>
             <li><a href="#prices">收費</a></li>
             <li><a href="#contact">聯絡我們</a></li>
           </ul>
@@ -119,12 +118,12 @@ License: You must have a valid license purchased only from themeforest (the abov
   <div class="about-block content content-center" id="about">
     <div class="container">
       <h2><strong>置簡單</strong></h2>
-      <h4>置業‧裝修‧話咁易</h4>
+      <h4>易安居‧易置業</h4>
 	  
 	</div>
 	<div class="row">
 		<div>
-			<img src="../../assets/frontend/onepage/img/background.jpg" alt="" class="img-responsive center-block">
+			<img src="../../assets/frontend/onepage/img/background.png" alt="" class="img-responsive center-block">
 		</div>
 	</div>
   </div> 
@@ -164,9 +163,9 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Services block END -->
 
   <!-- Choose us block BEGIN -->
-  <div class="choose-us-block content text-center margin-bottom-40" id="benefits1">
+  <div class="choose-us-block content text-center margin-bottom-40" id="prices">
     <div class="container">
-	  <h2 class="margin-bottom-50"><strong>收費</strong></h2>
+	  <h2 class="margin-bottom-50"><strong>甲醛檢測收費</strong></h2>
 	  <div class="row">
         <!-- Pricing item BEGIN -->
         <div class="col-md-4 col-md-offset-2 col-sm-4 col-xs-12">
@@ -179,14 +178,12 @@ License: You must have a valid license purchased only from themeforest (the abov
               	<strong>$<em>0</em></strong>
               </div>
 	          <ul class="list-unstyled">
-				<li><i class="fa fa-circle"></i> 一年內新裝修單位，一律免費 </li>
-	            <li><i class="fa fa-circle"></i> 包半小時詳細檢查 </li>
-	            <li><i class="fa fa-circle"></i> 即時結果查閱 </li>
+				<li><i class="fa fa-circle"></i> 五年內新裝修單位，一律免費 </li>
+	            <li><i class="fa fa-circle"></i> 1000呎以下單位 </li>
+	            <li><i class="fa fa-circle"></i> 即時詳細結果查閱 </li>
 	          </ul>
             </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="/register">立即註冊</a>
-            </div>
+            
           </div>
         </div>
 		
@@ -200,13 +197,9 @@ License: You must have a valid license purchased only from themeforest (the abov
               	<strong>$<em>200</em></strong>
               </div>
 	          <ul class="list-unstyled">
-				<li><i class="fa fa-circle"></i> 裝修超過一年之單位</li>
-	            <li><i class="fa fa-circle"></i> 包半小時詳細檢查 </li>
-	            <li><i class="fa fa-circle"></i> 即時結果查閱 </li>
+				<li><i class="fa fa-circle"></i> 裝修超過五年之單位</li>
+	            <li><i class="fa fa-circle"></i> 即時詳細結果查閱  </li>
 	          </ul>
-            </div>
-            <div class="pricing-footer">
-              <a class="btn btn-default" href="/register">立即註冊</a>
             </div>
           </div>
         </div>
@@ -308,10 +301,7 @@ License: You must have a valid license purchased only from themeforest (the abov
           <!-- BEGIN BOTTOM CONTACTS -->
           <h2>聯絡我們</h2>
           <address class="margin-bottom-20">
-            35, Lorem Lis Street, Park Ave<br>
-            California, US<br>
             Phone: 300 323 3456<br>
-            Fax: 300 323 1456<br>
             Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
           </address>
           <!-- END BOTTOM CONTACTS -->
@@ -326,16 +316,18 @@ License: You must have a valid license purchased only from themeforest (the abov
     <div class="container">
       <div class="row">
         <!-- BEGIN COPYRIGHT -->
-        <div class="col-md-6 col-sm-6">
-          <div class="copyright">2014 © Metronic One Page. ALL Rights Reserved.</div>
+        <div class="col-md-8 col-sm-8">
+          <div class="copyright">
+		  2015 © Homeasy. ALL Rights Reserved.
+		  <a class="term-link" href="/tos">Term of Conditions</a>
+		  <a class="term-link" style="border-width:0" href="/top">Privacy Policy</a>
+		  </div>
         </div>
         <!-- END COPYRIGHT -->
         <!-- BEGIN SOCIAL ICONS -->
-        <div class="col-md-6 col-sm-6 pull-right">
+        <div class="col-md-4 col-sm-4 pull-right">
           <ul class="social-icons">
             <li><a class="facebook" data-original-title="facebook" href="javascript:void(0);"></a></li>
-            <li><a class="youtube" data-original-title="youtube" href="javascript:void(0);"></a></li>
-            <li><a class="skype" data-original-title="skype" href="javascript:void(0);"></a></li>
           </ul>
         </div>
         <!-- END SOCIAL ICONS -->
@@ -344,7 +336,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   </div>
   <!-- END FOOTER -->
 
-  <a href="#promo-block" class="go2top scroll"><i class="fa fa-arrow-up"></i></a>
+  <a href="#about" class="go2top scroll"><i class="fa fa-arrow-up"></i></a>
 
   <!--[if lt IE 9]>
     <script src="../../assets/global/plugins/respond.min.js"></script>

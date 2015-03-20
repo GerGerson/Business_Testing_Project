@@ -162,3 +162,30 @@ Pre-Header and pre-header elements
 	font-weight: 900;
 	color: #FF0000;
 }
+
+/***
+Footer term
+***/
+
+/***
+Term of service / Term of Privacy
+***/
+
+.term-link {
+	padding: 0 10px 0 10px;
+	border-right-style : solid;
+	border-right-width : 1px;
+}
+
+.term-title {
+	color: #64AED9;
+	text-align : center;
+}
+
+.term-header {
+	color: #64AED9;
+}
+
+.term p {
+	font-size: 18px;
+}

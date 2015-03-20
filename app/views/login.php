@@ -62,6 +62,8 @@ License: You must have a valid license purchased only from themeforest(the above
 			
 			<form id="login" class="form-horzontal" action="">
 				<p class="register_font">登入並查閱新資訊！</p>
+				<!-- Email BEGIN-->
+				<!--
 				<div class="form-group">
 					<div class="input-inline">
 						<div class="input-group">
@@ -72,6 +74,8 @@ License: You must have a valid license purchased only from themeforest(the above
 						</div>
 					</div>
 				</div>
+				-->
+				<!--Email END-->
 				
 				<div class="form-group">
 					<div class="input-inline">
@@ -94,7 +98,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		</div>
 	</div>
 	<div class="page-footer-custom">
-		 2014 &copy; TBC.
+		 2015 &copy; Homeasy.
 	</div>
 </div>
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
@@ -144,7 +148,7 @@ jQuery(document).ready(function() {
 								strHtml = "<div class='alert alert-danger'>";
 								strHtml += "<button class='close' data-close='alert'></button>";
 								strHtml += "<span>";
-								strHtml += "登入用戶名或密碼不正確";
+								strHtml += "登入密碼不正確";
 								strHtml += "</span>";
 								strHtml += "</div>";
 								

@@ -96,7 +96,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 		</div>
 		<div class="col-md-8 col-md-offset-2">
 			<div class="col-md-5">
-				<img src="/photo/sample.jpg"/>
+				<img src="/photo/detail1.png"/>
 			</div>
 			<div class="col-md-7">
 			<ul>
@@ -114,7 +114,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 		</div>
 		<div  class="col-md-8 col-md-offset-2">
 			<div class="col-md-5">
-				<img src="/photo/sample.jpg"/>
+				<img src="/photo/detail2.png"/>
 			</div>
 			<div class="col-md-7">
 			<ul>
@@ -132,7 +132,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 		</div>
 		<div class="col-md-8 col-md-offset-2">
 			<div class="col-md-5">
-				<img src="/photo/sample.jpg"/>
+				<img src="/photo/detail3.png"/>
 			</div>
 			<div class="col-md-7">
 			<ul>
@@ -150,7 +150,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 		</div>
 		<div class="col-md-8 col-md-offset-2">
 			<div class="col-md-5">
-				<img src="/photo/sample.jpg"/>
+				<img src="/photo/detail4.png"/>
 			</div>
 			<div class="col-md-7">
 			<ul>

@@ -18,7 +18,7 @@ class MemberController extends BaseController {
 		$password = hash('md5',Input::get('password'));
 		//$SaveMode = Input::get('SaveMode');
 		
-		$data = DB::Select("SELECT * FROM UserInfo WHERE email = '". $email ."' AND login_password = '" . $password . "'");
+		$data = DB::Select("SELECT * FROM UserInfo WHERE login_password = '" . $password . "'");
 
 		if (count($data) == 0){
 			echo (string)count($data);
