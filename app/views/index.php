@@ -302,7 +302,7 @@ License: You must have a valid license purchased only from themeforest (the abov
           <h2>聯絡我們</h2>
           <address class="margin-bottom-20">
             Phone: 300 323 3456<br>
-            Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
+            Email: <a href="mailto:info@metronic.com">info@homeasy.house</a><br>
           </address>
           <!-- END BOTTOM CONTACTS -->
         </div>
