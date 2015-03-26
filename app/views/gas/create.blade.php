@@ -89,6 +89,7 @@
 					<th style="text-align: right">
 						 讀數(ppm)
 					</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -96,6 +97,7 @@
 					<tr>
 						<td>{{$g->getLocation()}}</td>
 						<td style="text-align: right">{{{number_format($g->getGasValue(), 2, '.', '')}}}</td>
+						<td><a href="{{ URL::route('front.gas.delete.get', ['id' => $g->id, 'order_id' => $order->id]) }}">刪除</a></td>
 					</tr>
 				
 				@endforeach

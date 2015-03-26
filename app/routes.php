@@ -63,6 +63,7 @@ Route::group(array('before' => 'gas_detail_auth_check'), function()
 });
 
 Route::get('/gas/create/{id}', ['as' => 'front.gas.create.get', 'uses' => 'GasController@createGasRecord']);
+Route::get('/gas/delete/{id}/{order_id}', ['as' => 'front.gas.delete.get', 'uses' => 'GasController@deleteGasRecord']);
 Route::post('/gas/store', ['as' => 'front.gas.store.post', 'uses' => 'GasController@storeGasRecord']);
 
 /*

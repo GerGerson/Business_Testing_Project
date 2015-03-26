@@ -60,4 +60,9 @@ class GasController extends BaseController {
 		
 		return Redirect::route('front.gas.create.get', ['id' => $orderId]);
 	}
+	
+	public function deleteGasRecord($id, $order_id){
+		$gas = Gas::find($id)->delete();
+		return Redirect::route('front.gas.create.get', ['id' => $order_id]);
+	}
 }
