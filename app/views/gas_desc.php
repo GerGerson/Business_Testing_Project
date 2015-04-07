@@ -61,13 +61,30 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Theme styles END -->
 </head>
 <body>
+	<!-- BEGIN TOP BAR -->
+	<div class="pre-header">
+		<div class="container">
+			<div class="row">
+				<!-- BEGIN TOP BAR LEFT PART -->
+				<div class="col-md-6 col-sm-6 additional-shop-info">
+					<ul class="list-unstyled list-inline">
+						<li><i class="fa fa-phone"></i><span>5184 0530</span></li>
+						<li><i class="fa fa-envelope-o"></i><span>info@homeasy.house</span></li>
+					</ul>
+				</div>
+				<!-- END TOP BAR LEFT PART -->
+			</div>
+		</div>        
+	</div>
+	<!-- END TOP BAR -->
+	
   <!-- Header BEGIN -->
   <div class="header header-mobi-ext">
     <div class="container">
       <div class="row">
         <!-- Logo BEGIN -->
         <div class="col-md-2 col-sm-2">
-          <a class="scroll site-logo" href="#promo-block"><img src="../../assets/frontend/onepage/img/logo/turquoise.png" alt="Metronic One Page"></a>
+          <a class="site-logo" href="/"><img src="../../assets/frontend/onepage/img/logo/turquoise.png" alt="Metronic One Page"></a>
         </div>
         <!-- Logo END -->
 
@@ -86,13 +103,58 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Header END -->
 
   <!-- Services block BEGIN -->
-  <div class="services-block content " id="services">
+  <div class="detail-services-block content " id="services">
     <div class="container">
-      <h1><strong>甲醛FAQ</strong></h1>
+     <h2><strong>服務</strong></h2>
+	 <div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<h2>檢查甲醛</h2>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-5">
+				<img src="/photo/detail4.png"/>
+			</div>
+			<div class="col-md-7">
+			<ul>
+				<li>Homeasy為所有五年內裝修之單位提供免費檢查甲醛服務。</li>
+				<li>裝修超過五的單位，亦可以以優惠價錢安排檢查。</li>
+				<li>免費檢查，可大大減輕你選擇除甲醛服務時的成本。</li>
+			</ul>
+			</div>
+        </div>
+	  </div>
+	  <div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<h2>如何除甲醛</h2>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-5">
+				<img src="/photo/detail5.png"/>
+			</div>
+			<div class="col-md-7">
+			<ul>
+				<li>坊間有很多方法去除甲醛,但都是被誤解的。</li>
+				<li>除去剌鼻的味道,其實甲醛並未消失,並持續地釋放。</li>
+				<li>最好的方法當然是經常保持窒內空氣流通,用低甲醛物料,或請專人上門提供除甲醛服務。</li>
+				<li>市場上，各公司有不同方法去除甲醛(如光觸媒、CT觸媒等)。</li>
+				<li>如有需要除甲醛服務，Homeasy可根據你的需要安排合適公司。</li>
+				<li>經Homeasy安排的公司，都可以穫得折扣優惠。</li>
+			</ul>
+			</div>
+        </div>
+	  </div>
+    </div>
+  </div>
+  <!-- Services block END -->
+  
+  <!-- Services block BEGIN -->
+  <div class="detail-gas-block content " id="services">
+    <div class="container">
+      <h2><strong>甲醛</strong></h2>
 	  
 	  <div class="row">
 		<div class="col-md-6 col-md-offset-3">
-			<h2>甚麼是甲醛?</h2>
+			<h2>甚麼是甲醛</h2>
 		</div>
 		<div class="col-md-8 col-md-offset-2">
 			<div class="col-md-5">
@@ -107,7 +169,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 			</div>
         </div>
       </div>
-	  <hr/>
+
 	  <div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<h2>甲醛的影響</h2>
@@ -125,7 +187,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 			</div>
         </div>
 	  </div>
-	  <hr/>
+
 	  <div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<h2>國際對甲醛之標準</h2>
@@ -139,24 +201,6 @@ License: You must have a valid license purchased only from themeforest (the abov
 				<li>歐洲各國早已定明室內甲醛量不應超過0.08pp。</li>
 				<li>美國於2012年更進一步收緊建築及裝修用之複合木質品標準不可超過0.05ppm。</li>
 				<li>香港亦參考世界衛生組織標準定立指標,分別「卓越級」- 少於0.024ppm、「良好級」- 少於0.08ppm。</li>
-			</ul>
-			</div>
-        </div>
-	  </div>
-	  <hr/>
-	  <div class="row">
-		<div class="col-md-6 col-md-offset-3">
-			<h2>如何除甲醛</h2>
-		</div>
-		<div class="col-md-8 col-md-offset-2">
-			<div class="col-md-5">
-				<img src="/photo/detail4.png"/>
-			</div>
-			<div class="col-md-7">
-			<ul>
-				<li>坊間有很多方法去除甲醛,但都是被誤解的。</li>
-				<li>除去剌鼻的味道,其實甲醛並未消失,並持續地釋放。</li>
-				<li>最好的方法當然是經常保持窒內空氣流通,用低甲醛物料,或請專人上門提供除甲醛服務。</li>
 			</ul>
 			</div>
         </div>
@@ -182,11 +226,8 @@ License: You must have a valid license purchased only from themeforest (the abov
           <!-- BEGIN BOTTOM CONTACTS -->
           <h2>聯絡我們</h2>
           <address class="margin-bottom-20">
-            35, Lorem Lis Street, Park Ave<br>
-            California, US<br>
-            Phone: 300 323 3456<br>
-            Fax: 300 323 1456<br>
-            Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
+            Phone/Whatsapp: 5184 0530<br>
+            Email: <a href="mailto:info@metronic.com">info@homeasy.house</a><br>
           </address>
           <!-- END BOTTOM CONTACTS -->
         </div>
@@ -201,7 +242,7 @@ License: You must have a valid license purchased only from themeforest (the abov
       <div class="row">
         <!-- BEGIN COPYRIGHT -->
         <div class="col-md-6 col-sm-6">
-          <div class="copyright">2014 © Metronic One Page. ALL Rights Reserved.</div>
+          <div class="copyright">2015 © Homeasy. ALL Rights Reserved.</div>
         </div>
         <!-- END COPYRIGHT -->
         <!-- BEGIN SOCIAL ICONS -->
@@ -243,7 +284,6 @@ License: You must have a valid license purchased only from themeforest (the abov
   <script src="../../assets/global/plugins/jquery.parallax.js"></script>
   <script src="../../assets/global/plugins/jquery.scrollTo.min.js"></script>
   <script src="../../assets/frontend/onepage/scripts/jquery.nav.js"></script>
-  <script src="../../assets/frontend/layout/scripts/back-to-top.js" type="text/javascript"></script>  
   <!-- Core plugins END (required only for current page) -->
 
   <!-- Global js BEGIN -->

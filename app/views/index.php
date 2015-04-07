@@ -69,7 +69,7 @@ License: You must have a valid license purchased only from themeforest (the abov
                 <!-- BEGIN TOP BAR LEFT PART -->
                 <div class="col-md-6 col-sm-6 additional-shop-info">
                     <ul class="list-unstyled list-inline">
-                        <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
+                        <li><i class="fa fa-phone"></i><span>5184 0530</span></li>
                         <li><i class="fa fa-envelope-o"></i><span>info@homeasy.house</span></li>
                     </ul>
                 </div>
@@ -93,7 +93,7 @@ License: You must have a valid license purchased only from themeforest (the abov
       <div class="row">
         <!-- Logo BEGIN -->
         <div class="col-md-2 col-sm-2">
-          <a class="scroll site-logo" href="/"><img src="../../assets/frontend/onepage/img/logo/turquoise.png" alt="Metronic One Page"></a>
+          <a class="site-logo" href="/"><img src="../../assets/frontend/onepage/img/logo/turquoise.png" alt="Metronic One Page"></a>
         </div>
         <!-- Logo END -->
 
@@ -137,22 +137,27 @@ License: You must have a valid license purchased only from themeforest (the abov
 		<div class="col-md-6 col-sm-6 col-xs-12 item">
           <i class="fa_danger fa-exclamation"></i>
           <h3>危險氣體</h3>
-          <p>裝修物料及傢俬均有機會含有甲醛，並可以持續數年放出</p>
+          <h4><p>裝修物料及傢俬均有機會含有甲醛，並可以持續數年放出</p></h4>
         </div>
         <div  class="col-md-6 col-sm-6 col-xs-12 item">
           <i class="fa_danger fa-bomb"></i>
           <h3>影響健康</h3>
-          <p>長期吸入甲醛，會增加致癌風險</p>
+          <h4><p>長期吸入甲醛，會增加致癌風險</p></h4>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 item">
           <i class="fa fa-gear"></i>
           <h3>專業檢查</h3>
-          <p>工業級儀器，準確測量</p>
+          <p>
+			<h4>Homeasy提供新裝修單位免費甲醛檢測服務</h4>
+		  </p>
         </div>
 		<div class="col-md-6 col-sm-6 col-xs-12 item">
           <i class="fa fa-user"></i>
           <h3>安排適合解決方法</h3>
-          <p>因應需求，提供合理解決服務</p>
+          <h4><p>
+			由Homeasy提供的檢測結果，我們可以助你找出合適的除甲醛公司。<br>只要經Homeasy安排的除甲醛公司，都可享有折扣優惠。
+		  </p></h4>
+		  
         </div>
       </div>
 	  <div class="row">
@@ -163,7 +168,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- Services block END -->
 
   <!-- Choose us block BEGIN -->
-  <div class="choose-us-block content text-center margin-bottom-40" id="prices">
+  <div class="choose-us-block content text-center" id="prices">
     <div class="container">
 	  <h2 class="margin-bottom-50"><strong>甲醛檢測收費</strong></h2>
 	  <div class="row">
@@ -208,8 +213,8 @@ License: You must have a valid license purchased only from themeforest (the abov
     </div>
   </div>
   <!-- Choose us block END -->
-
-  <!-- Services block BEGIN -->
+  
+  <!-- Contact block BEGIN -->
   <div class="contact-block content text-center" id="contact">
 	<div class="container">
 		<h2><strong>聯絡我們</strong></h2>
@@ -245,7 +250,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 		</div>
 	</div>
   </div>
-  <!-- Services block END -->
+  <!-- Contact block END -->
   
   <!-- Testimonials block BEGIN -->
   <!--
@@ -301,7 +306,7 @@ License: You must have a valid license purchased only from themeforest (the abov
           <!-- BEGIN BOTTOM CONTACTS -->
           <h2>聯絡我們</h2>
           <address class="margin-bottom-20">
-            Phone: 300 323 3456<br>
+            Phone/Whatsapp: 5184 0530<br>
             Email: <a href="mailto:info@metronic.com">info@homeasy.house</a><br>
           </address>
           <!-- END BOTTOM CONTACTS -->

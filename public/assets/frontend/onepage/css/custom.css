@@ -54,14 +54,16 @@
   padding: 35px 0 0;
 }
 
-.services-block ul li {
-  font-size: 18px;
-  padding: 5px;
-}
+
 
 .services-block .item { /* remove border */
   border-right: solid 0px #e8e7e7;
   padding-top: 50px;
+}
+
+.choose-us-block ul li {
+  font-size: 18px;
+  padding: 5px;
 }
 
 /*Overide blue.css(theme)*/
@@ -163,6 +165,34 @@ Pre-Header and pre-header elements
 	color: #FF0000;
 }
 
+/***
+Detail Description
+***/
+.detail-services-block {
+  background: #fff;
+  padding: 60px 0 70px;
+}
+.detail-services-block .row {
+  padding-top: 44px;
+}
+
+.detail-services-block ul li {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.detail-gas-block {
+  background: #f6f6f6;
+  padding: 60px 0 70px;
+}
+.detail-gas-block .row {
+  padding-top: 44px;
+}
+
+.detail-gas-block ul li {
+  font-size: 18px;
+  padding: 5px;
+}
 /***
 Footer term
 ***/

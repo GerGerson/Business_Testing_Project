@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>HomEasy</title>
+  <title>Homeasy</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -63,21 +63,21 @@ License: You must have a valid license purchased only from themeforest (the abov
 <body>
 
 	<!-- BEGIN TOP BAR -->
-    <div class="pre-header">
-        <div class="container">
-            <div class="row">
-                <!-- BEGIN TOP BAR LEFT PART -->
-                <div class="col-md-6 col-sm-6 additional-shop-info">
-                    <ul class="list-unstyled list-inline">
-                        <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
-                        <li><i class="fa fa-envelope-o"></i><span>info@homeasy.house</span></li>
-                    </ul>
-                </div>
-                <!-- END TOP BAR LEFT PART -->
-            </div>
-        </div>        
-    </div>
-    <!-- END TOP BAR -->
+	<div class="pre-header">
+		<div class="container">
+			<div class="row">
+				<!-- BEGIN TOP BAR LEFT PART -->
+				<div class="col-md-6 col-sm-6 additional-shop-info">
+					<ul class="list-unstyled list-inline">
+						<li><i class="fa fa-phone"></i><span>5184 0530</span></li>
+						<li><i class="fa fa-envelope-o"></i><span>info@homeasy.house</span></li>
+					</ul>
+				</div>
+				<!-- END TOP BAR LEFT PART -->
+			</div>
+		</div>        
+	</div>
+	<!-- END TOP BAR -->
 
   <!-- Header BEGIN -->
   <div class="header header-mobi-ext">
@@ -85,7 +85,7 @@ License: You must have a valid license purchased only from themeforest (the abov
       <div class="row">
         <!-- Logo BEGIN -->
         <div class="col-md-2 col-sm-2">
-          <a class="scroll site-logo" href="/"><img src="../../assets/frontend/onepage/img/logo/turquoise.png" alt="Metronic One Page"></a>
+          <a class="site-logo" href="/"><img src="../../assets/frontend/onepage/img/logo/turquoise.png" alt="Metronic One Page"></a>
         </div>
         <!-- Logo END -->
 
@@ -107,7 +107,7 @@ License: You must have a valid license purchased only from themeforest (the abov
   <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="term-title"><h1>Term and Conditions</h1></div>
+			<div class="term-title" id="top"><h1>Term and Conditions</h1></div>
 			<div class="term">
 				<h3>Last Updated: March 13, 2015</h3>
 				<h3 class="term-header">IMPORTANT</h3>
@@ -170,7 +170,7 @@ License: You must have a valid license purchased only from themeforest (the abov
           <!-- BEGIN BOTTOM CONTACTS -->
           <h2>聯絡我們</h2>
           <address class="margin-bottom-20">
-            Phone: 300 323 3456<br>
+            Phone/Whatsapp: 5184 0530<br>
             Email: <a href="mailto:info@metronic.com">info@homeasy.house</a><br>
           </address>
           <!-- END BOTTOM CONTACTS -->
@@ -201,6 +201,8 @@ License: You must have a valid license purchased only from themeforest (the abov
   </div>
   <!-- END FOOTER -->
 
+  <a href="#top" class="go2top scroll"><i class="fa fa-arrow-up"></i></a>
+  
   <!--[if lt IE 9]>
     <script src="../../assets/global/plugins/respond.min.js"></script>
   <![endif]-->
@@ -220,5 +222,13 @@ License: You must have a valid license purchased only from themeforest (the abov
   <script src="../../assets/frontend/onepage/scripts/jquery.nav.js"></script>
   <script src="../../assets/global/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
   <!-- Core plugins END (required only for current page) -->
+  
+  <!-- Global js BEGIN -->
+  <script src="../../assets/frontend/onepage/scripts/layout.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function() {
+      Layout.init();
+	});
+  </script>
 </body>
 </html>
