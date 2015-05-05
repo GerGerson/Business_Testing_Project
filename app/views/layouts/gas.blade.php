@@ -64,29 +64,38 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
 <body class="page-header-fixed page-full-width">
 <!-- BEGIN HEADER -->
-<div class="page-header navbar navbar-fixed-top" style="background-color: rgba(255,255,255,0.95); box-shadow: 0 1px 4px rgba(228, 228, 228, 0.95); height: 90px; ">
+<div class="page-header navbar navbar-fixed-top" style="background-color: rgba(255,255,255,0.95); box-shadow: 0 1px 4px rgba(228, 228, 228, 0.95); min-height: 60px; ">
 	<!-- BEGIN HEADER INNER -->
 	<div class="page-header-inner">
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
 			<a href="/">
-			<img src="/assets/frontend/onepage/img/logo/turquoise.png" alt="logo" class="logo-default"/>
+			<img src="/assets/frontend/onepage/img/logo/turquoise.png" alt="logo"/>
 			</a>
 		</div>
 		<!-- END LOGO -->
 		<!-- BEGIN HORIZANTAL MENU -->
 		<!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
 		<!-- DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) sidebar menu below. So the horizontal menu has 2 seperate versions -->
+		<div class = "logout">
+			<ul class="list-unstyled list-inline pull-right">
+				<a href="/logout">登出</a>
+			</ul>
+		</div>
+		<!--
 		<div class="hor-menu hor-menu-light hidden-sm hidden-xs" style="text-align: right; float: right; ">
 			<div class="col-md-12" >
-				@yield('horizontal_menu')
+				@yield('horizontal_menu_bak')
 			</div>
 		</div>
+		-->
 		<!-- END HORIZANTAL MENU -->
 		
 		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<!--
 		<div class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
 		</div>
+		-->
 		<!-- END RESPONSIVE MENU TOGGLER -->
 	</div>
 	<!-- END HEADER INNER -->

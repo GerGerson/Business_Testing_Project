@@ -116,8 +116,8 @@ License: You must have a valid license purchased only from themeforest (the abov
 			</div>
 			<div class="col-md-7">
 			<ul>
-				<li>Homeasy為所有五年內裝修之單位提供免費檢查甲醛服務。</li>
-				<li>裝修超過五的單位，亦可以以優惠價錢安排檢查。</li>
+				<li>Homeasy為五年內裝修之單位提供免費檢查甲醛服務。</li>
+				<li>裝修超過五年的單位，亦可以以優惠價錢安排檢查。</li>
 				<li>免費檢查，可大大減輕你選擇除甲醛服務時的成本。</li>
 			</ul>
 			</div>
@@ -215,7 +215,7 @@ License: You must have a valid license purchased only from themeforest (the abov
       <div class="row">
         <!-- BEGIN BOTTOM ABOUT BLOCK -->
         <div class="col-md-6 col-sm-6 pre-footer-col">
-          <h2>關於置簡單</h2>
+          <h2>關於Homeasy(置簡單)</h2>
           <p>安居置業都係大陪份打工仔既目標，但置業往往用盡大家積蓄，而忽略居住質素。</p>
           <p>置簡單希望可以從多方面提供資訊、服務，以幫助大家易安居‧易置業。</p>
         </div>

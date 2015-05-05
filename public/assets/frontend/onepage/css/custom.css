@@ -7,8 +7,8 @@
 }
 
 .about-block {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 /*Overide component.css*/
@@ -26,8 +26,8 @@
 .services-block .fa_danger {
   background: #f05250;
   color: #fff;
-  width: 99px;
-  height: 99px;  
+  width: 150px;
+  height: 150px;  
   line-height: 1;
   border-radius: 50%;
   position: relative;
@@ -50,8 +50,39 @@
 }
 
 .services-block .fa_danger {
-  font-size: 38px;
-  padding: 35px 0 0;
+  font-size: 100px;
+  padding: 25px 0 0;
+}
+
+.services-block .fa {
+  background: #64AED9;
+  color: #fff;
+  width: 150px;
+  height: 150px;  
+  line-height: 1;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.services-block .fa:after {
+  bottom: -8px;
+  width: 0; 
+  height: 0;
+  left: 50%;
+  margin-left: -9px;
+  z-index: 2; 
+  content: " "; 
+  display: block; 
+  position: absolute;
+  border-top: 9px solid #64AED9;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+
+.services-block .fa {
+  font-size: 100px;
+  padding: 25px 0 0;
 }
 
 
@@ -64,6 +95,79 @@
 .choose-us-block ul li {
   font-size: 18px;
   padding: 5px;
+}
+
+.pi-price strong {
+  font-size: 25px;
+  font-weight: 400;
+  display: inline-block;
+
+  background: #64AED9;
+  color: #fff;
+  width: 150px;
+  height: 150px;  
+  line-height: 1;
+  border-radius: 50%;
+  position: relative;
+  padding: 45px 0 0;
+  margin-bottom: 20px;
+}
+.pi-price strong:after {
+  bottom: -8px;
+  width: 0; 
+  height: 0;
+  left: 50%;
+  margin-left: -9px;
+  z-index: 2; 
+  content: " "; 
+  display: block; 
+  position: absolute;
+  border-top: 9px solid #64AED9;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+
+.pi-price-free strong em {
+  font-size: 50px;  
+  font-style: normal;
+}
+
+.pi-price-free {
+  margin-bottom: 31px;
+}
+
+.pi-price-free strong {
+  font-size: 25px;
+  font-weight: 400;
+  display: inline-block;
+
+  background: #e6400c;
+  color: #fff;
+  width: 150px;
+  height: 150px;  
+  line-height: 1;
+  border-radius: 50%;
+  position: relative;
+  padding: 45px 0 0;
+  margin-bottom: 20px;
+}
+.pi-price-free strong:after {
+  bottom: -8px;
+  width: 0; 
+  height: 0;
+  left: 50%;
+  margin-left: -9px;
+  z-index: 2; 
+  content: " "; 
+  display: block; 
+  position: absolute;
+  border-top: 9px solid #e6400c;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+
+.pricing-content .free .list-unstyled li i {
+  color: #e85425;
 }
 
 /*Overide blue.css(theme)*/

@@ -102,7 +102,7 @@ License: You must have a valid license purchased only from themeforest (the abov
         <!-- Navigation BEGIN -->
         <div class="col-md-10">
           <ul class="header-navigation">
-            <li class="current"><a href="#about">關於置簡單</a></li>
+            <li class="current"><a href="#about">關於Homeasy</a></li>
             <li><a href="#services">服務</a></li>
             <li><a href="#prices">收費</a></li>
             <li><a href="#contact">聯絡我們</a></li>
@@ -117,13 +117,11 @@ License: You must have a valid license purchased only from themeforest (the abov
   <!-- About block BEGIN -->
   <div class="about-block content content-center" id="about">
     <div class="container">
-      <h2><strong>置簡單</strong></h2>
-      <h4>易安居‧易置業</h4>
-	  
+      
 	</div>
 	<div class="row">
 		<div>
-			<img src="../../assets/frontend/onepage/img/background.png" alt="" class="img-responsive center-block">
+			<img src="../../assets/frontend/onepage/img/background.jpg" alt="" class="img-responsive center-block">
 		</div>
 	</div>
   </div> 
@@ -140,24 +138,25 @@ License: You must have a valid license purchased only from themeforest (the abov
           <h4><p>裝修物料及傢俬均有機會含有甲醛，並可以持續數年放出</p></h4>
         </div>
         <div  class="col-md-6 col-sm-6 col-xs-12 item">
-          <i class="fa_danger fa-bomb"></i>
+          <i class="fa_danger fa-user-md"></i>
           <h3>影響健康</h3>
           <h4><p>長期吸入甲醛，會增加致癌風險</p></h4>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 item">
-          <i class="fa fa-gear"></i>
+          <i class="fa fa-search"></i>
           <h3>專業檢查</h3>
           <p>
 			<h4>Homeasy提供新裝修單位免費甲醛檢測服務</h4>
 		  </p>
         </div>
 		<div class="col-md-6 col-sm-6 col-xs-12 item">
-          <i class="fa fa-user"></i>
+          <i class="fa fa-check-circle-o"></i>
           <h3>安排適合解決方法</h3>
-          <h4><p>
+          <h4>
+		  <p>
 			由Homeasy提供的檢測結果，我們可以助你找出合適的除甲醛公司。<br>只要經Homeasy安排的除甲醛公司，都可享有折扣優惠。
-		  </p></h4>
-		  
+		  </p>
+		  </h4>
         </div>
       </div>
 	  <div class="row">
@@ -176,17 +175,20 @@ License: You must have a valid license purchased only from themeforest (the abov
         <div class="col-md-4 col-md-offset-2 col-sm-4 col-xs-12">
           <div class="pricing-item">
             <div class="pricing-head">
-              <h3>新居大禮</h3>
+              <h3 class="free">新居大禮</h3>
             </div>
             <div class="pricing-content">
-              <div class="pi-price">
+              <div class="pi-price-free">
               	<strong>$<em>0</em></strong>
               </div>
-	          <ul class="list-unstyled">
-				<li><i class="fa fa-circle"></i> 五年內新裝修單位，一律免費 </li>
-	            <li><i class="fa fa-circle"></i> 1000呎以下單位 </li>
-	            <li><i class="fa fa-circle"></i> 即時詳細結果查閱 </li>
-	          </ul>
+			  <div class="free">
+				<ul class="list-unstyled">
+					<li><i class="fa fa-circle"></i> 五年內新裝修單位，一律免費 </li>
+					<li><i class="fa fa-circle"></i> 免費檢測之次數，根據單位結構而定 </li>
+					<li><i class="fa fa-circle"></i> 如單位有1客廳、1飯廳、1房、1廚房、1廁所，則可在以上地點各檢測一次</li>
+					<li><i class="fa fa-circle"></i> $10次/額外範圍</li>
+				  </ul>
+			  </div>
             </div>
             
           </div>
@@ -199,11 +201,15 @@ License: You must have a valid license purchased only from themeforest (the abov
             </div>
             <div class="pricing-content">
               <div class="pi-price">
-              	<strong>$<em>200</em></strong>
+              	<strong>$<em>0.3/呎</em></strong>
               </div>
 	          <ul class="list-unstyled">
 				<li><i class="fa fa-circle"></i> 裝修超過五年之單位</li>
-	            <li><i class="fa fa-circle"></i> 即時詳細結果查閱  </li>
+				<li><i class="fa fa-circle"></i> 每500尺，自選範圍可獲10次檢測</li>
+				<li><i class="fa fa-circle"></i> e.g. 500尺或以下，自選範圍可獲10次檢測</li>
+				<li><i class="fa fa-circle"></i> e.g. 501 - 1000尺，自選範圍可獲20次檢測</li>
+				<li><i class="fa fa-circle"></i> 1000尺以上，歡迎來電查詢</li>
+				<li><i class="fa fa-circle"></i> $10次/額外範圍</li>
 	          </ul>
             </div>
           </div>
@@ -295,8 +301,8 @@ License: You must have a valid license purchased only from themeforest (the abov
       <div class="row">
         <!-- BEGIN BOTTOM ABOUT BLOCK -->
         <div class="col-md-6 col-sm-6 pre-footer-col">
-          <h2>關於置簡單</h2>
-          <p>安居置業都係大陪份打工仔既目標，但置業往往用盡大家積蓄，而忽略居住質素。</p>
+          <h2>關於Homeasy(置簡單)</h2>
+          <p>安居置業都係大部份打工仔既目標，但置業往往用盡大家積蓄，而忽略居住質素。</p>
           <p>置簡單希望可以從多方面提供資訊、服務，以幫助大家易安居‧易置業。</p>
         </div>
         <!-- END BOTTOM ABOUT BLOCK -->

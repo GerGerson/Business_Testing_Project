@@ -184,8 +184,8 @@ License: You must have a valid license purchased only from themeforest (the abov
       <div class="row">
         <!-- BEGIN BOTTOM ABOUT BLOCK -->
         <div class="col-md-6 col-sm-6 pre-footer-col">
-          <h2>關於置簡單</h2>
-          <p>安居置業都係大陪份打工仔既目標，但置業往往用盡大家積蓄，而忽略居住質素。</p>
+          <h2>關於Homeasy(置簡單)</h2>
+          <p>安居置業都係大部份打工仔既目標，但置業往往用盡大家積蓄，而忽略居住質素。</p>
           <p>置簡單希望可以從多方面提供資訊、服務，以幫助大家易安居‧易置業。</p>
         </div>
         <!-- END BOTTOM ABOUT BLOCK -->
